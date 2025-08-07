@@ -1,11 +1,12 @@
 <template>
   <div>
-    <HomepageMain />
+    <NavNavbar />
+    <HomepageHero />
+    
   </div>
 </template>
 
 <script lang="ts" setup>
-
 
 </script>
 

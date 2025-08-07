@@ -1,11 +1,10 @@
 <template>
-  <div class="border p-4 rounded-lg shadow-md">
+  <div class="border p-4 rounded-lg shadow-md h-full w-full">
     <NuxtLink  class="block">
-
       <h3>{{ item.title }}</h3>
-    </NuxtLink>
-    
+    </NuxtLink> 
   </div>
+
 </template>
 
 <script lang="ts" setup>

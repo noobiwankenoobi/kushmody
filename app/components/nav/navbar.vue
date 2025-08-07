@@ -1,13 +1,20 @@
 <template>
-  <div>
-    
-  </div>
+  <!-- <nav class="bg-white shadow px-4 py-2 h-48">
+    <div v-if="page === 'home'">Home Navbar</div>
+    <div v-else-if="page === 'gallery'">Gallery Navbar</div>
+    <div v-else>Default Navbar</div>
+  </nav> -->
+   <nav class="bg-white shadow px-4 py-2 h-48">
+    Nav
+  </nav>
 </template>
 
-<script lang="ts" setup>
-
+<script setup lang="js">
+import { defineProps } from 'vue';
+const props = defineProps({
+  page: {
+    type: String,
+    required: true
+  }
+});
 </script>
-
-<style>
-
-</style>

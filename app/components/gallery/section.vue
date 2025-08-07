@@ -1,11 +1,10 @@
 <template>
   <div>
-    <HomepageMain />
+    <GalleryGrid />
   </div>
 </template>
 
 <script lang="ts" setup>
-
 
 </script>
 
