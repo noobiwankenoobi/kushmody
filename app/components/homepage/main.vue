@@ -2,6 +2,8 @@
   <div>
     <HomepageHero />
     <HomepageName />
+    <HomepageStudio />
+    <HomepageContact />
   </div>
 </template>
 
