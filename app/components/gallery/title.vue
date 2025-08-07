@@ -1,10 +1,10 @@
 <template>
   <div>
-    <HomepageHero />
+    title
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="js" setup>
 
 </script>
 

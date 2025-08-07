@@ -2,12 +2,13 @@
   <AppLayout>
     <!-- Page-specific content here -->
     <div>
-      <GallerySection />
+      <GalleryMain />
     </div>
+    
   </AppLayout>
 </template>
 
-<script lang="ts" setup>
+<script lang="js" setup>
 import AppLayout from '~/layouts/app-layout.vue';
 
 

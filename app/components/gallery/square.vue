@@ -1,13 +1,11 @@
 <template>
-  <div class="border p-4 rounded-lg shadow-md h-full w-full">
-    <NuxtLink  class="block">
+  <div class="border p-4 rounded-sm shadow-sm h-32 w-32 cursor-pointer"
+  @click="$emit('click')">
       <h3>{{ item.title }}</h3>
-    </NuxtLink> 
   </div>
-
 </template>
 
-<script lang="ts" setup>
+<script lang="js" setup>
 import { defineProps } from 'vue';
 const props = defineProps({
   item: {
@@ -15,7 +13,7 @@ const props = defineProps({
     required: true
   }
 });
-
+defineEmits(['click'])
 </script>
 
 <style>
