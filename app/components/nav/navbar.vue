@@ -5,7 +5,16 @@
     <div v-else>Default Navbar</div>
   </nav> -->
    <nav class="bg-white min-h-32 border-b">
-    <NavMusicNav />
+
+    <div v-if="page === 'music'">
+      <NavMusicNav />
+    </div>
+    <div v-else-if="page === 'visual'">
+      <NavVisualNav />
+    </div>
+
+    <div v-else>Default Navbar</div>
+    
   </nav>
 </template>
 

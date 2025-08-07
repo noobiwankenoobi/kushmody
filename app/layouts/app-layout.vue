@@ -10,5 +10,8 @@
 <script setup lang="js">
 import { useRoute } from 'vue-router'
 const route = useRoute()
-const page = route.path?.toString // or use route.path for more control
+const path = route.path
+
+const page = ref()
+page.value = path === '/' ? 'home' : path.includes('/music') ? 'music' : path.includes('/visual') ? 'visual' : 'other'
 </script>

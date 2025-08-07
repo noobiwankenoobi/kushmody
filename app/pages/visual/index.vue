@@ -1,10 +1,16 @@
 <template>
-  <div>
+  <AppLayout>
+    <!-- Page-specific content here -->
+    <div>
+      <!-- <GalleryMain /> -->
+    </div>
     
-  </div>
+  </AppLayout>
 </template>
 
-<script lang="ts" setup>
+<script lang="js" setup>
+import AppLayout from '~/layouts/app-layout.vue';
+
 
 </script>
 
