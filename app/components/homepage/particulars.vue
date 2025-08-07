@@ -1,7 +1,6 @@
 <template>
   <div>
-    <HomepageHero />
-    <HomepageName />
+    
   </div>
 </template>
 

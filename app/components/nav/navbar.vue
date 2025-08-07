@@ -4,8 +4,8 @@
     <div v-else-if="page === 'gallery'">Gallery Navbar</div>
     <div v-else>Default Navbar</div>
   </nav> -->
-   <nav class="bg-white shadow px-4 py-2 h-48">
-    Nav
+   <nav class="bg-white min-h-32 border-b">
+    <NavMusicNav />
   </nav>
 </template>
 

@@ -38,9 +38,10 @@ function closeModal() {
 
 <template>
   <!-- Grid container -->
-  <div class="gallery-grid grid grid-cols-4 gap-x-4 gap-y-32 my-8 justify-center mx-auto max-w-5xl">
+  <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-22 my-8 justify-center mx-auto max-w-5xl">
+
     <!-- Looping items -->
-    <div class="flex justify-center items-center"  
+    <div class="flex justify-center items-center aspect-[2/3] w-full"  
       v-for="item in items"
      >
       <GallerySquare 

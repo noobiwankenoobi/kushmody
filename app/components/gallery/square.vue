@@ -1,5 +1,5 @@
 <template>
-  <div class="border p-4 rounded-sm shadow-sm h-32 w-32 cursor-pointer"
+  <div class="border border-gray-300 p-4 rounded-sm  h-full w-full cursor-pointer"
   @click="$emit('click')">
       <h3>{{ item.title }}</h3>
   </div>
