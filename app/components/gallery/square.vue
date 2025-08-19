@@ -2,7 +2,7 @@
   <div
   class=" py-4  h-full w-full cursor-pointer"
   @click="$emit('click')">
-    <img :src="item.image" :alt="item.title" class="w-full object-contain" >
+    <img :src="item.artwork_url" :alt="item.title" class="w-full object-contain" >
   </div>
 </template>
 
