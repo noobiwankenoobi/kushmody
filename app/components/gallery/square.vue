@@ -1,20 +1,20 @@
 <template>
-  <div class="border border-gray-300 py-4  h-full w-full cursor-pointer"
+  <div
+  class=" py-4  h-full w-full cursor-pointer"
   @click="$emit('click')">
-    <img :src="item.image" :alt="item.title" class="w-full h-48 object-contain mb-2 " />
-      <h3>{{ item.title }}</h3>
+    <img :src="item.image" :alt="item.title" class="w-full object-contain" >
   </div>
 </template>
 
 <script lang="js" setup>
-import { defineProps } from 'vue';
-const props = defineProps({
+import { defineProps } from "vue"
+defineProps({
   item: {
     type: Object,
-    required: true
-  }
-});
-defineEmits(['click'])
+    required: true,
+  },
+})
+defineEmits(["click"])
 </script>
 
 <style>

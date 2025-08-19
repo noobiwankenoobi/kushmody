@@ -4,13 +4,12 @@
     <div>
       <GalleryMain />
     </div>
-    
+
   </AppLayout>
 </template>
 
 <script lang="js" setup>
-import AppLayout from '~/layouts/app-layout.vue';
-
+import AppLayout from "~/layouts/app-layout.vue"
 
 </script>
 

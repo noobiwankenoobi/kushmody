@@ -3,7 +3,7 @@
   <div class="relative w-full h-full ">
       <!-- Background image -->
       <img
-src="/images/hero.jpg" alt="My Photo"
+      src="/images/hero.jpg" alt="My Photo"
       class=" w-full h-full object-cover z-0 opacity-70"
       >
 
