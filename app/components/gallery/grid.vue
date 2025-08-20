@@ -2,19 +2,31 @@
 // import json file items from 'data/music-items.js'
 import items from "~/data/music-items.json"
 
-const selectedItem = ref(null)
-const router = useRouter()
+// get the category from the query param
+const route = useRoute()
+// const category = route.query.category
 
-// computed for items visible
+const selectedItem = ref(null)
+
+function containsSubstring(str, substring) {
+  return str.includes(substring)
+}
+
+// computed for items visible -- filtered by category
 const visibleItems = computed(() => {
-  return items.filter(item => item)
+  if (!route.query.category) {
+    return items // return all items if no category is specified
+  }
+  return items.filter(item => containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase()))
 })
 
+// click on square
 function handleSquareClick(item) {
   selectedItem.value = item
   router.replace({ query: { id: item.work_title } }) // stays on page, updates URL
 }
 
+// close modal
 function closeModal() {
   selectedItem.value = null
   router.replace({ query: {} }) // remove id from URL

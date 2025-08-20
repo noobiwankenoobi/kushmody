@@ -7,6 +7,17 @@ const subNavItems = [
   { name: "BRANDED", data: "branded" },
 ]
 
+// handle click on subnav item
+const router = useRouter()
+function handleClick(item) {
+  if (item.data == router.currentRoute.value.query.category) {
+    // remove current category from URL
+    router.push({ path: "/music", query: {} })
+    return
+  }
+  router.push({ path: "/music", query: { category: item.data } })
+}
+
 </script>
 
 <template>
@@ -15,7 +26,8 @@ const subNavItems = [
 
     <!-- loop through sub nav items -->
     <ul v-for="item in subNavItems" :key="item.name" class="list-none">
-      <NavSubNavItem :item="item" />
+      <!-- handle the emit -->
+      <NavSubNavItem :item="item" @handleClick="handleClick(item)" />
     </ul>
 
   </div>
