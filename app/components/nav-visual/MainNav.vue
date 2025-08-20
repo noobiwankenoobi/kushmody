@@ -10,7 +10,7 @@
     <span class="font-semibold text-gray-700">PHOTOGRAPHY</span>
     <span class="font-semibold text-gray-700">VIDEO</span>
     <span class="font-semibold text-gray-700">ART & DESIGN</span>
-    
+
   </div>
 </template>
 

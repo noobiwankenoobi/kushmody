@@ -1,6 +1,6 @@
 <template>
   <!-- Music Nav Container -->
-    <div class=" bg-white px-4 py-2 z-50 w-screen">
+    <div class="  px-4 py-2 z-50 w-screen">
         <NavMusicTopNav />
         <NavMusicSubNav />
     </div>
