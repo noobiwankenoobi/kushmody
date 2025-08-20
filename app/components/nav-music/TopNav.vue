@@ -7,7 +7,7 @@
 
     <!-- Left Side -->
     <div class="flex-shrink-0 w-32 flex items-center justify-start">
-      <NuxtLink to="/" class="text-gray-700 font-bold w-1/6 left-0 items-center justify-center"><span>home</span></NuxtLink>
+      <NuxtLink to="/" class="text-gray-700 font-bold w-1/6 left-0 items-center justify-center"><span>HOME</span></NuxtLink>
     </div>
     <!--  -->
 
