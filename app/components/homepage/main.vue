@@ -2,6 +2,7 @@
   <div>
     <HomepageHero />
     <HomepageName />
+    <HomepageParticulars />
     <HomepageStudio />
     <HomepageContact />
   </div>

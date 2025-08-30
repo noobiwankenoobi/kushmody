@@ -8,7 +8,7 @@ const props = defineProps({
 })
 defineEmits(["click"])
 
-const imgSrc = `/images/music/${props.item.work_title}.jpg`
+const imgSrc = `/images/music/${props.item.work_title}.webp`
 
 </script>
 
