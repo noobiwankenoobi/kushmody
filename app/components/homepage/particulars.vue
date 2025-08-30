@@ -2,9 +2,9 @@
  
   <div class="w-full bg-white py-12 flex flex-col justify-center">
     <!-- TOP SECTION -->
-    <div class="flex flex-row items-center max-w-[60%] w-full px-6 py-12 m-auto">
+    <div class="flex flex-row items-center w-full px-6 py-12 m-auto">
       <!-- Illustration -->
-      <div class="flex-shrink-0 mr-8 w-[1/3]">
+      <div class="flex flex-shrink-0 justify-center items-center mr-8 w-[1/3]">
         <img src="/images/homepage/illustrations/homepage_sheet_music_drawing.png" alt="Particulars Illustration" class="w-64 h-64 object-contain" />
       </div>
       <!-- Text Section -->
@@ -35,7 +35,7 @@
     </div>
 
     <!-- BOTTOM SECTION -->
-     <div class="flex flex-row items-center max-w-[60%] w-full px-6 py-12 m-auto">
+     <div class="flex flex-row items-center  w-full px-6 py-12 m-auto">
      
       <!-- Text Section -->
       <div class="flex flex-row w-full items-stretch">

@@ -1,11 +1,15 @@
 <template>
+  <div>
+  <NavNavbar :page="page"  class="top-0 w-full z-50" />
   <AppLayout>
     <!-- Page-specific content here -->
+
     <div>
-      <!-- <GalleryMain /> -->
+      <GalleryMain />
     </div>
 
   </AppLayout>
+  </div>
 </template>
 
 <script lang="js" setup>
