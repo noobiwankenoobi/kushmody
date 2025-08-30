@@ -5,6 +5,7 @@
     <HomepageParticulars />
     <HomepageStudio />
     <HomepageContact />
+    <HomepageTellMe />
   </div>
 </template>
 

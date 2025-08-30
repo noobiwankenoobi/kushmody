@@ -14,7 +14,7 @@
           <div class="flex flex-col w-full h-full z-200">
 
             <!-- TOP BAR -->
-            <div class="flex flex-row items-center justify-between w-full px-72 py-2 ">
+            <div class="flex flex-row items-center justify-between w-full px-80 py-2 ">
               <div class=" font-bold text-md justify-start z-100 tracking-wide ml-20">[ CLICK THE EAR FOR MUSIC WORK ]</div>
               <div class=" font-bold text-md  justify-end z-100 tracking-wide">[ CLICK THE EYE FOR VISUAL WORK ]</div>
             </div>
