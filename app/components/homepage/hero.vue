@@ -5,16 +5,21 @@
       <img
       src="/images/hero.jpg" alt="My Photo"
       class=" w-full h-full object-cover z-0 opacity-75"
+
       >
 
       <!-- OVERLAY: full size absolute overlay div -- full width and height -->
-      <div class="absolute top-0 z-105 w-full h-full">
+      <div  class="absolute top-0 z-105 w-full h-full">
 
         <!-- START: relative div inside overlay -->
           <div class="flex flex-col w-full h-full z-200">
 
             <!-- TOP BAR -->
-            <div class="flex flex-row items-center justify-between w-full px-80 py-2 ">
+            <div
+:class="[
+            'flex flex-row items-center justify-between w-full px-80 py-2 transition-opacity duration-1000',
+            showTopBar ? 'opacity-100' : 'opacity-0'
+          ]">
               <div class=" font-bold text-md justify-start z-100 tracking-wide ml-20">[ CLICK THE EAR FOR MUSIC WORK ]</div>
               <div class=" font-bold text-md  justify-end z-100 tracking-wide">[ CLICK THE EYE FOR VISUAL WORK ]</div>
             </div>
@@ -69,6 +74,15 @@ const routeToVisual = () => {
   // Navigate to visual page
   router.push("/visual")
 }
+
+// Animate top bar to fade in after 5 seconds
+const showTopBar = ref(false)
+
+onMounted(() => {
+  setTimeout(() => {
+    showTopBar.value = true
+  }, 5000)
+})
 
 </script>
 

@@ -12,5 +12,12 @@ export default defineNuxtConfig({
     ],
   },
 
+    nitro: {
+    prerender: {
+      routes: ["/", "/music", "/visual"],
+      ignore: ["/dynamic"],
+    },
+  },
+
   modules: ["@nuxt/eslint"],
 })
