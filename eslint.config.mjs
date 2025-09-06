@@ -1,6 +1,6 @@
 // eslint.config.js
 import stylistic from "@stylistic/eslint-plugin"
-import withNuxt from "./.nuxt/eslint.config.mjs"
+import { withNuxt } from "@nuxt/eslint-config"
 
 export default withNuxt(
   [

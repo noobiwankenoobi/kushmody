@@ -5,9 +5,11 @@
       <img
       src="/images/hero.jpg" alt="My Photo"
       class=" w-full h-full object-cover z-0 opacity-75"
-
+      @load="onImageLoaded"
       >
 
+      <!-- Start transition -->
+      <transition name="fade" mode="out-in" appear>
       <!-- OVERLAY: full size absolute overlay div -- full width and height -->
       <div  class="absolute top-0 z-105 w-full h-full">
 
@@ -53,6 +55,8 @@
           </div>
           <!-- END: relative div inside overlay -->
       </div>
+      <!-- End transition -->
+      </transition>
 
   </div>
 
@@ -84,8 +88,24 @@ onMounted(() => {
   }, 5000)
 })
 
+const imageLoaded = ref(false)
+
+function onImageLoaded() {
+  // Image has loaded, you can perform any actions if needed
+  console.log("Background image loaded")
+  setTimeout(() => {
+    imageLoaded.value = true
+  }, 100)
+}
+
 </script>
 
 <style>
+.fade-enter-active, .fade-leave-active {
+  @apply transition-opacity duration-700;
+}
+.fade-enter-from, .fade-leave-to {
+  @apply opacity-0;
+}
 
 </style>

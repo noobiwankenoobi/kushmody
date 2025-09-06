@@ -1,23 +1,38 @@
 <template>
  
-  <div class="w-full bg-white py-12 flex flex-col justify-center">
-    <!-- TOP SECTION -->
-    <div class="flex flex-row items-center w-full px-6 py-12 m-auto">
-      <!-- Illustration -->
-      <div class="flex flex-shrink-0 justify-center items-center mr-8 w-[1/3]">
-        <img src="/images/homepage/illustrations/homepage_sheet_music_drawing.png" alt="Particulars Illustration" class="w-64 h-64 object-contain" />
-      </div>
-      <!-- Text Section -->
-      <div class="flex flex-row w-full items-stretch">
-        <!-- Left: Header (1/3) -->
-        <div class="flex flex-col w-1/3 pr-4">
-          <h2 class="text-3xl font-bold text-gray-900 text-right">Particulars</h2>
+  <div class="w-full bg-white py-4 flex flex-col justify-center">
+
+    <!-- ------------------------ -->
+    <!-- ----- TOP SECTION ----- -->
+    <!-- ------------------------ -->
+
+    <!-- FULL WIDTH SECTION with illustration on left and text on right -->
+    <div class="flex flex-row items-start justify-center py-4 w-full">
+
+      <!-- LEFT OF DIVIDER SECTION -->
+      <div class="w-4/10 flex items-stretch ">
+
+        <!-- Illustration in left divider -->
+        <div class="flex items-center justify-center p-12">
+          <img src="/images/homepage/illustrations/homepage_sheet_music_drawing.png" alt="Particulars Illustration" class="object-contain w-2xl h-2xl" />
         </div>
+
+        <!-- Title in left divider -->
+      <div class="align-right w-full">
+        <h2 class="text-3xl font-bold text-gray-900 text-right">Particulars</h2>
+      </div>
+
+      </div>
+
+      <!-- RIGHT OF DIVIDER SECTION -->
+      <div class="w-6/10">
+
+        
         <!-- Divider -->
         <div class="w-px bg-gray-300 mx-0"></div>
         <!-- Right: Accomplishments (2/3) -->
-        <div class="flex flex-col justify-center w-2/3 pl-4">
-          <ul class="text-xl text-gray-700 font-bold space-y-2 list-none text-left mt-6">
+        <div class="flex flex-col justify-center w-4/5">
+          <ul class="text-lg text-gray-700 font-bold space-y-2 list-none text-left mt-10">
             <li>Interdiscplinary creative based in LA</li>
             <li>Graduated in 2010 from Berklee College of Music with a degree in film scoring</li>
             <li>Toured worldwide as bassist and keyboardist for 11 years</li>
@@ -27,55 +42,73 @@
           </ul>
         </div>
       </div>
+
+
     </div>
 
     <!-- Full width dividing line below section -->
-    <div class="w-full mt-12 mb-4">
-      <hr class="border-t-2 border-gray-700" />
+    <div class="w-full my-4">
+      <hr class="border-t-1 border-gray-700" />
     </div>
 
-    <!-- BOTTOM SECTION -->
-     <div class="flex flex-row items-center  w-full px-6 py-12 m-auto">
-     
-      <!-- Text Section -->
-      <div class="flex flex-row w-full items-stretch">
-        <!-- Left: Header (1/3) -->
-        <div class="flex flex-col w-1/3 pr-4">
-          <h2 class="text-3xl font-bold text-gray-900 text-right">Notable Credits & Collaborators</h2>
-        </div>
-        <!-- Divider -->
-        <div class="w-px bg-gray-300 mx-0"></div>
-        <!-- Right: Accomplishments (2/3) -->
-        <div class="flex flex-col justify-center w-2/3 pl-4">
-        <ul class="flex flex-row w-full gap-8 mt-18">
-            <!-- Left List -->
-            <ul class="flex-1 text-xl text-gray-700 font-bold space-y-2 list-none text-left">
-              <li>Anderson .Paak</li>
-              <li>T-Pain</li>
-              <li>Talib Kweli</li>
-              <li>Eric Krasno</li>
-              <li>Mononeon</li>
-              <li>Rachel Zegler</li>
-              <li>Watsky</li>
-            </ul>
-            <!-- Right List -->
-            <ul class="flex-1 text-xl text-gray-700 font-bold space-y-2 list-none text-left">
-              <li>Apple</li>
-              <li>T-Mobile</li>
-              <li>Target</li>
-              <li>Adidas</li>
-              <li>Brita</li>
-              <li>Snapchat</li>
-              <li>YouTube</li>
-            </ul>
-          </ul>
-        </div>
+    <!-- ------------------------ -->
+    <!-- ----- BOTTOM SECTION ----- -->
+    <!-- ------------------------ -->
+
+    <!-- FULL WIDTH SECTION with illustration on left and text on right -->
+    <div class="flex flex-row items-start justify-center py-4 w-full">
+
+      <!-- LEFT OF DIVIDER SECTION -->
+      <div class="w-4/10 flex items-stretch ">
+
+        <!-- Title in left divider -->
+      <div class="align-right w-full">
+        <h2 class="text-3xl font-bold text-gray-900 text-right">Notable<br/> Credits & Collaborators</h2>
       </div>
-       <!-- Illustration -->
-      <div class="flex-shrink-0 mr-8">
-        <img src="/images/homepage/illustrations/T Pain drawing.png" alt="Particulars Illustration" class="w-64 h-64 object-contain" />
+
       </div>
+
+      <!-- RIGHT OF DIVIDER SECTION -->
+      <div class="w-6/10 flex ">
+
+        <!-- NOTABLES SECTION -->
+        <div class="flex flex-col justify-center w-1/2">
+          <ul class="flex flex-row w-full gap-8 mt-18">
+              <!-- Left List -->
+              <ul class="flex-1 text-lg text-gray-700 font-bold space-y-1 list-none text-left">
+                <li>Anderson .Paak</li>
+                <li>T-Pain</li>
+                <li>Talib Kweli</li>
+                <li>Eric Krasno</li>
+                <li>Mononeon</li>
+                <li>Rachel Zegler</li>
+                <li>Watsky</li>
+              </ul>
+              <!-- Right List -->
+              <ul class="flex-1 text-lg text-gray-700 font-bold space-y-1 list-none text-left">
+                <li>Apple</li>
+                <li>T-Mobile</li>
+                <li>Target</li>
+                <li>Adidas</li>
+                <li>Brita</li>
+                <li>Snapchat</li>
+                <li>YouTube</li>
+              </ul>
+            </ul>
+        </div>
+
+        <!-- Illustration in right divider -->
+        <div class="flex-shrink-0 mr-8">
+          <img src="/images/homepage/illustrations/T Pain drawing.png" alt="Particulars Illustration" class="w-64 h-64 object-contain" />
+        </div>
+
+
+
+      </div>
+
+
     </div>
+
   </div>
 
 

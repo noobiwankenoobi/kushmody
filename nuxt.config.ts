@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     ],
   },
 
-    nitro: {
+  nitro: {
     prerender: {
       routes: ["/", "/music", "/visual"],
       ignore: ["/dynamic"],
