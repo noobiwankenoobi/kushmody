@@ -12,12 +12,16 @@ export default defineNuxtConfig({
     ],
   },
 
+  ssr: true, // Enable server-side rendering (required for SSG)
+
   nitro: {
+    preset: 'static',
     prerender: {
       routes: ["/", "/music", "/visual"],
       ignore: ["/dynamic"],
     },
   },
+
 
   modules: ["@nuxt/eslint"],
 })

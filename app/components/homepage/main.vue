@@ -12,6 +12,5 @@
 
 <script lang="js" setup>
 import { ref } from 'vue'
-const heroLoaded = ref(false)
 
 </script>
