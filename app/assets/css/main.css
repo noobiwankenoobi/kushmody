@@ -16,11 +16,14 @@
 
 @theme {
   --font-display: "Vonny", sans-serif;
-  --color-kushmint: #71DFBC
+  --color-kushmint: #71ddbb;
+  --color-koosh: #ef3706;
+  --color-kushred: #ca2702;
+  --color-kushoffwhite: #edf3f5;
 }
 
 body {
   font-family: 'Helvetica', sans-serif;
-  background-color: #EDF2F5;
+  background-color: #EDF3F5;
   /* Light gray background */
 }

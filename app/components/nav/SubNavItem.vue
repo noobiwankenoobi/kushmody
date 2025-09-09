@@ -13,7 +13,7 @@ defineEmits(["handleClick"])
 <template>
   <li class="mx-4">
     <span
-    class="text-gray-600 hover:text-gray-900 font-bold text-xl cursor-pointer"
+    class="text-gray-600 hover:text-kushred font-bold text-xl cursor-pointer transition-colors duration-300"
       @click="$emit('handleClick', item)"
     >
       {{ item.name }}

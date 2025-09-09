@@ -31,11 +31,21 @@ function closeModal() {
   selectedItem.value = null
   router.replace({ query: {} }) // remove id from URL
 }
+
+// Animation trigger flag
+const triggerAnimation = ref(false)
+
+// Watch for changes in visibleItems and trigger animation
+watch(visibleItems, async () => {
+  triggerAnimation.value = false
+  await nextTick()
+  triggerAnimation.value = true
+}, { immediate: true })
 </script>
 
 <template>
   <!-- Grid container -->
-  <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-22 my-8 justify-center mx-auto max-w-5xl">
+  <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-12 justify-center mx-auto max-w-5xl">
 
     <!-- Looping items -->
     <div
@@ -47,6 +57,11 @@ function closeModal() {
         :item="item"
         :to="`/gallery/${item.id}`"
         @click="handleSquareClick(item)"
+        :style="{ transitionDelay: `${idx * 80}ms` }"
+      :class="[
+        triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
+        'transition-all duration-500'
+      ]"
       />
     </div>
   </div>
@@ -56,3 +71,26 @@ function closeModal() {
     @close="closeModal"
   />
 </template>
+
+<style scoped>
+@keyframes fade-in-wiggle {
+  0% {
+    opacity: 0;
+    transform: translateY(32px) rotate(-2deg) scale(0.98);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-4px) rotate(2deg) scale(1.04);
+  }
+  80% {
+    transform: translateY(0px) rotate(-1deg) scale(0.99);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+.animate-fade-in {
+  animation: fade-in-wiggle 0.6s forwards;
+}
+</style>

@@ -22,7 +22,7 @@
             'flex flex-row items-center justify-between w-full px-80 py-2 transition-opacity duration-1000',
             showTopBar ? 'opacity-100' : 'opacity-0'
           ]">
-              <div class=" font-bold text-md justify-start z-100 tracking-wide ml-20">[ CLICK THE EAR FOR MUSIC WORK ]</div>
+              <div class=" font-bold text-md justify-start z-100 tracking-wide ml-20 cursor-pointer">[ CLICK THE EAR FOR MUSIC WORK ]</div>
               <div class=" font-bold text-md  justify-end z-100 tracking-wide">[ CLICK THE EYE FOR VISUAL WORK ]</div>
             </div>
             <!-- END: TOP BAR -->

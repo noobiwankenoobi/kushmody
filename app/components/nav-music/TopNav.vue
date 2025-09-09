@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex flex-row items-center w-full px-4 py-2 ">
+  <div class="flex flex-row items-center w-full px-4 py-2">
 
     <!-- Left Side -->
     <div class="flex-shrink-0 w-32 flex items-center justify-start">
