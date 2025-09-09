@@ -13,10 +13,38 @@
         @click="$emit('close')">✕
       </button>
 
-      <!-- Audio Player -->
-      <!-- <iframe id="disco-playlist-16150967" name="disco-playlist-16150967" allowfullscreen frameborder="0" class="disco-embed" src="https://kushmody.disco.ac/e/p/16150967?download=true&s=RZ7mv4QzZziJ5uSJ0SngODJ1dsk%3AKuamgBlS&artwork=true&color=%2332B57C&theme=white" width="480" height="395"/> -->
+      <!-- Loading Spinner -->
+      <!-- <div v-if="isLoading" class="flex items-center justify-center h-[395px] w-[480px]">
+        <svg class="animate-spin h-8 w-8 text-gray-400" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
+        </svg>
+      </div> -->
 
-      <div v-if="item.disco" v-html="item.disco"/>
+      <!-- Custom Loading Spinner -->
+      <div v-if="isLoading" class="flex items-center justify-center h-[395px] w-[480px]">
+        <div class="relative w-12 h-12">
+          <div class="absolute inset-0 rounded-full border-4 border-t-kushmint border-b-gray-300 border-l-gray-300 border-r-gray-300 animate-spin"></div>
+          <div class="absolute inset-2 rounded-full bg-kushmint opacity-30"></div>
+        </div>
+      </div>
+
+      <!-- Audio Player -->
+
+       <!-- Audio Player Iframe -->
+      <iframe
+        v-if="item.disco"
+        ref="discoIframe"
+        :src="extractSrc(item.disco)"
+        width="480"
+        height="395"
+        frameborder="0"
+        allowfullscreen
+        class="disco-embed"
+        @load="onIframeLoad"
+        style="display: block;"
+        v-show="!isLoading"
+      ></iframe>
 
     </div>
   </div>
@@ -31,4 +59,24 @@ defineProps({
     required: true,
   },
 })
+
+const isLoading = ref(true)
+const discoIframe = ref(null)
+
+
+// Extract src from the disco iframe HTML string
+function extractSrc(html) {
+  const match = html.match(/src="([^"]+)"/)
+  return match ? match[1] : ""
+}
+
+function onIframeLoad() {
+  isLoading.value = false
+}
+
+
+
+
 </script>
+
+ <!-- <iframe id="disco-playlist-16150967" name="disco-playlist-16150967" allowfullscreen frameborder="0" class="disco-embed" src="https://kushmody.disco.ac/e/p/16150967?download=true&s=RZ7mv4QzZziJ5uSJ0SngODJ1dsk%3AKuamgBlS&artwork=true&color=%2332B57C&theme=white" width="480" height="395"/> -->

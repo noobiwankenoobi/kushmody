@@ -14,10 +14,20 @@ function containsSubstring(str, substring) {
 
 // computed for items visible -- filtered by category
 const visibleItems = computed(() => {
-  if (!route.query.category) {
-    return items // return all items if no category is specified
+  
+
+  let randomItems = [...items]
+  // shuffle the array using Fisher-Yates algorithm
+  for (let i = randomItems.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [randomItems[i], randomItems[j]] = [randomItems[j], randomItems  [i]]
   }
-  return items.filter(item => containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase()))
+
+  if (!route.query.category) {
+    return randomItems // return all items if no category is specified
+  }
+
+  return randomItems.filter(item => containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase()))
 })
 
 // click on square
@@ -36,11 +46,12 @@ function closeModal() {
 const triggerAnimation = ref(false)
 
 // Watch for changes in visibleItems and trigger animation
-watch(visibleItems, async () => {
+watch(() => visibleItems.value, async () => {
   triggerAnimation.value = false
   await nextTick()
   triggerAnimation.value = true
-}, { immediate: true })
+
+}, { immediate: false })
 </script>
 
 <template>
@@ -76,11 +87,11 @@ watch(visibleItems, async () => {
 @keyframes fade-in-wiggle {
   0% {
     opacity: 0;
-    transform: translateY(32px) rotate(-2deg) scale(0.98);
+    transform: translateY(32px) rotate(-1deg) scale(0.98);
   }
   60% {
     opacity: 1;
-    transform: translateY(-4px) rotate(2deg) scale(1.04);
+    transform: translateY(-4px) rotate(1deg) scale(1.04);
   }
   80% {
     transform: translateY(0px) rotate(-1deg) scale(0.99);
@@ -91,6 +102,6 @@ watch(visibleItems, async () => {
   }
 }
 .animate-fade-in {
-  animation: fade-in-wiggle 0.6s forwards;
+  animation: fade-in-wiggle 0.4s forwards;
 }
 </style>

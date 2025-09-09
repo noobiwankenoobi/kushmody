@@ -34,21 +34,31 @@
               <div class="w-4/10 relative ">
                 <img src="/images/homepage/homepage_header_full.png" alt="Kush Mody Header" class="w-full" >
                 <!-- 2 clickable overlays on the logo -->
-                <div class="absolute top-2 left-17/80 w-6/50 h-9/10  z-300 cursor-pointer" @click="routeToMusic"/>
-                <div class="absolute top-2 right-9/40 w-6/50 h-9/10  z-300 cursor-pointer" @click="routeToVisual"/>
+
+                <!-- EAR CLICK AREA -->
+                <div class="absolute top-2 left-17/80 w-6/50 h-9/10  z-300 cursor-pointer" @click="routeToMusic"
+                @mouseenter="earHover = true"
+                @mouseleave="earHover = false"
+                />
+
+                <!-- EYE CLICK AREA -->
+                <div class="absolute top-2 right-9/40 w-6/50 h-9/10  z-300 cursor-pointer" @click="routeToVisual"
+                @mouseenter="eyeHover = true"
+                @mouseleave="eyeHover = false"
+                />
               </div>
             </div>
             <!-- END: MAIN HEADER -->
 
             <!-- SUB HEADER -->
-            <div class="flex flex-row items-center justify-center z-10">
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 tracking-widest">PRODUCER</span>
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest">&middot;</span>
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 tracking-widest">MIXER</span>
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest">&middot;</span>
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 tracking-widest">COMPOSER</span>
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest">&middot;</span>
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 tracking-widest">VISUAL ARTIST</span>
+            <div class="flex flex-row items-center justify-center z-10 ">
+              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">PRODUCER</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300 " :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">MIXER</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">COMPOSER</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">VISUAL ARTIST</span>
             </div>
             <!-- END: SUB HEADER -->
 
@@ -97,6 +107,9 @@ function onImageLoaded() {
     imageLoaded.value = true
   }, 100)
 }
+
+const earHover = ref(false)
+const eyeHover = ref(false)
 
 </script>
 

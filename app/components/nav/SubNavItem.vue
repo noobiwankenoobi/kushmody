@@ -4,6 +4,7 @@ defineProps({
     type: Object,
     required: true,
   },
+  isSelected: { type: Boolean, default: false }
 })
 
 defineEmits(["handleClick"])
@@ -13,7 +14,10 @@ defineEmits(["handleClick"])
 <template>
   <li class="mx-4">
     <span
-    class="text-gray-600 hover:text-kushred font-bold text-xl cursor-pointer transition-colors duration-300"
+      :class="[
+          'font-bold text-xl cursor-pointer transition-colors duration-300',
+          isSelected ? 'text-kushred' : 'text-gray-700 hover:text-kushred'
+        ]"
       @click="$emit('handleClick', item)"
     >
       {{ item.name }}

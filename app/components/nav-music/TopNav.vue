@@ -7,7 +7,7 @@
 
     <!-- Left Side -->
     <div class="flex-shrink-0 w-32 flex items-center justify-start">
-      <NuxtLink to="/" class="text-gray-700 font-bold w-1/6 left-0 items-center justify-center"><span>HOME</span></NuxtLink>
+      <NuxtLink to="/" class="text-gray-700 font-bold w-1/6 left-0 items-center justify-center hover:text-kushred transition-colors duration-300"><span>HOME</span></NuxtLink>
     </div>
     <!--  -->
 
@@ -21,7 +21,7 @@
 
     <!-- Right Side -->
     <div class="flex-shrink-0 w-32 flex items-center justify-end">
-      <NuxtLink to="/visual" class="text-gray-700 font-bold"><span>to visual work</span></NuxtLink>
+      <NuxtLink to="/visual" class="text-gray-700 font-bold hover:text-kushred transition-colors duration-300"><span>to visual work</span></NuxtLink>
     </div>
     <!--  -->
   </div>
