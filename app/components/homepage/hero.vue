@@ -76,6 +76,7 @@
 
 <script lang="js" setup>
 
+
 import { useRouter } from "vue-router"
 const router = useRouter()
 
@@ -103,6 +104,7 @@ const imageLoaded = ref(false)
 function onImageLoaded() {
   // Image has loaded, you can perform any actions if needed
   console.log("Background image loaded")
+
   setTimeout(() => {
     imageLoaded.value = true
   }, 50)
