@@ -105,7 +105,7 @@ function onImageLoaded() {
   console.log("Background image loaded")
   setTimeout(() => {
     imageLoaded.value = true
-  }, 100)
+  }, 50)
 }
 
 const earHover = ref(false)

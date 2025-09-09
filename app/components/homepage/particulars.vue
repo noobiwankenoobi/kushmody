@@ -1,6 +1,6 @@
 <template>
  
-  <div class="w-full bg-white py-4 flex flex-col justify-center">
+  <div class="w-full bg-kushoffwhite py-4 flex flex-col justify-center">
 
     <!-- ------------------------ -->
     <!-- ----- TOP SECTION ----- -->
