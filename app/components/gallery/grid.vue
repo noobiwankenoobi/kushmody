@@ -1,11 +1,14 @@
 <script setup lang="js">
-// import json file items from 'data/music-items.js'
-import musicItems from "~/data/music-items.json"
-import visualItems from "~/data/visual-items.json"
 
-// get the category from the query param
+const props = defineProps({
+  galleryItems: {
+    type: Array,
+    required: false,
+    default: () => []
+  }
+})
+const router = useRouter()
 const route = useRoute()
-// const category = route.query.category
 
 const selectedItem = ref(null)
 
@@ -16,27 +19,29 @@ function containsSubstring(str, substring) {
 // computed for items visible -- filtered by category
 const visibleItems = computed(() => {
 
-  let randomItems = []
-  if (route.path.includes('/music')) {
-    randomItems = [...musicItems]
-  } else if (route.path.includes('/visual')) {
-    randomItems = [...visualItems]
+  let items = [...props.galleryItems]
+
+  // if the length is 0, return empty array
+  if (items.length === 0) return []
+
+  // Filter -- filter down by category if exist
+  if (route.query.category) {
+    console.log('Filtering by category: ', route.query.category)
+    items = items.filter(item => {
+    return containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase())
+  })
   }
-  
-  // shuffle the array using Fisher-Yates algorithm
-  for (let i = randomItems.length - 1; i > 0; i--) {
+ 
+  // Randomize -- shuffle the array using Fisher-Yates algorithm
+  for (let i = items.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [randomItems[i], randomItems[j]] = [randomItems[j], randomItems  [i]]
+    [items[i], items[j]] = [items[j], items[i]]
   }
 
-  if (!route.query.category) {
-    return randomItems // return all items if no category is specified
-  }
-
-  return randomItems.filter(item => containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase()))
+  return items
 })
 
-const router = useRouter()
+
 
 // click on square
 function handleSquareClick(item) {
@@ -61,6 +66,11 @@ watch(() => visibleItems.value, async () => {
   triggerAnimation.value = true
 
 }, { immediate: false })
+
+// watcher for galleryItems
+watch(() => props.galleryItems, (newVal, _) => {
+  console.log('galleryItems prop changed: ', newVal, _)
+}, { immediate: true })
 </script>
 
 <template>
@@ -77,7 +87,6 @@ watch(() => visibleItems.value, async () => {
         :item="item"
         :to="`/gallery/${item.id}`"
         @click="handleSquareClick(item)"
-        :style="{ transitionDelay: `100ms` }"
       :class="[
         triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
         'transition-all duration-500'

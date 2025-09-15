@@ -31,11 +31,10 @@
 
       <!-- Audio Player -->
 
-       <!-- Audio Player Iframe -->
+       <!-- Disco Audio Player Iframe -->
       <iframe
-        v-if="item.disco || item.embed"
-        ref="discoIframe"
-        :src="extractSrc(item.disco || item.embed)"
+        v-if="item.disco_embed"
+        :src="extractDiscoSrc(item.disco_embed)"
         width="480"
         height="395"
         frameborder="0"
@@ -46,6 +45,25 @@
         v-show="!isLoading"
       ></iframe>
 
+      <!-- Youtube Embed -->
+      <iframe
+        v-if="item.youtube_embed"
+        width="560"
+        height="315"
+        :src="youtubeSrc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="rounded shadow"
+      ></iframe>
+
+      <!-- vhtml -->
+      <div v-if="item.vimeo_embed" v-html="item.vimeo_embed" @load="onIframeLoad" style="display: block;" v-show="!isLoading"></div>
+
+      <!-- vhtml for youtube -->
+      <!-- <div v-if="item.youtube_embed" v-html="item.youtube_embed" @load="onIframeLoad" style="display: block;" ></div> -->
+
     </div>
   </div>
 </template>
@@ -53,19 +71,35 @@
 <script setup lang="js">
 import { defineEmits } from "vue"
 defineEmits(["close"])
-defineProps({
+const props = defineProps({
   item: {
     type: Object,
     required: true,
   },
 })
 
-const isLoading = ref(true)
-const discoIframe = ref(null)
+const isLoading = ref(false)
 
 
+
+// YOUTUBE
+
+// Extracts the YouTube video ID from an iframe embed HTML string
+function extractYoutubeSrc(html) {
+  const match = html.match(/src="([^"]+)"/)
+  return match ? match[1] : null
+}
+
+const youtubeSrc = computed(() => {
+  if (!props?.item?.youtube_embed) return null
+  return extractYoutubeSrc(props?.item?.youtube_embed || "")
+})  
+// const youtubeSrc = extractYoutubeSrc(props.item?.youtube_embed)
+
+
+// DISCO
 // Extract src from the disco iframe HTML string
-function extractSrc(html) {
+function extractDiscoSrc(html) {
   const match = html.match(/src="([^"]+)"/)
   return match ? match[1] : ""
 }
@@ -75,7 +109,12 @@ function onIframeLoad() {
 }
 
 
+// watch youtubeSrc and set isLoading to true when it changes
+watch(() => youtubeSrc.value, (newVal, _) => {
+  console.log('youtubeSrc changed: ', newVal, _)
+  console.log("item is: ", props?.item)
 
+}, { immediate: true})
 
 </script>
 

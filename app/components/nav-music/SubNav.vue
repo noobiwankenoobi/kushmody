@@ -3,7 +3,7 @@
 const subNavItems = [
   { name: "PRODUCTION", data: "production" },
   { name: "MIXING", data: "mixing" },
-  { name: "FILM SCORING", data: "film-scoring" },
+  { name: "FILM SCORING", data: "film scoring" },
   { name: "BRANDED", data: "branded" },
 ]
 

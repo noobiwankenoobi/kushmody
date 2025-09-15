@@ -2,20 +2,19 @@
   <div>
   <NavNavbar :page="page"  class="top-0 w-full z-50" />
   <AppLayout>
-    <!-- Page-specific content here -->
-
-    <div>
-      <GalleryMain />
-    </div>
-
+    <!-- Gallery -->
+      <GalleryMain :galleryItems="galleryItems" />
+    <!-- Gallery End -->
   </AppLayout>
   </div>
 </template>
 
 <script lang="js" setup>
 import AppLayout from "~/layouts/app-layout.vue"
+import musicItems from "~/data/music-items.json"
 
-import { useRoute } from "vue-router"
+const galleryItems = ref(musicItems)
+
 const route = useRoute()
 const path = route.path
 

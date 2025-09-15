@@ -9,7 +9,6 @@ const props = defineProps({
 defineEmits(["click"])
 
 const route = useRoute()
-
 const visualOrMusic = route.path.includes('/music') ? 'music' : 'visual'
 
 const imgSrc = `/images/${visualOrMusic}/${props.item.work_title}.webp`

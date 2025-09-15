@@ -2,55 +2,107 @@
   {
     "id": 1,
     "work_title": "The World Is Mine (BTS)",
+    "format": "youtube",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "https://www.youtube.com/watch?v=UAbH1oErrwQ",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
   },
   {
     "id": 2,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Immigrants (We Get The Job Done) BTS",
+    "format": "youtube",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "https://www.youtube.com/watch?v=pWFLYqkvhMk",
+    "youtube_embed": ""
   },
   {
     "id": 3,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Exquisite Corpse (BTS)",
+    "format": "vimeo",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "",
+    "youtube_embed": "",
+    "vimeo": "https://vimeo.com/manage/videos/249213444",
+    "vimeo_embed": ""
   },
   {
     "id": 4,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Lithium",
+    "format": "youtube",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "https://www.youtube.com/watch?v=5H7A2-WLFCc",
+    "youtube_embed": "",
+    "vimeo": "",
+    "vimeo_embed": ""
   },
   {
     "id": 5,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Plate Guitar Co",
+    "format": "vimeo",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "",
+    "youtube_embed": "",
+    "vimeo": "https://vimeo.com/359182669",
+    "vimeo_embed": ""
   },
   {
     "id": 6,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Congratulatory Trinkets",
+    "format": "",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "https://www.youtube.com/watch?v=x00I42ATvKo",
+    "youtube_embed": "",
+    "vimeo": "",
+    "vimeo_embed": ""
   },
   {
     "id": 7,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Wax On Wax: Shit I Used To Do",
+    "format": "youtube",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "https://www.youtube.com/watch?v=GTaFYJt_oPI",
+    "youtube_embed": "",
+    "vimeo": "",
+    "vimeo_embed": ""
   },
   {
     "id": 8,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "SoCal Grill",
+    "format": "vimeo",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "",
+    "youtube_embed": "",
+    "vimeo": "https://vimeo.com/1069434916/68b7260cd9?p=1t",
+    "vimeo_embed": ""
   },
   {
     "id": 9,
-    "work_title": "The World Is Mine (BTS)",
+    "work_title": "Apollo",
+    "format": "",
     "categories": "video",
-    "embed": "<iframe width=\"560\" height=\"315\" src=\"https: //www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    "youtube": "https://www.youtube.com/watch?v=lflpOfP9BgA",
+    "youtube_embed": "",
+    "vimeo": "",
+    "vimeo_embed": ""
+  },
+  {
+    "id": 10,
+    "work_title": "Darren FUNd",
+    "format": "youtube",
+    "categories": "video",
+    "youtube": "https://www.youtube.com/watch?v=2kPX8i5HXzw",
+    "youtube_embed": "",
+    "vimeo": "",
+    "vimeo_embed": ""
+  },
+  {
+    "id": 11,
+    "work_title": "The Wheel",
+    "format": "youtube",
+    "categories": "video",
+    "youtube": "https://www.youtube.com/watch?v=dtkbnOBx1aU",
+    "youtube_embed": "",
+    "vimeo": "",
+    "vimeo_embed": ""
   }
 ]

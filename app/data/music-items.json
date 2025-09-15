@@ -5,384 +5,364 @@
     "format": "Album",
     "categories": "Production, Mixing",
     "artwork_url": "",
-    "disco": "<iframe id=\"disco-playlist-16150967\" name=\"disco-playlist-16150967\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/16150967?download=true&s=RZ7mv4QzZziJ5uSJ0SngODJ1dsk%3AKuamgBlS&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-16150967\" name=\"disco-playlist-16150967\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/16150967?download=true&s=RZ7mv4QzZziJ5uSJ0SngODJ1dsk%3AKuamgBlS&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/uu5bbwv5xirdozqh4dvob/Lifetime-Achievement-Award.jpg?rlkey=c12nie8yn6wh84sr6ba05ox7y&dl=0",
     "spotify": "https://open.spotify.com/album/40H2tssCMzDiCaksvwlA5b?si=GfzDORoRSoCzVfujmCbF4A",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 2,
     "work_title": "Fine Si Dolce",
     "format": "EP",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-playlist-20235353\" name=\"disco-playlist-20235353\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/20235353?download=false&s=ckdLBzKpNCG0k3RI4qY877eMQJs%3AcznhK6P9&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-20235353\" name=\"disco-playlist-20235353\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/20235353?download=false&s=ckdLBzKpNCG0k3RI4qY877eMQJs%3AcznhK6P9&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/89gr6y7wwlsj2kt9xx4x2/Fine-Si-Dolce.jpg?rlkey=1jylz2um0j1hamxvzcucx601p&dl=0",
     "spotify": "https://open.spotify.com/album/1azbuhnw5cbVOdqzfUWxAU?si=3qIgczbOT1ylzgEiOX4gIQ",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 3,
     "work_title": "On One",
     "format": "EP",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-playlist-18599855\" name=\"disco-playlist-18599855\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/18599855?download=false&s=l5YMipmOD12puZpX0r_BLkQIhT4%3ACsRmEIb9&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-18599855\" name=\"disco-playlist-18599855\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/18599855?download=false&s=l5YMipmOD12puZpX0r_BLkQIhT4%3ACsRmEIb9&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/fifp603a4yv7sc5ptfqh4/On-One.jpg?rlkey=jbl7pnnlz9iuq3v8c5joa2nas&dl=0",
     "spotify": "https://open.spotify.com/album/6yUhwqAUXdwmFdnzrzEXur?si=IxGVF6XAS42tnCPg_YlPdg",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 4,
     "work_title": "Classics",
     "format": "EP",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-playlist-17139391\" name=\"disco-playlist-17139391\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/17139391?download=false&s=fWwLL5dro0tF-Jd4YM7pNnh3cN8%3AvhXWzuL7&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-17139391\" name=\"disco-playlist-17139391\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/17139391?download=false&s=fWwLL5dro0tF-Jd4YM7pNnh3cN8%3AvhXWzuL7&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/bitx98yvqrnhg09r3cw41/Classics.jpg?rlkey=m02i6vkmu2aprxp9ax6xz1dgx&dl=0",
     "spotify": "https://open.spotify.com/album/2olYIFfvkReHBq2R7ip02N?si=lSkk1bvzR1WbTOCha38UXw",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 5,
     "work_title": "Quixote",
     "format": "EP",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-playlist-16110250\" name=\"disco-playlist-16110250\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/16110250?download=false&s=DIaR8xN509BzLGxxuu2Cavj0680%3AMUUDRFhw&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-16110250\" name=\"disco-playlist-16110250\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/16110250?download=false&s=DIaR8xN509BzLGxxuu2Cavj0680%3AMUUDRFhw&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/mb2c19fqf4tqoyxacbaqr/Quixote.jpg?rlkey=6cdpvpbxib3gcui0z17jw2a5c&dl=0",
     "spotify": "https://open.spotify.com/album/4HXUHEzXZCKTdT9ozxg46g?si=IHiNaJyYSrifykRMZPv9jQ",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 6,
     "work_title": "Give Me All Your Money",
     "format": "EP",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-playlist-24767775\" name=\"disco-playlist-24767775\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24767775?download=true&s=vaXxGaf79mWIGyZRng9exOYdhMA%3AHSLSmCvW&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24767775\" name=\"disco-playlist-24767775\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24767775?download=true&s=vaXxGaf79mWIGyZRng9exOYdhMA%3AHSLSmCvW&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/8bn693smc6imjdyz1hwzm/Give-Me-All-Your-Money.jpg?rlkey=eflkdebff7zvutohh1erjk648&dl=0",
     "spotify": "https://open.spotify.com/album/7eFwEwtEJBujdKM2GnxxzK?si=YkGCr-7SQaqDwgYNkFAx4A",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 7,
     "work_title": "Shotgun",
     "format": "Song",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-track-167356610\" name=\"disco-track-167356610\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167356610?download=true&s=PgFArQRDl_UwoqB-3MynfOOiLno%3ArXdRmwR0&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167356610\" name=\"disco-track-167356610\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167356610?download=true&s=PgFArQRDl_UwoqB-3MynfOOiLno%3ArXdRmwR0&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/6gqmjbb60xbyija7vqe0o/Shotgun.jpg?rlkey=ya7oh10x3j8g8i1do3vo62c6n&dl=0",
     "spotify": "https://open.spotify.com/track/25HyvzeaRBziTOQ4wecaGo?si=761071ff0b32467b",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 8,
     "work_title": "Higher",
     "format": "Song",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-track-167349377\" name=\"disco-track-167349377\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349377?download=true&s=I0Kzbsechmtu6mNwx1FcVXHB2gI%3AfIaTScg9&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167349377\" name=\"disco-track-167349377\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349377?download=true&s=I0Kzbsechmtu6mNwx1FcVXHB2gI%3AfIaTScg9&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/divxclhakalkv76ybb0c5/Higher.jpg?rlkey=ntb9x5fxzttzrvcb8i6ye7tn2&dl=0",
     "spotify": "https://open.spotify.com/track/6f5I8yAEaJCx1UmvOg8a1c?si=48d7e1e8d6ce4f27",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 9,
     "work_title": "Intention",
     "format": "Album",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-playlist-24768203\" name=\"disco-playlist-24768203\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768203?download=false&s=TAN531e59APtb9AXVgKMuehR_ZQ%3APg1HvpQu&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24768203\" name=\"disco-playlist-24768203\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768203?download=false&s=TAN531e59APtb9AXVgKMuehR_ZQ%3APg1HvpQu&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/w955hnuahe91n2zz0q2ds/Intention.jpg?rlkey=b0mz6xvavte8uu0cmbggpfqc8&dl=0",
     "spotify": "https://open.spotify.com/album/6yktPF79RZehdGx93H9wwh?si=Et9O-z_KSLGmlYYFBW-X3Q",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 10,
     "work_title": "Scam Likely",
     "format": "Song",
     "categories": "Production, Mixing",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/wjummgu37fmg6pt3363si/Scam-Likely.jpg?rlkey=t1jw7toh84seqrr3ndooqakj7&dl=0",
     "spotify": "https://open.spotify.com/track/1IRGG9yF8TlrxFBGVdxKb5?si=c7b6dfe428ec44f0",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 11,
     "work_title": "Brass Knuckles",
     "format": "Song",
     "categories": "Production, Mixing",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/r6o0weecqndhix7h51cl9/Brass-Knuckles.jpg?rlkey=ibvgdxagia0gszcv6alqnwqg0&dl=0",
     "spotify": "https://open.spotify.com/track/6nYSPOcAALymPgFMXjSc9r?si=b36724f431a74e6d",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 12,
     "work_title": "Somewhere in the Middle",
     "format": "Song",
     "categories": "Production, Mixing",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/ylxp6zh2w1znluphco730/Somewhere-in-the-Middle.jpg?rlkey=nlev0l2t9ooehg2xvls9n9sgl&dl=0",
     "spotify": "https://open.spotify.com/track/5fvpkee9nLZ8T4Xuflq3M7?si=809cd9954ffa4c38",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 13,
     "work_title": "Bryarly",
     "format": "Album",
     "categories": "Production",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/km4519weghheupskzvyy4/Bryarly.png?rlkey=hzdkwa5em8mdo8r89lhtsizz5&dl=0",
     "spotify": "https://open.spotify.com/album/6BaCAFtvH1xV3xaJV8b3EF?si=n0jHZ2JKTISjYmCmQERyLQ",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 14,
     "work_title": "Cardboard Castles",
     "format": "Album",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-playlist-24768093\" name=\"disco-playlist-24768093\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768093?download=false&s=YanRMWT0sWZUZbZ9jm6TcG7fo84%3AvhXWzuL7&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24768093\" name=\"disco-playlist-24768093\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768093?download=false&s=YanRMWT0sWZUZbZ9jm6TcG7fo84%3AvhXWzuL7&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/flk6gsh01p7l5b1q1qcy9/Cardboard-Castles.jpg?rlkey=2tykc2qfre0sehja639mghugr&dl=0",
     "spotify": "https://open.spotify.com/album/0DgsDOuUx1092GFDemIzYb?si=vqJwoEdZT4OxQtP3vZNNrA",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 15,
     "work_title": "X Infinity",
     "format": "Album",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-playlist-24767308\" name=\"disco-playlist-24767308\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24767308?download=false&s=jQRU_D2u1QbH9i1iUIU3qM5zXko%3AuhmUQbd0&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24767308\" name=\"disco-playlist-24767308\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24767308?download=false&s=jQRU_D2u1QbH9i1iUIU3qM5zXko%3AuhmUQbd0&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/4szw4kmxauper3tny1s5q/X-Infinity.jpg?rlkey=imdfyzj5anqznlykp00btwl4r&dl=0",
     "spotify": "https://open.spotify.com/album/6CcTNttjHJN3WGR5igg4MR?si=jmZNLPBVRIG8mF_1I9iT6g",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 16,
     "work_title": "Backpack of Snacks",
     "format": "EP",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-playlist-24768237\" name=\"disco-playlist-24768237\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768237?download=false&s=CPiXVWrUEie6_oqdS5MFjrnzfPY%3AFMlZEbeZ&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24768237\" name=\"disco-playlist-24768237\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768237?download=false&s=CPiXVWrUEie6_oqdS5MFjrnzfPY%3AFMlZEbeZ&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/mwt0n2izz2899tcnuwtmm/Backpack-of-Snacks.jpg?rlkey=y0550lxbynyz92sgc54lvo3o0&dl=0",
     "spotify": "https://open.spotify.com/album/772H251VbV7Y2sMe1Su9Kp?si=g5zkwQxnT_iCYf5rLa20SQ",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 17,
     "work_title": "Biirdvana",
     "format": "EP",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-playlist-24768248\" name=\"disco-playlist-24768248\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768248?download=false&s=Bt8GoZ9AjAcT4iWi7G3rNZH1_CE%3AunuOklOf&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24768248\" name=\"disco-playlist-24768248\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768248?download=false&s=Bt8GoZ9AjAcT4iWi7G3rNZH1_CE%3AunuOklOf&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/qy0jqwgu7gwebpyvxbfoa/Biirdvana.jpg?rlkey=u58g9i7n8ns7rzj4bnlcy6oiw&dl=0",
     "spotify": "https://open.spotify.com/album/6pqQMQVt0KHWZ3stUBkPgZ?si=rR3bkJ3WSq-h669OnHZipQ",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 18,
     "work_title": "Slow Down",
     "format": "Song",
     "categories": "Production, Mixing",
-    "disco": "<iframe id=\"disco-track-167350068\" name=\"disco-track-167350068\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167350068?download=true&s=ep48YXWQdwcGyj8oBMrZzsvbfmU%3Awfvz9fjW&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167350068\" name=\"disco-track-167350068\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167350068?download=true&s=ep48YXWQdwcGyj8oBMrZzsvbfmU%3Awfvz9fjW&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/msd2rgm9vm8ztpjldi5g7/Slow-Down.jpg?rlkey=5k29e7yo36m5b35mn761a0bd5&dl=0",
     "spotify": "https://open.spotify.com/album/24wEooC41VYVgRkd4t31PQ?si=MtnsiVFmR7mBrQUUMqT_2g",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 19,
     "work_title": "Freight Train",
     "format": "Song",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-track-167349413\" name=\"disco-track-167349413\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349413?download=true&s=vbcohHF4OUBMc2FxTETmA7_egxE%3A6G3hU50c&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167349413\" name=\"disco-track-167349413\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349413?download=true&s=vbcohHF4OUBMc2FxTETmA7_egxE%3A6G3hU50c&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/7l3rl02krmdc35r7hzc1v/Freight-Train.jpg?rlkey=vrp9cd1lmwhwesrjjgt8idhly&dl=0",
     "spotify": "https://open.spotify.com/track/0VBtFnyokbIlOqpWW8LwAK?si=e34ab6b1004b46d3",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 20,
     "work_title": "Locked",
     "format": "Song",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-track-167349421\" name=\"disco-track-167349421\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349421?download=true&s=Heh6WYIwWOnbo9TfMHqrCEOGJcc%3AVZnd1lOq&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167349421\" name=\"disco-track-167349421\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349421?download=true&s=Heh6WYIwWOnbo9TfMHqrCEOGJcc%3AVZnd1lOq&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/0yk3u1xkp7vyt5riqw16s/Locked.jpg?rlkey=bxjg63o2sjmxznuk1phrizstj&dl=0",
     "spotify": "https://open.spotify.com/track/5YO1mdnfFLeZ8kNY6UXmZy?si=9d0dd7fb0fe74dd6",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 21,
     "work_title": "Sexie Sadie",
     "format": "Song",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-track-167349422\" name=\"disco-track-167349422\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349422?download=true&s=bGsoRL3WsW3-zZCgJFOos1zYZ84%3AixHJcJEd&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167349422\" name=\"disco-track-167349422\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167349422?download=true&s=bGsoRL3WsW3-zZCgJFOos1zYZ84%3AixHJcJEd&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/ecjubdlxsjhkyq9q8cnt5/Sexy-Sadie.jpg?rlkey=eexes0zx88o4evp5zvsofqd73&dl=0",
     "spotify": "https://open.spotify.com/track/1pC2qVFcRPDM0w8QxKXMmo?si=08343ec9ff6b431a",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 22,
     "work_title": "Another Miracle",
     "format": "Song",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-track-167350046\" name=\"disco-track-167350046\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167350046?download=true&s=X7cpMneJ3VBR8p0vQiP2kk7B97Y%3AGFSLx3DM&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167350046\" name=\"disco-track-167350046\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167350046?download=true&s=X7cpMneJ3VBR8p0vQiP2kk7B97Y%3AGFSLx3DM&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/wj05bi4v4w22v9gi2mb3m/Another-Miracle.jpg?rlkey=07dicqjy9r4mjq659qbjnz9t0&dl=0",
     "spotify": "https://open.spotify.com/track/1ySPFcNLH7A6MCBGprqpVH?si=be26c204b25646ed",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 23,
     "work_title": "Loud",
     "format": "Song",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-track-167350055\" name=\"disco-track-167350055\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167350055?download=true&s=I86yTEngqrjSI_WuWcixcCq-ZAw%3ANjAAYK5s&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167350055\" name=\"disco-track-167350055\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167350055?download=true&s=I86yTEngqrjSI_WuWcixcCq-ZAw%3ANjAAYK5s&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/ywhoofcyaxz572ouvufmj/Loud.jpg?rlkey=hgxulp73s08sdioc976zpv5ix&dl=0",
     "spotify": "https://open.spotify.com/track/3B0eFBbYwK7BMfNlGLG1TU?si=eae8dfb0c6c04355",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 24,
     "work_title": "Complaint",
     "format": "Album",
     "categories": "Production",
-    "disco": "<iframe id=\"disco-playlist-24768131\" name=\"disco-playlist-24768131\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768131?download=false&s=0wcG3MPIOxpUyEJJkHUBJTqK68Q%3Aisl8XNKw&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24768131\" name=\"disco-playlist-24768131\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768131?download=false&s=0wcG3MPIOxpUyEJJkHUBJTqK68Q%3Aisl8XNKw&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/hxknlcl2u3ikay1q9y42d/Complaint.jpg?rlkey=4k9gy4mm6fov4e5li7qdpuelk&dl=0",
     "spotify": "https://open.spotify.com/album/37ng9Mhkp1IMPqYDzEGFtk?si=5fUQYqp7TZyBlaJS7mXrbw",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 25,
     "work_title": "When It's Over",
     "format": "Song",
     "categories": "Production",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/mgve7qfyy3v3orbbiveaq/When-It-s-Over.jpg?rlkey=16qdair37xrehgivluy68vkbt&dl=0",
     "spotify": "https://open.spotify.com/track/2JdRiR3hqWBrPsRHTBUHzz?si=d25c2a3d4dbf4e64",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 26,
     "work_title": "Watsky Live! from the Metro",
     "format": "Album",
     "categories": "Mixing",
-    "disco": "<iframe id=\"disco-playlist-24768277\" name=\"disco-playlist-24768277\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768277?download=false&s=cgo41MxziplF0-XXPMLwxO3c3Lg%3AVTyFndAB&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-playlist-24768277\" name=\"disco-playlist-24768277\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/p/24768277?download=false&s=cgo41MxziplF0-XXPMLwxO3c3Lg%3AVTyFndAB&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"395\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/0anz7xs2gs8rr6il61666/Watsky-Live-From-The-Metro.jpg?rlkey=qcy6aeddrjihliv1xdc6i9b0i&dl=0",
     "spotify": "https://open.spotify.com/album/4atFc6WKjj6dyaq7gBbe8v?si=j6t3UYj9TJKRTmQvMuNP6A",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 27,
     "work_title": "Feel Something",
     "format": "Song",
     "categories": "Mixing",
-    "disco": "<iframe id=\"disco-track-167357697\" name=\"disco-track-167357697\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167357697?download=true&s=-869wRQ7Ji1Zco26Fdn-7B9X_88%3Alh5Cdk5E&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
+    "disco_embed": "<iframe id=\"disco-track-167357697\" name=\"disco-track-167357697\" allowfullscreen frameborder=\"0\" class=\"disco-embed\" src=\"https://kushmody.disco.ac/e/t/167357697?download=true&s=-869wRQ7Ji1Zco26Fdn-7B9X_88%3Alh5Cdk5E&artwork=true&color=%2332B57C&theme=white\" width=\"480\" height=\"235\"></iframe>",
     "dropbox_url": "https://www.dropbox.com/scl/fi/r42k0in1nmyyrptdvwpy3/Feel-Something.jpg?rlkey=2w988gp1ikzaqxlkluvzzyxoy&dl=0",
     "spotify": "https://open.spotify.com/track/0TlMvmW6VH3Ue5Dhvg9BV1?si=f1a403d07d6842e6",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 28,
     "work_title": "Adventures of Serial Buddies",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/nxivq9xy6vzfb6o47og1v/Serial-Buddies.jpg?rlkey=k3ln53e1ki8adokxpp2co0e9n&dl=0",
     "spotify": "",
     "youtube": "",
-    "dropbox_file": ""
+    "youtube_embed": ""
   },
   {
     "id": 29,
     "work_title": "American Futbol",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/12wrhtvfxnlc6fpgjh78s/American-F-tbol.jpg?rlkey=ey0cnprx4wl3lrpvy96v2vwqf&dl=0",
     "spotify": "",
     "youtube": "https://youtu.be/Yzk__VxuPkA",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/foy7se5dvjebcm3g4sghb/American-Futbol_clip.mp4?rlkey=2y8t68kwmlnkhuqlbi39xb4ej&dl=0"
   },
   {
     "id": 30,
     "work_title": "Ephemera Utah",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/pm9kygb2tyrsoaq47qgh7/Ephemera-Utah.png?rlkey=sq1cod9adwhwoig1lqsmq1u5q&dl=0",
     "spotify": "",
     "youtube": "https://youtu.be/cVePPfM6hec",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/15mqgoaekn991nhgopsew/Ephemera_clip.mp4?rlkey=1wnhw118b1zxibkb1n1hymvxc&dl=0"
   },
   {
     "id": 31,
     "work_title": "In Searching",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/uu5ntxrm1vm3zphymm0we/In-Searching.jpg?rlkey=3hb0lng6c9g8i0fbkkzu85zvx&dl=0",
     "spotify": "",
     "youtube": "https://youtu.be/_TdIWlAQOwM",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/bi9mqusm0x5ag8hcqvdqb/In-Searching_clip.mov?rlkey=96fzhwqm7h9yqouk9oceyrzt0&dl=0"
   },
   {
     "id": 33,
     "work_title": "Speak Now",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/mrd9w552gfj46cm7fyy45/Speak-Now.jpg?rlkey=u34iy7kir0157p8j0jw6qfcwm&dl=0",
     "spotify": "",
     "youtube": "https://youtu.be/cmxM-Wwj6l8",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/c6oduwy4t9dblveda102o/Speak-Now_clip.mov?rlkey=qff9nqkmyfiwnqbv3zbcr153x&dl=0"
   },
   {
     "id": 34,
     "work_title": "This Isn't Funny",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/enegablkd3tcm0fblrskx/This-Isn-t-Funny.jpg?rlkey=k9mtemzjermy8u4639f3z0z10&dl=0",
     "spotify": "",
     "youtube": "https://youtu.be/v5yavlrI8So",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/jki5j7dzabuxcavt6l3bw/This-Isn-t-Funny_clip.mp4?rlkey=kdnxk64ptdkf3p3o4dek3vs2g&dl=0"
   },
   {
     "id": 35,
     "work_title": "Welcome Home",
     "format": "Feature Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "https://www.dropbox.com/scl/fi/uoffu8qconnapjw6f6asp/Welcome-Home.jpg?rlkey=ihx1z3vhf6689i301tk93pauz&dl=0",
     "spotify": "",
     "youtube": "https://youtu.be/cd-wPmprXFA",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/wz7wktlthozt836yr141y/Welcome-Home_clip.mov?rlkey=43glnbpdkntlltsvvxz6broq9&dl=0"
   },
   {
     "id": 37,
     "work_title": "Get Your Line In And Pray",
     "format": "Short Film",
-    "categories": "Film Score",
-    "disco": "",
+    "categories": "Film Scoring",
+    "disco_embed": "",
     "dropbox_url": "",
     "spotify": "",
     "youtube": "https://youtu.be/of-9kuM8R_0",
+    "youtube_embed": "",
     "dropbox_file": "https://www.dropbox.com/scl/fi/u090c13e12u0893zdxt0g/Get-Your-Line-In-And-Pray_clip.mp4?rlkey=zxgrutu684auw7wqtx2pbbp3v&dl=0"
   },
   {
@@ -390,76 +370,71 @@
     "work_title": "All In All Gym",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
-    "spotify": "https://vimeo.com/76007739",
+    "spotify": "",
     "youtube": "",
-    "dropbox_file": ""
+    "vimeo": "https://vimeo.com/76007739",
+    "vimeo_embed": "<iframe src=\"https://player.vimeo.com/video/76007739?h=3f3e4f0f4e\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
   },
   {
     "id": 39,
     "work_title": "Best Roommate Ever",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
-    "spotify": "https://www.youtube.com/watch?v=zI8UnfP21lI&t=28s",
-    "youtube": "",
-    "dropbox_file": ""
+    "spotify": "",
+    "youtube": "https://www.youtube.com/watch?v=zI8UnfP21lI&t=28s"
   },
   {
     "id": 40,
     "work_title": "Let's Target",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
-    "spotify": "https://youtu.be/380FF1Q_6oQ?list=PL49VV18KYYOMft_gSGAnuzhG5KXTccpXY&t=5",
-    "youtube": "",
-    "dropbox_file": ""
+    "spotify": "",
+    "youtube": "https://youtu.be/380FF1Q_6oQ?list=PL49VV18KYYOMft_gSGAnuzhG5KXTccpXY&t=5"
   },
   {
     "id": 41,
     "work_title": "Level Up (theme song)",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
     "spotify": "https://youtu.be/cImVz2MghtE?t=9",
-    "youtube": "",
-    "dropbox_file": ""
+    "youtube": ""
   },
   {
     "id": 42,
     "work_title": "Level Up (trailer)",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
-    "spotify": "https://www.youtube.com/shorts/ABs60Ui0pvw",
-    "youtube": "",
-    "dropbox_file": ""
+    "spotify": "",
+    "youtube": "https://www.youtube.com/shorts/ABs60Ui0pvw"
   },
   {
     "id": 43,
     "work_title": "Ultimate Home Championship",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
-    "spotify": "https://www.youtube.com/watch?v=fGTcaf-zm2Y&t=29s",
-    "youtube": "",
-    "dropbox_file": ""
+    "spotify": "",
+    "youtube": "https://www.youtube.com/watch?v=fGTcaf-zm2Y&t=29s"
   },
   {
     "id": 44,
     "work_title": "Wherever",
     "format": "Video",
     "categories": "Branded",
-    "disco": "",
+    "disco_embed": "",
     "dropbox_url": "",
-    "spotify": "https://www.youtube.com/watch?v=cQ1xbjHNR3Q",
-    "youtube": "",
-    "dropbox_file": ""
+    "spotify": "",
+    "youtube": "https://www.youtube.com/watch?v=cQ1xbjHNR3Q"
   }
 ]
