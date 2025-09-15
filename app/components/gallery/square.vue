@@ -11,7 +11,12 @@ defineEmits(["click"])
 const route = useRoute()
 const visualOrMusic = route.path.includes('/music') ? 'music' : 'visual'
 
-const imgSrc = `/images/${visualOrMusic}/${props.item.work_title}.webp`
+const imgSrc = ref('')
+if (props?.item?.img_url) {
+  imgSrc.value = props.item.img_url
+} else if (props?.item?.work_title) {
+  imgSrc.value =`/images/${visualOrMusic}/${props?.item?.work_title}.webp`
+}
 
 </script>
 
@@ -22,3 +27,6 @@ const imgSrc = `/images/${visualOrMusic}/${props.item.work_title}.webp`
       <img :src="imgSrc" :alt="item.work_title" class="w-full object-contain">
   </div>
 </template>
+
+<!-- EXAMPLE URLS -->
+<!-- "img_url": "https://img.youtube.com/vi/ {VIDEO ID} /hqdefault.jpg", -->

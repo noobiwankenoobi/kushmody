@@ -24,12 +24,15 @@
 
       </div>
 
+
+      <!-- Divider -->
+      <!-- <div class="w-px bg-gray-300 mx-0"></div> -->
+
       <!-- RIGHT OF DIVIDER SECTION -->
       <div class="w-6/10">
 
         
-        <!-- Divider -->
-        <div class="w-px bg-gray-300 mx-0"></div>
+
         <!-- Right: Accomplishments (2/3) -->
         <div class="flex flex-col justify-center w-4/5">
           <ul class="text-lg text-gray-700 font-bold space-y-2 list-none text-left mt-10">
@@ -99,7 +102,7 @@
 
         <!-- Illustration in right divider -->
         <div class="flex-shrink-0 mr-8">
-          <img src="/images/homepage/illustrations/T Pain drawing.png" alt="Particulars Illustration" class="w-64 h-64 object-contain" />
+          <img src="/images/homepage/illustrations/logos-and-artists.png" alt="Particulars Illustration" class="object-contain px-12" />
         </div>
 
 

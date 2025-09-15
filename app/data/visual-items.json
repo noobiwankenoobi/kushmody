@@ -4,6 +4,7 @@
     "work_title": "The World Is Mine (BTS)",
     "format": "youtube",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/UAbH1oErrwQ/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=UAbH1oErrwQ",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
   },
@@ -12,8 +13,9 @@
     "work_title": "Immigrants (We Get The Job Done) BTS",
     "format": "youtube",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/pWFLYqkvhMk/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=pWFLYqkvhMk",
-    "youtube_embed": ""
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/pWFLYqkvhMk?si=smJ0ys9q2nQj7lM0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
   },
   {
     "id": 3,
@@ -30,28 +32,30 @@
     "work_title": "Lithium",
     "format": "youtube",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/5H7A2-WLFCc/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=5H7A2-WLFCc",
-    "youtube_embed": "",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5H7A2-WLFCc?si=VP7AAMfsyR0UbusK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
     "vimeo": "",
     "vimeo_embed": ""
   },
   {
     "id": 5,
-    "work_title": "Plate Guitar Co",
+    "work_title": "Plante Guitar Co",
     "format": "vimeo",
     "categories": "video",
     "youtube": "",
     "youtube_embed": "",
     "vimeo": "https://vimeo.com/359182669",
-    "vimeo_embed": ""
+    "vimeo_embed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/359182669?h=7e4e1321c2\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" allowfullscreen></iframe>"
   },
   {
     "id": 6,
     "work_title": "Congratulatory Trinkets",
     "format": "",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/x00I42ATvKo/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=x00I42ATvKo",
-    "youtube_embed": "",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/x00I42ATvKo?si=4U28OV9EumEzfuqY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
     "vimeo": "",
     "vimeo_embed": ""
   },
@@ -60,8 +64,9 @@
     "work_title": "Wax On Wax: Shit I Used To Do",
     "format": "youtube",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/GTaFYJt_oPI/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=GTaFYJt_oPI",
-    "youtube_embed": "",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GTaFYJt_oPI?si=uQHezDzVlmP0Yoxg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
     "vimeo": "",
     "vimeo_embed": ""
   },
@@ -73,15 +78,16 @@
     "youtube": "",
     "youtube_embed": "",
     "vimeo": "https://vimeo.com/1069434916/68b7260cd9?p=1t",
-    "vimeo_embed": ""
+    "vimeo_embed": "<iframe src=\"https://player.vimeo.com/video/1069434916?h=68b7260cd9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"SoCal Grill Cleaning In Action!\"></iframe>"
   },
   {
     "id": 9,
     "work_title": "Apollo",
     "format": "",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/lflpOfP9BgA/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=lflpOfP9BgA",
-    "youtube_embed": "",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/lflpOfP9BgA?si=zkGUPtDBAKKDch0j\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
     "vimeo": "",
     "vimeo_embed": ""
   },
@@ -90,8 +96,9 @@
     "work_title": "Darren FUNd",
     "format": "youtube",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/2kPX8i5HXzw/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=2kPX8i5HXzw",
-    "youtube_embed": "",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2kPX8i5HXzw?si=ZeozFFvHl5r6ip2i\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
     "vimeo": "",
     "vimeo_embed": ""
   },
@@ -100,8 +107,9 @@
     "work_title": "The Wheel",
     "format": "youtube",
     "categories": "video",
+    "img_url": "https://img.youtube.com/vi/dtkbnOBx1aU/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=dtkbnOBx1aU",
-    "youtube_embed": "",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dtkbnOBx1aU?si=nMYnzsSBIiT7pP7k\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
     "vimeo": "",
     "vimeo_embed": ""
   }
