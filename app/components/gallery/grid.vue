@@ -16,6 +16,10 @@ function containsSubstring(str, substring) {
   return str.includes(substring)
 }
 
+function removeSpaces(str) {
+  return str.replace(/\s+/g, '');
+}
+
 // computed for items visible -- filtered by category
 const visibleItems = computed(() => {
 
@@ -28,7 +32,10 @@ const visibleItems = computed(() => {
   if (route.query.category) {
     console.log('Filtering by category: ', route.query.category)
     items = items.filter(item => {
-    return containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase())
+
+    let categories = removeSpaces(item.categories.toLowerCase())
+    let queryCategory = removeSpaces(route.query.category.toLowerCase())
+    return containsSubstring(categories, queryCategory)
   })
   }
  
@@ -45,6 +52,8 @@ const visibleItems = computed(() => {
 
 // click on square
 function handleSquareClick(item) {
+  if (!item) return
+  if (!item.youtube_embed && !item.disco_embed) return
   selectedItem.value = item
   router.push({ query: { id: item.work_title } }) // stays on page, updates URL
 }

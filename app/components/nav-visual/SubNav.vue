@@ -3,11 +3,16 @@
 const subNavItems = [
   { name: "PHOTOGRAPHY", data: "photography" },
   { name: "VIDEO", data: "video" },
-  { name: "ART & DESIGN", data: "art-and-design" },
+  { name: "ART & DESIGN", data: "art&design" },
 ]
+
 
 // handle click on subnav item
 const router = useRouter()
+
+const selectedCategory = computed(() => router.currentRoute.value.query.category || null)
+
+
 function handleClick(item) {
   if (item.data == router.currentRoute.value.query.category) {
     // remove current category from URL
@@ -26,7 +31,7 @@ function handleClick(item) {
     <!-- loop through sub nav items -->
     <ul v-for="item in subNavItems" :key="item.name" class="list-none">
       <!-- handle the emit -->
-      <NavSubNavItem :item="item" @handle-click="handleClick(item)" />
+      <NavSubNavItem :item="item" @handle-click="handleClick(item)" :isSelected="item.data == selectedCategory"  />
     </ul>
 
   </div>

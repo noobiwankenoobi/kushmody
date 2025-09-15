@@ -58,16 +58,19 @@
     <!-- ----- BOTTOM SECTION ----- -->
     <!-- ------------------------ -->
 
-    <!-- FULL WIDTH SECTION with illustration on left and text on right -->
+    <!--+------------------+-->
+    <!-- FULL WIDTH SECTION -->
+    <!--+------------------+-->
+    <!-- with illustration on left and text on right -->
     <div class="flex flex-row items-start justify-center py-4 w-full">
 
       <!-- LEFT OF DIVIDER SECTION -->
-      <div class="w-4/10 flex items-stretch ">
+      <div class="w-4/10 flexitems-stretch h-full">
 
         <!-- Title in left divider -->
-      <div class="align-right w-full">
-        <h2 class="text-3xl font-bold text-gray-900 text-right">Notable<br/> Credits & Collaborators</h2>
-      </div>
+        <div class="w-full">
+          <h2 class="text-3xl font-bold text-gray-900 text-right">Notable<br/> Credits & Collaborators</h2>
+        </div>
 
       </div>
 
