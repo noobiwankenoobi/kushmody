@@ -35,10 +35,10 @@
           <ul class="text-lg text-gray-700 font-bold space-y-2 list-none text-left mt-10">
             <li>Interdiscplinary creative based in LA</li>
             <li>Graduated in 2010 from Berklee College of Music with a degree in film scoring</li>
-            <li>Toured worldwide as bassist and keyboardist for 11 years</li>
+            <li>Toured worldwide as a bassist and keyboardist for 11 years</li>
             <li>Produces and mixes for major and independent music artists</li>
             <li>Composes for independent films, commercials, and branded content</li>
-            <li>Approaches every project with great attention to detail, out-the-box problem solving, team-mindedness, socially conscious values, empath and compassion, dedication to the vision, and clear communication</li>
+            <li>Approaches every project with great attention to detail, outside-the-box problem solving, team-mindedness, socially conscious values, empathy and compassion, dedication to the vision, and clear communication</li>
           </ul>
         </div>
       </div>

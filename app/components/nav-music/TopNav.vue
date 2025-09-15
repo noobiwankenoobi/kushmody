@@ -1,5 +1,11 @@
 <script lang="js" setup>
 
+const router = useRouter()
+
+function handleClick() {
+  router.push({ query: {} })
+}
+
 </script>
 
 <template>
@@ -13,7 +19,7 @@
 
     <!-- Center Music Logo -->
     <div class="flex-1 flex items-center justify-center">
-      <div>
+      <div @click="handleClick" class="cursor-pointer">
         <img src="/images/homepage/music_page_header_music_eye_work.png" alt="Kush Mody Header" class="max-w-full h-24">
       </div>
     </div>

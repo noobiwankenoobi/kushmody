@@ -1,6 +1,7 @@
 <script setup lang="js">
 // import json file items from 'data/music-items.js'
-import items from "~/data/music-items.json"
+import musicItems from "~/data/music-items.json"
+import visualItems from "~/data/visual-items.json"
 
 // get the category from the query param
 const route = useRoute()
@@ -14,9 +15,14 @@ function containsSubstring(str, substring) {
 
 // computed for items visible -- filtered by category
 const visibleItems = computed(() => {
-  
 
-  let randomItems = [...items]
+  let randomItems = []
+  if (route.path.includes('/music')) {
+    randomItems = [...musicItems]
+  } else if (route.path.includes('/visual')) {
+    randomItems = [...visualItems]
+  }
+  
   // shuffle the array using Fisher-Yates algorithm
   for (let i = randomItems.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -30,16 +36,18 @@ const visibleItems = computed(() => {
   return randomItems.filter(item => containsSubstring(item.categories.toLowerCase(), route.query.category.toLowerCase()))
 })
 
+const router = useRouter()
+
 // click on square
 function handleSquareClick(item) {
   selectedItem.value = item
-  router.replace({ query: { id: item.work_title } }) // stays on page, updates URL
+  router.push({ query: { id: item.work_title } }) // stays on page, updates URL
 }
 
 // close modal
 function closeModal() {
   selectedItem.value = null
-  router.replace({ query: {} }) // remove id from URL
+  router.push({ query: {} }) // remove id from URL
 }
 
 // Animation trigger flag
@@ -47,6 +55,7 @@ const triggerAnimation = ref(false)
 
 // Watch for changes in visibleItems and trigger animation
 watch(() => visibleItems.value, async () => {
+  console.log('visibleItems changed: ', visibleItems.value)
   triggerAnimation.value = false
   await nextTick()
   triggerAnimation.value = true
@@ -60,15 +69,15 @@ watch(() => visibleItems.value, async () => {
 
     <!-- Looping items -->
     <div
-      v-for="item in visibleItems" :key="item.id"
-      class="flex justify-center items-center aspect-[2/3] w-full"
+      v-for="(item, idx) in visibleItems" :key="item.id"
+      class="flex justify-center items-center  w-full"
      >
       <GallerySquare
         :key="item.id"
         :item="item"
         :to="`/gallery/${item.id}`"
         @click="handleSquareClick(item)"
-        :style="{ transitionDelay: `${idx * 80}ms` }"
+        :style="{ transitionDelay: `100ms` }"
       :class="[
         triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
         'transition-all duration-500'

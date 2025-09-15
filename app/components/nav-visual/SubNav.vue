@@ -11,10 +11,10 @@ const router = useRouter()
 function handleClick(item) {
   if (item.data == router.currentRoute.value.query.category) {
     // remove current category from URL
-    router.push({ path: "/music", query: {} })
+    router.push({ path: "/visual", query: {} })
     return
   }
-  router.push({ path: "/music", query: { category: item.data } })
+  router.push({ path: "/visual", query: { category: item.data } })
 }
 
 </script>

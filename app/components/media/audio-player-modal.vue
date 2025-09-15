@@ -33,9 +33,9 @@
 
        <!-- Audio Player Iframe -->
       <iframe
-        v-if="item.disco"
+        v-if="item.disco || item.embed"
         ref="discoIframe"
-        :src="extractSrc(item.disco)"
+        :src="extractSrc(item.disco || item.embed)"
         width="480"
         height="395"
         frameborder="0"

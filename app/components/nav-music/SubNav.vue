@@ -18,10 +18,6 @@ function handleClick(item) {
     router.push({ path: "/music", query: { category: item.data } })
   }
 }
-
-
-
-
 </script>
 
 <template>
@@ -33,7 +29,7 @@ function handleClick(item) {
       <!-- handle the emit -->
       <NavSubNavItem 
         :item="item"
-        :isSelected="item.data === selectedCategory" 
+        :isSelected="item.data == selectedCategory" 
         @handleClick="handleClick(item)" />
     </ul>
 

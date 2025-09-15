@@ -5,7 +5,6 @@
       <img
       src="/images/hero.jpg" alt="My Photo"
       class=" w-full h-full object-cover z-0 opacity-75"
-      @load="onImageLoaded"
       >
 
       <!-- Start transition -->
@@ -52,13 +51,25 @@
 
             <!-- SUB HEADER -->
             <div class="flex flex-row items-center justify-center z-10 ">
-              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">PRODUCER</span>
+
+              <!-- PRODUCER -->
+              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'">PRODUCER</span>
+
               <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300 " :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
-              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">MIXER</span>
+
+              <!-- MIXER -->
+              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'">MIXER</span>
+
               <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
-              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">COMPOSER</span>
+
+              <!-- COMPOSER -->
+              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'">COMPOSER</span>
+
               <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
-              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">VISUAL ARTIST</span>
+
+              <!-- VISUAL ARTIST -->
+              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">VISUAL ARTIST</span>
+
             </div>
             <!-- END: SUB HEADER -->
 
@@ -98,17 +109,6 @@ onMounted(() => {
     showTopBar.value = true
   }, 5000)
 })
-
-const imageLoaded = ref(false)
-
-function onImageLoaded() {
-  // Image has loaded, you can perform any actions if needed
-  console.log("Background image loaded")
-
-  setTimeout(() => {
-    imageLoaded.value = true
-  }, 50)
-}
 
 const earHover = ref(false)
 const eyeHover = ref(false)
