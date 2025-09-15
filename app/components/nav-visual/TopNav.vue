@@ -10,7 +10,7 @@ function handleClick() {
 </script>
 
 <template>
-  <div class="flex flex-row items-center w-full px-4 py-2 ">
+  <div class="flex flex-row items-center w-full px-12 py-2 ">
 
     <!-- Left Side -->
     <div class="flex-shrink-0 w-32 flex items-center justify-start">
@@ -27,8 +27,10 @@ function handleClick() {
     <!--  -->
 
     <!-- Right Side -->
-    <div class="flex-shrink-0 w-32 flex items-center justify-end">
-      <NuxtLink to="/music" class="text-gray-700 font-bold"><span>to music work</span></NuxtLink>
+    <div class="flex-shrink-0 w-28 p-2 flex items-center justify-end">
+      <NuxtLink to="/music" class="text-gray-700 font-bold ">
+        <img class="hover:scale-105 transition-all" src="/images/nav-elements/visual_page_ear_to_music_work.png" />
+      </NuxtLink>
     </div>
     <!--  -->
   </div>
