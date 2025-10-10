@@ -29,22 +29,29 @@
             <!-- MAIN HEADER -->
             <!-- Kush Mody Logo -->
             <div class="flex flex-row items-center justify-center z-10 h-3/20">
-              <!-- sizing container for the image with relative position -->
-              <div class="w-4/10 relative ">
-                <img src="/images/homepage/homepage_header_full.png" alt="Kush Mody Header" class="w-full" >
+              <!-- sizing container for the "kush mody" logo image with relative position -->
+              <div class="w-4/10 relative">
+                <!-- LOGO IMG -->
+                <img src="/images/homepage-logo/kushmody_header_no_ear_eye.png" alt="Kush Mody Header" class="w-full" >
+          
                 <!-- 2 clickable overlays on the logo -->
-
                 <!-- EAR CLICK AREA -->
-                <div class="absolute top-2 left-17/80 w-6/50 h-9/10  z-300 cursor-pointer" @click="routeToMusicPage"
-                @mouseenter="earHover = true"
-                @mouseleave="earHover = false"
-                />
+                <div class="absolute -top-4 left-18/80 w-6/50 h-30/20 z-300 cursor-pointer" @click="routeToMusicPage"
+                  @mouseenter="earHover = true"
+                  @mouseleave="earHover = false"
+                >
+                  <!-- EAR -->
+                  <img src="/images/homepage-logo/red_ear.png" class="text-black h-full"/>
+                </div>
 
                 <!-- EYE CLICK AREA -->
-                <div class="absolute top-2 right-9/40 w-6/50 h-9/10  z-300 cursor-pointer" @click="routeToVisualPage"
-                @mouseenter="eyeHover = true"
-                @mouseleave="eyeHover = false"
-                />
+                <div class="absolute -top-5 right-16/80 w-8/50  z-300 cursor-pointer" @click="routeToVisualPage"
+                  @mouseenter="eyeHover = true"
+                  @mouseleave="eyeHover = false"
+                >
+                  <!-- EYE -->
+                  <img src="/images/homepage-logo/red_eye.png" class="text-black h-full"/>
+                </div>
               </div>
             </div>
             <!-- END: MAIN HEADER -->
