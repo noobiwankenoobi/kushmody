@@ -68,7 +68,6 @@
 </template>
 
 <script setup lang="js">
-import { defineEmits } from "vue"
 defineEmits(["close"])
 const props = defineProps({
   item: {

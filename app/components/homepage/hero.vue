@@ -17,12 +17,16 @@
 
             <!-- TOP BAR -->
             <div
-            :class="[
-            'flex flex-row items-center justify-between w-full px-80 py-2 transition-opacity duration-1000',
-            showTopBar ? 'opacity-100' : 'opacity-0'
-            ]">
-              <div class=" font-bold text-sm justify-start z-100 tracking-wide ml-20 cursor-pointer">[ CLICK THE EAR FOR MUSIC WORK ]</div>
-              <div class=" font-bold text-sm  justify-end z-100 tracking-wide">[ CLICK THE EYE FOR VISUAL WORK ]</div>
+              :class="[
+              'flex flex-row items-center justify-between w-full px-80 py-2 transition-opacity duration-1000',
+              showTopBar ? 'opacity-100' : 'opacity-0']"
+            >
+              <div class=" font-medium text-sm justify-start z-100 tracking-wide ml-20 cursor-pointer">
+                [ CLICK THE EAR FOR MUSIC WORK ]
+              </div>
+              <div class=" font-medium text-sm  justify-end z-100 tracking-wide">
+                [ CLICK THE EYE FOR VISUAL WORK ]
+              </div>
             </div>
             <!-- END: TOP BAR -->
 
@@ -41,16 +45,39 @@
                   @mouseleave="earHover = false"
                 >
                   <!-- EAR -->
-                  <img src="/images/homepage-logo/red_ear.png" class="text-black h-full"/>
+                  <img 
+                    v-show="earHover"
+                    src="/images/homepage-logo/red_ear.png"
+                    class="text-black h-full transition-opacity duration-500 scale-105"
+                    :class="earHover ? 'opacity-100' : 'opacity-0'"
+                  />
+                  <img
+                    v-show="!earHover"
+                    src="/images/homepage-logo/ear_black.png"
+                    class="text-black h-full transition-opacity duration-500"
+                    :class="earHover ? 'opacity-0' : 'opacity-100'"
+                  />
                 </div>
 
                 <!-- EYE CLICK AREA -->
-                <div class="absolute -top-5 right-16/80 w-8/50  z-300 cursor-pointer" @click="routeToVisualPage"
+                <div class="absolute -top-5 right-16/80 w-8/50 z-300 cursor-pointer" @click="routeToVisualPage"
                   @mouseenter="eyeHover = true"
                   @mouseleave="eyeHover = false"
                 >
                   <!-- EYE -->
-                  <img src="/images/homepage-logo/red_eye.png" class="text-black h-full"/>
+                    <img
+                      v-show="eyeHover"
+                      src="/images/homepage-logo/red_eye.png"
+                      class="text-black h-full transition-opacity duration-700 scale-105"
+                      :class="eyeHover ? 'opacity-100' : 'opacity-0'"
+                    />
+                    <img
+                      v-show="!eyeHover"
+                      src="/images/homepage-logo/eye_black.png"
+                      class="text-black h-full transition-opacity duration-700 "
+                      :class="eyeHover ? 'opacity-0' : 'opacity-100'"
+                    />
+                 
                 </div>
               </div>
             </div>
@@ -60,22 +87,22 @@
             <div class="flex flex-row items-center justify-center z-10 ">
 
               <!-- PRODUCER -->
-              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'production'})">PRODUCER</span>
+              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'production'})">PRODUCER</span>
 
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300 " :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-200 " :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
               <!-- MIXER -->
-              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'mixing'})">MIXER</span>
+              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'mixing'})">MIXER</span>
 
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300" :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-200" :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
               <!-- COMPOSER -->
-              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'film scoring'})">COMPOSER</span>
+              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'film scoring'})">COMPOSER</span>
 
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-300" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-200" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
               <!-- VISUAL ARTIST -->
-              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-300 cursor-pointer hover:text-kushred" :class="eyeHover ? 'text-kushred' : 'text-gray-900'" @click="routeToVisualPage()">VISUAL ARTIST</span>
+              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="eyeHover ? 'text-kushred' : 'text-gray-900'" @click="routeToVisualPage()">VISUAL ARTIST</span>
 
             </div>
             <!-- END: SUB HEADER -->

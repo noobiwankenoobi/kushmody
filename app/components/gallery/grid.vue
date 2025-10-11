@@ -52,8 +52,9 @@ const visibleItems = computed(() => {
 
 // click on square
 function handleSquareClick(item) {
+  console.log("handleSquareClick running -- item is:: ", item)
   if (!item) return
-  if (!item.youtube_embed && !item.disco_embed) return
+  // if (!item.youtube_embed && !item.disco_embed) return
   selectedItem.value = item
   router.push({ query: { id: item.work_title } }) // stays on page, updates URL
 }
@@ -89,21 +90,27 @@ watch(() => props.galleryItems, (newVal, _) => {
     <!-- Looping items -->
     <div
       v-for="(item, idx) in visibleItems" :key="item.id"
-      class="flex justify-center items-center  w-full"
+      class="flex justify-center items-center w-full"
      >
+     <!-- GALLERY SQUARE -->
       <GallerySquare
         :key="item.id"
         :item="item"
         :to="`/gallery/${item.id}`"
         @click="handleSquareClick(item)"
-      :class="[
+        :class="[
         triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
         'transition-all duration-500'
-      ]"
+        ]"
       />
     </div>
   </div>
     <MediaAudioPlayerModal
+    v-if="selectedItem && !selectedItem.type == `image`"
+    :item="selectedItem"
+    @close="closeModal"
+  />
+    <MediaImageViewerModal
     v-if="selectedItem"
     :item="selectedItem"
     @close="closeModal"
