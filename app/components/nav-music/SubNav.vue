@@ -22,7 +22,7 @@ function handleClick(item) {
 
 <template>
 
-  <div class="flex justify-evenly items-center py-6 px-52">
+  <div class="flex justify-evenly items-center py-2 px-52">
 
     <!-- loop through sub nav items -->
     <ul v-for="item in subNavItems" :key="item.name" class="list-none">

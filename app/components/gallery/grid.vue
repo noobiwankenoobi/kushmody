@@ -68,6 +68,16 @@ function closeModal() {
 // Animation trigger flag
 const triggerAnimation = ref(false)
 
+const path = route.path
+
+const isVisualGrid = computed(() => {
+  return path && path.includes("/visual")
+})
+
+const isMusicGrid = computed(() => {
+  return path && path.includes("/music")
+})
+
 // Watch for changes in visibleItems and trigger animation
 watch(() => visibleItems.value, async () => {
   console.log('visibleItems changed: ', visibleItems.value)
@@ -84,27 +94,48 @@ watch(() => props.galleryItems, (newVal, _) => {
 </script>
 
 <template>
-  <!-- Grid container -->
-  <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-12 justify-center mx-auto max-w-5xl">
+  <!-- Grid container: Music -->
+  <template v-if="isMusicGrid">
+    <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-12 justify-center mx-auto max-w-5xl">
 
-    <!-- Looping items -->
-    <div
-      v-for="(item, idx) in visibleItems" :key="item.id"
-      class="flex justify-center items-center w-full"
-     >
-     <!-- GALLERY SQUARE -->
-      <GallerySquare
-        :key="item.id"
-        :item="item"
-        :to="`/gallery/${item.id}`"
-        @click="handleSquareClick(item)"
-        :class="[
-        triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
-        'transition-all duration-500'
-        ]"
-      />
+        <!-- GALLERY SQUARE LOOP -->
+          <GalleryMusicSquare
+          v-for="(item, idx) in visibleItems"
+            :key="item.id"
+            :item="item"
+            :to="`/gallery/${item.id}`"
+            @click="handleSquareClick(item)"
+            :class="[
+            triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
+            'transition-all duration-500'
+            ]"
+          />
+    
+      </div>
+   </template>
+
+  <template v-else-if="isVisualGrid">
+  <!-- Grid container: Visual Art -->
+    <div class="columns-4 gap-x-16 mt-8">
+
+      <!-- GALLERY VISUAL SQUARE LOOP -->
+        <GalleryVisualSquare
+          v-for="(item, idx) in visibleItems"
+          :key="item.id"
+          :item="item"
+          :to="`/gallery/${item.id}`"
+          @click="handleSquareClick(item)"
+          :class="[
+          triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
+          'transition-all duration-500'
+          ]"
+        />
+
     </div>
-  </div>
+  </template>
+
+
+  <!-- MODALS -->
     <MediaAudioPlayerModal
     v-if="selectedItem && !selectedItem.type == `image`"
     :item="selectedItem"
@@ -138,4 +169,6 @@ watch(() => props.galleryItems, (newVal, _) => {
 .animate-fade-in {
   animation: fade-in-wiggle 0.4s forwards;
 }
+
+
 </style>

@@ -87,22 +87,22 @@
             <div class="flex flex-row items-center justify-center z-10 ">
 
               <!-- PRODUCER -->
-              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'production'})">PRODUCER</span>
+              <span class="flex flex-row items-center justify-center font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'production'})">PRODUCER</span>
 
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-200 " :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-lg mt-1 mx-2 tracking-widest transition-colors duration-200 " :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
               <!-- MIXER -->
-              <span class="flex flex-row items-center justify-center font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'mixing'})">MIXER</span>
+              <span class="flex flex-row items-center justify-center font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'mixing'})">MIXER</span>
 
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-200" :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-lg mt-1 mx-2 tracking-widest transition-colors duration-200" :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
               <!-- COMPOSER -->
-              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'film scoring'})">COMPOSER</span>
+              <span class="flex flex-row items-center justify-center  font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="earHover ? 'text-kushred' : 'text-gray-900'" @click="routeToMusicPage({category: 'film scoring'})">COMPOSER</span>
 
-              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-xl mt-1 mx-2 tracking-widest transition-colors duration-200" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              <span class="flex flex-row items-center justify-center text-gray-900 font-bold text-lg mt-1 mx-2 tracking-widest transition-colors duration-200" :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
               <!-- VISUAL ARTIST -->
-              <span class="flex flex-row items-center justify-center  font-bold text-xl mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="eyeHover ? 'text-kushred' : 'text-gray-900'" @click="routeToVisualPage()">VISUAL ARTIST</span>
+              <span class="flex flex-row items-center justify-center  font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred" :class="eyeHover ? 'text-kushred' : 'text-gray-900'" @click="routeToVisualPage()">VISUAL ARTIST</span>
 
             </div>
             <!-- END: SUB HEADER -->
