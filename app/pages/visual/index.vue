@@ -5,7 +5,7 @@
     <!-- Page-specific content here -->
 
     <div>
-      <GalleryMain :galleryItems="galleryItems" />
+      <GalleryMain/>
     </div>
 
   </AppLayout>
@@ -14,9 +14,6 @@
 
 <script lang="js" setup>
 import AppLayout from "~/layouts/app-layout.vue"
-import visualItems from "~/data/visual-items.json"
-
-const galleryItems = ref(visualItems)
 
 const route = useRoute()
 const path = route.path

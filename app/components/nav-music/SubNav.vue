@@ -1,10 +1,10 @@
 <script lang="js" setup>
 
 const subNavItems = [
-  { name: "PRODUCTION", data: "production" },
-  { name: "MIXING", data: "mixing" },
-  { name: "FILM SCORING", data: "film scoring" },
-  { name: "BRANDED", data: "branded" },
+  { name: "PRODUCTION", data: "production", work_type: "music" },
+  { name: "MIXING", data: "mixing", work_type: "music" },
+  { name: "FILM SCORING", data: "film scoring", work_type: "music" },
+  { name: "BRANDED", data: "branded", work_type: "music" },
 ]
 
 // handle click on subnav item
@@ -12,11 +12,10 @@ const router = useRouter()
 const selectedCategory = computed(() => router.currentRoute.value.query.category || null)
 
 function handleClick(item) {
-  if (item.data === selectedCategory.value) {
-    router.push({ path: "/music", query: {} })
-  } else {
-    router.push({ path: "/music", query: { category: item.data } })
+  if (item.data == router.currentRoute.value.query.category) {
+    return
   }
+  router.push({ path: "/music", query: { category: item.data } })
 }
 </script>
 

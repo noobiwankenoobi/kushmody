@@ -1,52 +1,44 @@
 <script setup lang="js">
 
-const props = defineProps({
-  galleryItems: {
-    type: Array,
-    required: false,
-    default: () => []
-  }
-})
+// gallery store ----------+
+import { useGalleryStore } from '~/stores/galleryStore'
+const galleryStore = useGalleryStore()
+const { galleryItems, visibleGalleryItems, galleryType, galleryCategory } = storeToRefs(galleryStore)
+
 const router = useRouter()
 const route = useRoute()
 
 const selectedItem = ref(null)
 
-function containsSubstring(str, substring) {
-  return str.includes(substring)
-}
 
-function removeSpaces(str) {
-  return str.replace(/\s+/g, '');
-}
 
 // computed for items visible -- filtered by category
-const visibleItems = computed(() => {
+// const visibleGalleryItems = computed(() => {
 
-  let items = [...props.galleryItems]
+//   let items = [...galleryItems]
 
-  // if the length is 0, return empty array
-  if (items.length === 0) return []
+//   // if the length is 0, return empty array
+//   if (items.length === 0) return []
 
-  // Filter -- filter down by category if exist
-  if (route.query.category) {
-    console.log('Filtering by category: ', route.query.category)
-    items = items.filter(item => {
+//   // Filter -- filter down by category if exist
+//   if (route.query.category) {
+//     console.log('Filtering by category: ', route.query.category)
+//     items = items.filter(item => {
 
-    let categories = removeSpaces(item.categories.toLowerCase())
-    let queryCategory = removeSpaces(route.query.category.toLowerCase())
-    return containsSubstring(categories, queryCategory)
-  })
-  }
+//     let categories = removeSpaces(item.categories.toLowerCase())
+//     let queryCategory = removeSpaces(route.query.category.toLowerCase())
+//     return containsSubstring(categories, queryCategory)
+//   })
+//   }
  
-  // Randomize -- shuffle the array using Fisher-Yates algorithm
-  for (let i = items.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [items[i], items[j]] = [items[j], items[i]]
-  }
+//   // Randomize -- shuffle the array using Fisher-Yates algorithm
+//   for (let i = items.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [items[i], items[j]] = [items[j], items[i]]
+//   }
 
-  return items
-})
+//   return items
+// })
 
 
 
@@ -54,9 +46,18 @@ const visibleItems = computed(() => {
 function handleSquareClick(item) {
   console.log("handleSquareClick running -- item is:: ", item)
   if (!item) return
-  // if (!item.youtube_embed && !item.disco_embed) return
+
+  // const category = route.query.category
+  const category = galleryCategory.value
+  
+  if (!category || category === '' || category === null || category === undefined) {
+    selectedItem.value = item
+    router.push({ query: { id: item.work_title } }) // stays on page, updates URL
+    return
+  }
+
   selectedItem.value = item
-  router.push({ query: { id: item.work_title } }) // stays on page, updates URL
+  router.push({ query: { category: category, id: item.work_title } }) // stays on page, updates URL
 }
 
 // close modal
@@ -68,28 +69,36 @@ function closeModal() {
 // Animation trigger flag
 const triggerAnimation = ref(false)
 
-const path = route.path
 
 const isVisualGrid = computed(() => {
-  return path && path.includes("/visual")
+  return galleryType.value == "visual"
 })
 
 const isMusicGrid = computed(() => {
-  return path && path.includes("/music")
+  return galleryType.value == "music"
 })
 
-// Watch for changes in visibleItems and trigger animation
-watch(() => visibleItems.value, async () => {
-  console.log('visibleItems changed: ', visibleItems.value)
+// Watch for changes in visibleGalleryItems and trigger animation
+watch(() => visibleGalleryItems.value, async () => {
+  console.log('GRID WATCHER: visibleGalleryItems changed: ', visibleGalleryItems.value)
+  console.log('Number of visible items: ', visibleGalleryItems.value.length)
+  console.log('Triggering animation...')
   triggerAnimation.value = false
   await nextTick()
   triggerAnimation.value = true
 
 }, { immediate: false })
 
+watch(() => route.query.category, (newCat, oldCat) => {
+  console.log('GRID WATCHER: Category changed from ', oldCat, ' to ', newCat)
+  // if (newCat === oldCat) return
+  // triggerAnimation.value = true
+
+}, { immediate: false })
+
 // watcher for galleryItems
-watch(() => props.galleryItems, (newVal, _) => {
-  console.log('galleryItems prop changed: ', newVal, _)
+watch(() => galleryItems.value, (newVal, _) => {
+  console.log('GRID WATCHER: galleryItems changed: ', newVal, _)
 }, { immediate: true })
 </script>
 
@@ -100,7 +109,7 @@ watch(() => props.galleryItems, (newVal, _) => {
 
         <!-- GALLERY SQUARE LOOP -->
           <GalleryMusicSquare
-          v-for="(item, idx) in visibleItems"
+          v-for="(item, idx) in visibleGalleryItems"
             :key="item.id"
             :item="item"
             :to="`/gallery/${item.id}`"
@@ -114,13 +123,13 @@ watch(() => props.galleryItems, (newVal, _) => {
       </div>
    </template>
 
-  <template v-else-if="isVisualGrid">
+  <template v-if="isVisualGrid">
   <!-- Grid container: Visual Art -->
-    <div class="columns-4 gap-x-16 mt-8">
+    <div class="columns-4 gap-x-16 mt-8 mx-auto max-w-5xl">
 
       <!-- GALLERY VISUAL SQUARE LOOP -->
         <GalleryVisualSquare
-          v-for="(item, idx) in visibleItems"
+          v-for="(item, idx) in visibleGalleryItems"
           :key="item.id"
           :item="item"
           :to="`/gallery/${item.id}`"

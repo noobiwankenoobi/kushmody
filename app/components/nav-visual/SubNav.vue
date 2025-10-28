@@ -15,8 +15,6 @@ const selectedCategory = computed(() => router.currentRoute.value.query.category
 
 function handleClick(item) {
   if (item.data == router.currentRoute.value.query.category) {
-    // remove current category from URL
-    router.push({ path: "/visual", query: {} })
     return
   }
   router.push({ path: "/visual", query: { category: item.data } })
@@ -31,7 +29,10 @@ function handleClick(item) {
     <!-- loop through sub nav items -->
     <ul v-for="item in subNavItems" :key="item.name" class="list-none">
       <!-- handle the emit -->
-      <NavSubNavItem :item="item" @handle-click="handleClick(item)" :isSelected="item.data == selectedCategory"  />
+      <NavSubNavItem 
+      :item="item" 
+      @handle-click="handleClick(item)" 
+      :isSelected="item.data == selectedCategory"  />
     </ul>
 
   </div>

@@ -13,13 +13,13 @@ export default defineNuxtConfig({
     ],
   },
 
-  nitro: {
-    prerender: {
-      // routes: ["/", "/music", "/visual"],
-      // ignore: ["/dynamic"],
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: ["/", "/music", "/visual"],
+  //     ignore: ["/dynamic"],
+  //   },
+  // },
 
 
-  modules: ["@nuxt/eslint"],
+  modules: ["@nuxt/eslint", "@pinia/nuxt"],
 })

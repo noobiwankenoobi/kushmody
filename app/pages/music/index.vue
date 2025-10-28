@@ -3,7 +3,7 @@
   <NavNavbar :page="page"  class="top-0 w-full z-50" />
   <AppLayout>
     <!-- Gallery -->
-      <GalleryMain :galleryItems="galleryItems" />
+      <GalleryMain />
     <!-- Gallery End -->
   </AppLayout>
   </div>
@@ -11,9 +11,6 @@
 
 <script lang="js" setup>
 import AppLayout from "~/layouts/app-layout.vue"
-import musicItems from "~/data/music-items.json"
-
-const galleryItems = ref(musicItems)
 
 const route = useRoute()
 const path = route.path
