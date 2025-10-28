@@ -27,9 +27,6 @@ export const useGalleryStore = defineStore('gallery', () => {
   const videoItems = ref([])
   const artAndDesignItems = ref([])
 
-
-
-
   //------------------------------------+
   //                                    |
   //            Actions                 +
@@ -54,12 +51,6 @@ export const useGalleryStore = defineStore('gallery', () => {
   }
 
   // GALLERY ITEMS --------------------------------+
-
-  // function randomizeAndSetGalleryItems(items) {
-  //   console.log('Randomizing and setting gallery items...')
-  //   const randomizedItems = randomizeItems(items)
-  //   setGalleryItems(randomizedItems)
-  // }
 
   function setGalleryItems(items) {
     console.log('Setting gallery items: ', items)
@@ -86,7 +77,7 @@ export const useGalleryStore = defineStore('gallery', () => {
     artAndDesignItems.value = reduceAndGetItemsByCategory(allItems, 'art&design')
   }
 
-  // returns an array of items for a given category from a passed param of all items
+  // returns an array of items for a given category created by filtering allItems
   function reduceAndGetItemsByCategory(allItems, category) {
     if (!category || category == '') {
       console.error('No category provided, returning empty array')
@@ -140,6 +131,30 @@ export const useGalleryStore = defineStore('gallery', () => {
 
   }
 
+  function randomizeCurrentItemsForCategory(category) {
+    console.log('Randomizing current category items for category: ', category)
+    switch (category.toLowerCase()) {
+      // music
+      case 'production':
+        productionItems.value = randomizeItems(productionItems.value)
+      case 'mixing':
+        mixingItems.value = randomizeItems(mixingItems.value)
+      case 'film scoring':
+        filmScoringItems.value = randomizeItems(filmScoringItems.value)
+      case 'branded':
+        brandedItems.value = randomizeItems(brandedItems.value)
+      // visual
+      case 'photography':
+        photographyItems.value = randomizeItems(photographyItems.value)
+      case 'video':
+        videoItems.value = randomizeItems(videoItems.value)
+      case 'art&design':
+        artAndDesignItems.value = randomizeItems(artAndDesignItems.value)
+      default:
+        console.error('Category not found, bug state, returning and doing nothing')
+        return
+    }
+  }
 
   function setGalleryType(type) {
     console.log('Setting gallery type: ', type)
@@ -152,30 +167,10 @@ export const useGalleryStore = defineStore('gallery', () => {
     galleryCategory.value = category
   }
 
-
-
   function getGalleryItems() {
     console.log('Getting gallery items')
     return galleryItems.value
   }
-
-  // function getVisibleItemsByCategory(newCategory) {
-  //   if (!newCategory || newCategory == '') {
-  //     console.log('No category provided, returning all gallery items')
-  //     return getGalleryItems()
-  //   }
-  //   console.log('Getting visible items by category: ', newCategory)
-
-  //   let items = getGalleryItems()
-
-  //   items = items.filter(item => {
-  //     let categories = removeSpaces(item.categories.toLowerCase())
-  //     let queryCategory = removeSpaces(route.query.category.toLowerCase())
-  //     return containsSubstring(categories, queryCategory)
-  //   })
-
-  //   return items
-  // }
 
   function randomizeItems(items) {
     return items
@@ -184,46 +179,12 @@ export const useGalleryStore = defineStore('gallery', () => {
       .map(({ value }) => value)
   }
 
-  // function getVisibleItemsByCategoryAndRandomize(newCategory) {
-  //   console.log('Getting visible items by category and randomizing: ', newCategory)
-  //   const items = getVisibleItemsByCategory(newCategory)
-  //   const randomizedItems = randomizeItems(items)
-  //   return randomizedItems
-  // }
-
-  // function setVisibleItems(items) {
-  //   console.log('Setting visible items: ', items)
-  //   visibleItems.value = items
-  // }
-
-  // function getAndSetVisibleItemsByCategory(newCategory) {
-  //   console.log('Getting and setting visible items by category: ', newCategory)
-
-  //   if (newCategory == '') {
-  //     const allItems = getGalleryItems()
-  //     setVisibleItems(allItems)
-  //     return
-  //   }
-
-  //   const items = getVisibleItemsByCategory(newCategory)
-  //   setVisibleItems(items)
-  // }
-
-
-
   function randomizeCurrentGalleryItems() {
     console.log('Randomizing gallery items...')
     const randomizedItems = randomizeItems(galleryItems.value)
     setGalleryItems(randomizedItems)
   }
 
-
-
-  // function randomizeAndSetCurrentVisibleItems() {
-  //   console.log('Randomizing visible items...')
-  //   const randomizedItems = randomizeItems(visibleItems.value)
-  //   setVisibleItems(randomizedItems)
-  // }
 
   //------------------------------------+
   //                                    |
@@ -304,35 +265,13 @@ export const useGalleryStore = defineStore('gallery', () => {
 
   }, { immediate: true })
 
-  // GALLERY CATEGORY CHANGES --> SET VISIBLE ITEMS
-  // watch(galleryCategory, (newCategory, oldCategory) => {
-  //   console.log('Gallery category changed: ', newCategory, oldCategory)
-  //   if (newCategory === oldCategory) return
-  //   if (newCategory && newCategory !== '') {
-  //     getAndSetVisibleItemsByCategory(newCategory)
-  //   } else {
-  //     getAndSetVisibleItemsByCategory('')
-  //   }
-  // }, { immediate: true })
-
-  // GALLERY ITEMS CHANGES --> RESET ALL ITEM CATEGORIES
-  // watch(galleryItems, (newGalleryItems, _) => {
-  //   console.log('Gallery items changed: ', newGalleryItems, _)
-  //   setAllCategoryItems(newGalleryItems)
-  // }, { immediate: true })
-
-
-  // Watcher that determines the change situation
-  // -- Category changes
-
 
   return {
     galleryItems,
     galleryType,
     visibleGalleryItems,
     galleryCategory,
-    // randomizeCurrentGalleryItems,
-    // randomizeAndSetCurrentVisibleItems,
     setGalleryCategory,
+    randomizeCurrentItemsForCategory,
   }
 })

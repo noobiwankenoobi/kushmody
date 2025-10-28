@@ -1,5 +1,10 @@
 <script lang="js" setup>
 
+// gallery store ----------+
+import { useGalleryStore } from '~/stores/galleryStore'
+const galleryStore = useGalleryStore()
+const { randomizeCurrentItemsForCategory } = galleryStore
+
 const subNavItems = [
   { name: "PRODUCTION", data: "production", work_type: "music" },
   { name: "MIXING", data: "mixing", work_type: "music" },
@@ -12,9 +17,14 @@ const router = useRouter()
 const selectedCategory = computed(() => router.currentRoute.value.query.category || null)
 
 function handleClick(item) {
+  // if clicking the selected category, randomize items instead of changing route
   if (item.data == router.currentRoute.value.query.category) {
+    // consider adding user feedback here that items have been randomized
+    randomizeCurrentItemsForCategory(item.data)
     return
   }
+
+  // navigate to new category
   router.push({ path: "/music", query: { category: item.data } })
 }
 </script>
