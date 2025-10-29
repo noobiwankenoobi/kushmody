@@ -11,21 +11,21 @@ const subNavItems = [
   { name: "ART & DESIGN", data: "art&design" },
 ]
 
-
 // handle click on subnav item
 const router = useRouter()
+const route = useRoute()
+const selectedCategory = computed(() => route.query.category || null)
 
-const selectedCategory = computed(() => router.currentRoute.value.query.category || null)
-
-
+// +-----------------------------------+
+// |           HANDLE CLICK            |
+// +-----------------------------------+
 function handleClick(item) {
   // if clicking the selected category, randomize items instead of changing route
-  if (item.data == router.currentRoute.value.query.category) {
+  if (item.data == route.query.category) {
     // consider adding user feedback here that items have been randomized
     randomizeCurrentItemsForCategory(item.data)
     return
   }
-
   // navigate to new category
   router.push({ path: "/visual", query: { category: item.data } })
 }
@@ -33,7 +33,6 @@ function handleClick(item) {
 </script>
 
 <template>
-
   <div class="flex justify-evenly items-center py-2 px-52">
 
     <!-- loop through sub nav items -->
@@ -46,5 +45,4 @@ function handleClick(item) {
     </ul>
 
   </div>
-
 </template>

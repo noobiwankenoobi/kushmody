@@ -14,11 +14,15 @@ const subNavItems = [
 
 // handle click on subnav item
 const router = useRouter()
-const selectedCategory = computed(() => router.currentRoute.value.query.category || null)
+const route = useRoute()
+const selectedCategory = computed(() => route.query.category || null)
 
+// +-----------------------------------+
+// |           HANDLE CLICK            |
+// +-----------------------------------+
 function handleClick(item) {
   // if clicking the selected category, randomize items instead of changing route
-  if (item.data == router.currentRoute.value.query.category) {
+  if (item.data == route.query.category) {
     // consider adding user feedback here that items have been randomized
     randomizeCurrentItemsForCategory(item.data)
     return

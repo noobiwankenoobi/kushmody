@@ -33,7 +33,9 @@ export const useGalleryStore = defineStore('gallery', () => {
   //                                    |
   //------------------------------------+
 
-  // INIT ENTIRE STORE
+  // +-----------------------------------+
+  // |        INIT ENTIRE STORE          |
+  // +-----------------------------------+
   // this is called when the route is either /music or /visual
   function setEntireStore(items) {
 
@@ -41,6 +43,9 @@ export const useGalleryStore = defineStore('gallery', () => {
       console.error('No items provided, cannot set entire store')
       setGalleryItems([])
     }
+
+    console.log('SETTING ENTIRE STORE with items: ', items)
+
     let allGalleryItems = items
     // randomize
     const randomizedItems = randomizeItems(allGalleryItems)
@@ -51,13 +56,14 @@ export const useGalleryStore = defineStore('gallery', () => {
   }
 
   // GALLERY ITEMS --------------------------------+
-
   function setGalleryItems(items) {
     console.log('Setting gallery items: ', items)
     galleryItems.value = items
   }
 
-  // SET GALLERY CATEGORIZED ITEMS --------------------------+
+  // +-----------------------------------+
+  // |  SET GALLERY CATEGORIZED ITEMS    |
+  // +-----------------------------------+
   function setAllCategoryItems(allItems) {
     if (allItems.length === 0) {
       console.error('No items provided, cannot set category items')
@@ -66,19 +72,22 @@ export const useGalleryStore = defineStore('gallery', () => {
     console.log('Setting all category items...')
 
     // music
-    productionItems.value = reduceAndGetItemsByCategory(allItems, 'production')
-    mixingItems.value = reduceAndGetItemsByCategory(allItems, 'mixing')
-    filmScoringItems.value = reduceAndGetItemsByCategory(allItems, 'film scoring')
-    brandedItems.value = reduceAndGetItemsByCategory(allItems, 'branded')
+    productionItems.value = filterAndGetItemsByCategory(allItems, 'production')
+    mixingItems.value = filterAndGetItemsByCategory(allItems, 'mixing')
+    filmScoringItems.value = filterAndGetItemsByCategory(allItems, 'film scoring')
+    brandedItems.value = filterAndGetItemsByCategory(allItems, 'branded')
 
     // visual
-    photographyItems.value = reduceAndGetItemsByCategory(allItems, 'photography')
-    videoItems.value = reduceAndGetItemsByCategory(allItems, 'video')
-    artAndDesignItems.value = reduceAndGetItemsByCategory(allItems, 'art&design')
+    photographyItems.value = filterAndGetItemsByCategory(allItems, 'photography')
+    videoItems.value = filterAndGetItemsByCategory(allItems, 'video')
+    artAndDesignItems.value = filterAndGetItemsByCategory(allItems, 'art&design')
   }
 
+  // +---------------------------------------+
+  // |   FILTER AND GET ITEMS BY CATEGORY    |
+  // +---------------------------------------+
   // returns an array of items for a given category created by filtering allItems
-  function reduceAndGetItemsByCategory(allItems, category) {
+  function filterAndGetItemsByCategory(allItems, category) {
     if (!category || category == '') {
       console.error('No category provided, returning empty array')
       return []
@@ -99,6 +108,9 @@ export const useGalleryStore = defineStore('gallery', () => {
     return categoryItems
   }
 
+  // +---------------------------------------+
+  // |      GET CURENT CATEGORY'S ITEMS      |
+  // +---------------------------------------+
   function getCurrentCategoryItems(galleryCategory) {
     if (!galleryCategory || galleryCategory == '') {
       console.log('No category provided, returning all gallery items')
@@ -131,25 +143,36 @@ export const useGalleryStore = defineStore('gallery', () => {
 
   }
 
+  // +------------------------------------------------+
+  // |      RANDOMIZE CURRENT ITEMS FOR CATEGORY      |
+  // +------------------------------------------------+
   function randomizeCurrentItemsForCategory(category) {
     console.log('Randomizing current category items for category: ', category)
     switch (category.toLowerCase()) {
       // music
       case 'production':
         productionItems.value = randomizeItems(productionItems.value)
+        return
       case 'mixing':
         mixingItems.value = randomizeItems(mixingItems.value)
+        return
       case 'film scoring':
         filmScoringItems.value = randomizeItems(filmScoringItems.value)
+        return
       case 'branded':
         brandedItems.value = randomizeItems(brandedItems.value)
+        return
       // visual
       case 'photography':
+        console.log('Randomizing photography items...')
         photographyItems.value = randomizeItems(photographyItems.value)
+        return
       case 'video':
         videoItems.value = randomizeItems(videoItems.value)
+        return
       case 'art&design':
         artAndDesignItems.value = randomizeItems(artAndDesignItems.value)
+        return
       default:
         console.error('Category not found, bug state, returning and doing nothing')
         return
@@ -167,24 +190,16 @@ export const useGalleryStore = defineStore('gallery', () => {
     galleryCategory.value = category
   }
 
-  function getGalleryItems() {
-    console.log('Getting gallery items')
-    return galleryItems.value
-  }
+  // function getGalleryItems() {
+  //   console.log('Getting gallery items')
+  //   return galleryItems.value
+  // }
 
-  function randomizeItems(items) {
-    return items
-      .map(value => ({ value, sort: Math.random() }))
-      .sort((a, b) => a.sort - b.sort)
-      .map(({ value }) => value)
-  }
-
-  function randomizeCurrentGalleryItems() {
-    console.log('Randomizing gallery items...')
-    const randomizedItems = randomizeItems(galleryItems.value)
-    setGalleryItems(randomizedItems)
-  }
-
+  // function randomizeCurrentGalleryItems() {
+  //   console.log('Randomizing gallery items...')
+  //   const randomizedItems = randomizeItems(galleryItems.value)
+  //   setGalleryItems(randomizedItems)
+  // }
 
   //------------------------------------+
   //                                    |
@@ -265,13 +280,17 @@ export const useGalleryStore = defineStore('gallery', () => {
 
   }, { immediate: true })
 
+  // logging
+  watch(galleryItems, (newItems) => {
+    console.log('Gallery items updated, new items are: ', newItems)
+    console.log('Total gallery items count: ', newItems.length)
+  }, { immediate: false })
+
 
   return {
-    galleryItems,
     galleryType,
     visibleGalleryItems,
     galleryCategory,
-    setGalleryCategory,
     randomizeCurrentItemsForCategory,
   }
 })

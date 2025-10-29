@@ -3,7 +3,7 @@
 // gallery store ----------+
 import { useGalleryStore } from '~/stores/galleryStore'
 const galleryStore = useGalleryStore()
-const { galleryItems, visibleGalleryItems, galleryType, galleryCategory } = storeToRefs(galleryStore)
+const { visibleGalleryItems, galleryType, galleryCategory } = storeToRefs(galleryStore)
 
 const router = useRouter()
 const route = useRoute()
@@ -11,38 +11,9 @@ const route = useRoute()
 const selectedItem = ref(null)
 
 
-
-// computed for items visible -- filtered by category
-// const visibleGalleryItems = computed(() => {
-
-//   let items = [...galleryItems]
-
-//   // if the length is 0, return empty array
-//   if (items.length === 0) return []
-
-//   // Filter -- filter down by category if exist
-//   if (route.query.category) {
-//     console.log('Filtering by category: ', route.query.category)
-//     items = items.filter(item => {
-
-//     let categories = removeSpaces(item.categories.toLowerCase())
-//     let queryCategory = removeSpaces(route.query.category.toLowerCase())
-//     return containsSubstring(categories, queryCategory)
-//   })
-//   }
- 
-//   // Randomize -- shuffle the array using Fisher-Yates algorithm
-//   for (let i = items.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [items[i], items[j]] = [items[j], items[i]]
-//   }
-
-//   return items
-// })
-
-
-
-// click on square
+// +-----------------------------------+
+// |           SQUARE CLICK            |
+// +-----------------------------------+
 function handleSquareClick(item) {
   console.log("handleSquareClick running -- item is:: ", item)
   if (!item) return
@@ -89,17 +60,6 @@ watch(() => visibleGalleryItems.value, async () => {
 
 }, { immediate: false })
 
-watch(() => route.query.category, (newCat, oldCat) => {
-  console.log('GRID WATCHER: Category changed from ', oldCat, ' to ', newCat)
-  // if (newCat === oldCat) return
-  // triggerAnimation.value = true
-
-}, { immediate: false })
-
-// watcher for galleryItems
-watch(() => galleryItems.value, (newVal, _) => {
-  console.log('GRID WATCHER: galleryItems changed: ', newVal, _)
-}, { immediate: true })
 </script>
 
 <template>
