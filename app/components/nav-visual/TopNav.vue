@@ -13,15 +13,15 @@ function handleClick() {
   <div class="flex flex-row items-center w-full px-12 py-2 ">
 
     <!-- Left Side -->
-    <div class="flex-shrink-0 w-32 flex items-center justify-start">
-      <NuxtLink to="/" class="text-gray-700 font-semibold w-1/6 left-0 items-center justify-center"><span>HOME</span></NuxtLink>
+    <div class="flex-shrink-0 font-medium w-32 flex items-center justify-start">
+      <NuxtLink to="/" class="text-gray-700 text-sm font-semibold w-1/6 left-0 items-center justify-center"><span>HOME</span></NuxtLink>
     </div>
     <!--  -->
 
     <!-- Center Music Logo -->
     <div class="flex-1 flex items-center justify-center">
       <div @click="handleClick" class="cursor-pointer">
-        <img src="/images/homepage/visual_page_visual_eye_work.png" alt="Kush Mody Header" class="max-w-full h-18">
+        <img src="/images/homepage/visual_page_visual_eye_work.png" alt="Kush Mody Header" class="max-w-full h-12">
       </div>
     </div>
     <!--  -->

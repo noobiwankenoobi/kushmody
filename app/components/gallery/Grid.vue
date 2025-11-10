@@ -34,6 +34,10 @@ function handleSquareClick(item) {
 // close modal
 function closeModal() {
   selectedItem.value = null
+  if (route.query.category) {
+    router.push({ query: { category: route.query.category } }) // remove id from URL
+    return
+  }
   router.push({ query: {} }) // remove id from URL
 }
 
@@ -106,12 +110,12 @@ watch(() => visibleGalleryItems.value, async () => {
 
   <!-- MODALS -->
     <MediaAudioPlayerModal
-    v-if="selectedItem && !selectedItem.type == `image`"
+    v-if="selectedItem && !selectedItem.type == 'image'"
     :item="selectedItem"
     @close="closeModal"
   />
     <MediaImageViewerModal
-    v-if="selectedItem"
+    v-else-if="selectedItem && selectedItem.type == 'image'"
     :item="selectedItem"
     @close="closeModal"
   />

@@ -1,6 +1,6 @@
 <template>
 
-   <nav class="min-h-28 border-b-gray-300 border-2">
+   <nav class="min-h-24 border-b-gray-300 border-2">
 
     <div v-if="page === 'music'">
       <NavMusicMainNav />
