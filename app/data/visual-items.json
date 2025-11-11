@@ -2,6 +2,7 @@
   {
     "id": 1,
     "work_title": "The World Is Mine (BTS)",
+    "type": "video",
     "format": "youtube",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/UAbH1oErrwQ/hqdefault.jpg",
@@ -11,6 +12,7 @@
   {
     "id": 2,
     "work_title": "Immigrants (We Get The Job Done) BTS",
+    "type": "video",
     "format": "youtube",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/pWFLYqkvhMk/hqdefault.jpg",
@@ -20,6 +22,7 @@
   {
     "id": 3,
     "work_title": "Exquisite Corpse (BTS)",
+    "type": "video",
     "format": "vimeo",
     "categories": "video",
     "youtube": "",
@@ -30,6 +33,7 @@
   {
     "id": 4,
     "work_title": "Lithium",
+    "type": "video",
     "format": "youtube",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/5H7A2-WLFCc/hqdefault.jpg",
@@ -41,6 +45,7 @@
   {
     "id": 5,
     "work_title": "Plante Guitar Co",
+    "type": "video",
     "format": "vimeo",
     "categories": "video",
     "youtube": "",
@@ -51,6 +56,7 @@
   {
     "id": 6,
     "work_title": "Congratulatory Trinkets",
+    "type": "video",
     "format": "",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/x00I42ATvKo/hqdefault.jpg",
@@ -62,6 +68,7 @@
   {
     "id": 7,
     "work_title": "Wax On Wax: Shit I Used To Do",
+    "type": "video",
     "format": "youtube",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/GTaFYJt_oPI/hqdefault.jpg",
@@ -73,6 +80,7 @@
   {
     "id": 8,
     "work_title": "SoCal Grill",
+    "type": "video",
     "format": "vimeo",
     "categories": "video",
     "youtube": "",
@@ -83,6 +91,7 @@
   {
     "id": 9,
     "work_title": "Apollo",
+    "type": "video",
     "format": "",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/lflpOfP9BgA/hqdefault.jpg",
@@ -94,6 +103,7 @@
   {
     "id": 10,
     "work_title": "Darren FUNd",
+    "type": "video",
     "format": "youtube",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/2kPX8i5HXzw/hqdefault.jpg",
@@ -105,6 +115,7 @@
   {
     "id": 11,
     "work_title": "The Wheel",
+    "type": "video",
     "format": "youtube",
     "categories": "video",
     "img_url": "https://img.youtube.com/vi/dtkbnOBx1aU/hqdefault.jpg",

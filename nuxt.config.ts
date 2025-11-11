@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     ],
   },
 
+  icon: {
+    mode: 'css',
+    cssLayer: 'base'
+  },
+
   // nitro: {
   //   prerender: {
   //     routes: ["/", "/music", "/visual"],

@@ -6,6 +6,7 @@ const props = defineProps({
     required: true,
   },
 })
+definePageMeta({ ssr: false})
 defineEmits(["click"])
 
 const route = useRoute()
@@ -22,9 +23,17 @@ if (props?.item?.img_url) {
 
 <template>
   <div
-    class="flex items-center justify-center cursor-pointer w-full mb-8"
+    class="flex items-center justify-center cursor-pointer w-full mb-8 relative group"
     @click="$emit('click')">
+      <div
+        v-if="item.type === 'video'"
+        class="absolute top-1/2 left-1/2 z-200 transform -translate-x-1/2 -translate-y-1/2">
+        <IconsPlay :width="48" :height="48" custom-class="text-kushmint opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
       <img :src="imgSrc" :alt="item.work_title" class="w-full object-contain">
+
+
+      
   </div>
 </template>
 
