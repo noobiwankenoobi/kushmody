@@ -13,18 +13,25 @@ export default defineNuxtConfig({
     ],
   },
 
-  icon: {
-    mode: 'css',
-    cssLayer: 'base'
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: '/images/hero.jpg'
+        },
+        // Add other critical hero images here
+      ]
+    }
   },
 
+  // pre-rendering routes
   // nitro: {
   //   prerender: {
   //     routes: ["/", "/music", "/visual"],
   //     ignore: ["/dynamic"],
   //   },
   // },
-
-
   modules: ["@nuxt/eslint", "@pinia/nuxt"],
 })

@@ -17,9 +17,11 @@ export default withNuxt(
       },
     },
     stylistic.configs.customize({
+      indent: 2,
       quotes: "double",
       semi: false,
       commaDangle: "always-multiline",
+      braceStyle: "1tbs",
     }),
 
   ],

@@ -13,19 +13,25 @@
   // Eslint - Language specific settings
   "[vue]": {
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": false
+    "editor.formatOnPaste": true
   },
   "[javascript]": {
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": false
+    "editor.formatOnPaste": true
   },
   "[json]": {
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": false
+    "editor.formatOnPaste": true
   },
   "[html]": {
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": false
+    "editor.formatOnPaste": true
   },
-  "eslint.format.enable": true
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "vue",
+    "css",
+    "html"
+  ]
 }

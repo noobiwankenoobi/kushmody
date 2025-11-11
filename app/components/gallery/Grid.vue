@@ -22,17 +22,25 @@ function handleSquareClick(item) {
   const category = galleryCategory?.value
 
   console.log("handleSquareClick running: galleryCategory is:: ", galleryCategory?.value)
-  
+
   if (!category || category === '' || category === null || category === undefined) {
     selectedItem.value = item
     router.push({ query: { id: item?.gallery_image_url_thumbnail } }) // stays on page, updates URL
-     console.log("handleSquareClick running: no category, just pushing id of item: ", item)
+    console.log("handleSquareClick running: no category, just pushing id of item: ", item)
     return
   }
 
   selectedItem.value = item
   router.push({ query: { category: category, id: item?.gallery_image_url_thumbnail } }) // stays on page, updates URL
   console.log("handleSquareClick running: category found, just pushing id of item ", item)
+}
+
+function determineShowModal() {
+  const idInQuery = route.query.id
+  if (!idInQuery || idInQuery === '' || idInQuery === null || idInQuery === undefined) {
+    return false
+  }
+  return true
 }
 
 // close modal
@@ -76,56 +84,38 @@ watch(() => selectedItem, (newVal, _) => {
   <template v-if="isMusicGrid">
     <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-12 justify-center mx-auto max-w-5xl">
 
-        <!-- GALLERY SQUARE LOOP -->
-          <GalleryMusicSquare
-          v-for="(item, idx) in visibleGalleryItems"
-            :key="item.id"
-            :item="item"
-            :to="`/gallery/${item.id}`"
-            @click="handleSquareClick(item)"
-            :class="[
-            triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
-            'transition-all duration-500'
-            ]"
-          />
-    
-      </div>
-   </template>
+      <!-- GALLERY SQUARE LOOP -->
+      <GalleryMusicSquare v-for="(item, idx) in visibleGalleryItems" :key="item.id" :item="item"
+        :to="`/gallery/${item.id}`" @click="handleSquareClick(item)" :class="[
+          triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
+          'transition-all duration-500'
+        ]" />
+
+    </div>
+  </template>
 
   <template v-if="isVisualGrid">
-  <!-- Grid container: Visual Art -->
+    <!-- Grid container: Visual Art -->
     <div class="columns-4 gap-x-16 mt-8 mx-auto max-w-5xl">
 
       <!-- GALLERY VISUAL SQUARE LOOP -->
-        <GalleryVisualSquare
-          v-for="(item, idx) in visibleGalleryItems"
-          :key="item.id"
-          :item="item"
-          :to="`/gallery/${item.id}`"
-          @click="handleSquareClick(item)"
-          :class="[
+      <GalleryVisualSquare v-for="(item, idx) in visibleGalleryItems" :key="item.id" :item="item"
+        :to="`/gallery/${item.id}`" @click="handleSquareClick(item)" :class="[
           triggerAnimation ? 'animate-fade-in opacity-0 translate-y-8' : '',
           'transition-all duration-500'
-          ]"
-        />
+        ]" />
 
     </div>
   </template>
 
 
   <!-- MODALS -->
-    <MediaAudioPlayerModal
-    v-if="selectedItem"
-    :item="selectedItem"
-    @close="closeModal"
-  />
-    <MediaImageViewerModal
-    v-else-if="selectedItem && selectedItem?.type == 'image'"
-    :item="selectedItem"
-    @close="closeModal"
-  />
+  <MediaAudioPlayerModal v-if="selectedItem && selectedItem?.type == 'audio'" :item="selectedItem"
+    @close="closeModal" />
+  <MediaImageViewerModal v-else-if="selectedItem && selectedItem?.type == 'image'" :item="selectedItem"
+    @close="closeModal" />
 
-  
+
 </template>
 
 <style scoped>
@@ -134,21 +124,23 @@ watch(() => selectedItem, (newVal, _) => {
     opacity: 0;
     transform: translateY(32px) rotate(-1deg) scale(0.98);
   }
+
   60% {
     opacity: 1;
     transform: translateY(-4px) rotate(1deg) scale(1.04);
   }
+
   80% {
     transform: translateY(0px) rotate(-1deg) scale(0.99);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) rotate(0deg) scale(1);
   }
 }
+
 .animate-fade-in {
   animation: fade-in-wiggle 0.4s forwards;
 }
-
-
 </style>

@@ -28,8 +28,9 @@
 
             <!-- Full Size Image -->
       <img
+        v-if="item && item?.gallery_image_url_thumbnail"
         :src="determineImgSrc()"
-        :alt="item.work_title || 'Image'"
+        :alt="item.gallery_image_url_thumbnail || 'Image'"
         class="max-w-full h-[80vh] object-contain rounded"
         @load="onImageLoad"
       />
@@ -50,10 +51,10 @@ const props = defineProps({
 })
 
 function determineImgSrc() {
-  if (props?.item?.img_url) {
-    return props.item.img_url
-  } else if (props?.item?.gallery_image_url_thumbnail) {
-    return `/images/visual/${props?.item?.gallery_image_url_thumbnail}.webp`
+  if(!props.item) return ''
+  if (props?.item?.gallery_image_url_thumbnail) {
+    console.log('ImageViewerModal: determineImgSrc running for item: ', props?.item)
+    return `/images/visual/thumbnails/${props?.item?.gallery_image_url_thumbnail}.webp`
   }
   return ''
 }
@@ -68,7 +69,7 @@ function determineImgSrc() {
 //   playerIsLoading.value = false
 // }
 
-watch(() => props.item, (newVal, _) => {
+watch(() => props?.item?.value, (newVal, _) => {
   console.log('item prop changed: ', newVal, _)
 }, { immediate: true })
 

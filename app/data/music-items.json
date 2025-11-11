@@ -2,7 +2,7 @@
   {
     "id": 1,
     "work_title": "Lifetime Achievement Award",
-    "type": "music",
+    "type": "audio",
     "format": "album",
     "categories": "production, mixing",
     "gallery_image_filename": "lifetime_achievement_award",
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "work_title": "Fine Si Dolce",
-    "type": "music",
+    "type": "audio",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "fine_si_dolce",
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "work_title": "On One",
-    "type": "music",
+    "type": "audio",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "on_one",
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "work_title": "Classics",
-    "type": "music",
+    "type": "audio",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "classics",
@@ -66,7 +66,7 @@
   {
     "id": 5,
     "work_title": "Quixote",
-    "type": "music",
+    "type": "audio",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "quixote",
@@ -82,7 +82,7 @@
   {
     "id": 6,
     "work_title": "Give Me All Your Money",
-    "type": "music",
+    "type": "audio",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "give_me_all_your_money",
@@ -98,7 +98,7 @@
   {
     "id": 7,
     "work_title": "Shotgun",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production, mixing",
     "gallery_image_filename": "shotgun",
@@ -114,7 +114,7 @@
   {
     "id": 8,
     "work_title": "Higher",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production, mixing",
     "gallery_image_filename": "higher",
@@ -130,7 +130,7 @@
   {
     "id": 9,
     "work_title": "Intention",
-    "type": "",
+    "type": "audio",
     "format": "album",
     "categories": "production, mixing",
     "gallery_image_filename": "intention",
@@ -146,7 +146,7 @@
   {
     "id": 10,
     "work_title": "Scam Likely",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production, mixing",
     "gallery_image_filename": "scam_likely",
@@ -162,7 +162,7 @@
   {
     "id": 11,
     "work_title": "Brass Knuckles",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production, mixing",
     "gallery_image_filename": "brass_knuckles",
@@ -178,7 +178,7 @@
   {
     "id": 12,
     "work_title": "Somewhere in the Middle",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production, mixing",
     "gallery_image_filename": "somewhere_in_the_middle",
@@ -194,7 +194,7 @@
   {
     "id": 13,
     "work_title": "Bryarly",
-    "type": "",
+    "type": "audio",
     "format": "album",
     "categories": "production",
     "gallery_image_filename": "bryarly",
@@ -210,7 +210,7 @@
   {
     "id": 14,
     "work_title": "Cardboard Castles",
-    "type": "",
+    "type": "audio",
     "format": "album",
     "categories": "production",
     "gallery_image_filename": "cardboard_castles",
@@ -226,7 +226,7 @@
   {
     "id": 15,
     "work_title": "X Infinity",
-    "type": "",
+    "type": "audio",
     "format": "album",
     "categories": "production",
     "gallery_image_filename": "x_infinity",
@@ -242,7 +242,7 @@
   {
     "id": 16,
     "work_title": "Backpack of Snacks",
-    "type": "",
+    "type": "audio",
     "format": "ep",
     "categories": "production",
     "gallery_image_filename": "backpack_of_snacks",
@@ -258,7 +258,7 @@
   {
     "id": 17,
     "work_title": "Biirdvana",
-    "type": "",
+    "type": "audio",
     "format": "ep",
     "categories": "production",
     "gallery_image_filename": "biirdvana",
@@ -274,7 +274,7 @@
   {
     "id": 18,
     "work_title": "Slow Down",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production, mixing",
     "gallery_image_filename": "slow_down",
@@ -290,7 +290,7 @@
   {
     "id": 19,
     "work_title": "Freight Train",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production",
     "gallery_image_filename": "freight_train",
@@ -306,7 +306,7 @@
   {
     "id": 20,
     "work_title": "Locked",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production",
     "gallery_image_filename": "locked",
@@ -322,7 +322,7 @@
   {
     "id": 21,
     "work_title": "Sexie Sadie",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production",
     "gallery_image_filename": "sexie_sadie",
@@ -338,7 +338,7 @@
   {
     "id": 22,
     "work_title": "Another Miracle",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production",
     "gallery_image_filename": "another_miracle",
@@ -354,7 +354,7 @@
   {
     "id": 23,
     "work_title": "Loud",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production",
     "gallery_image_filename": "loud",
@@ -370,7 +370,7 @@
   {
     "id": 24,
     "work_title": "Complaint",
-    "type": "",
+    "type": "audio",
     "format": "album",
     "categories": "production",
     "gallery_image_filename": "complaint",
@@ -386,7 +386,7 @@
   {
     "id": 25,
     "work_title": "When It's Over",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "production",
     "gallery_image_filename": "when_it's_over",
@@ -402,7 +402,7 @@
   {
     "id": 26,
     "work_title": "Watsky Live! from the Metro",
-    "type": "",
+    "type": "audio",
     "format": "album",
     "categories": "mixing",
     "gallery_image_filename": "watsky_live!_from_the_metro",
@@ -418,7 +418,7 @@
   {
     "id": 27,
     "work_title": "Feel Something",
-    "type": "",
+    "type": "audio",
     "format": "song",
     "categories": "mixing",
     "gallery_image_filename": "feel_something",
@@ -434,7 +434,7 @@
   {
     "id": 28,
     "work_title": "Adventures of Serial Buddies",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "adventures_of_serial_buddies",
@@ -451,7 +451,7 @@
   {
     "id": 29,
     "work_title": "American Futbol",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "american_futbol",
@@ -469,7 +469,7 @@
   {
     "id": 30,
     "work_title": "Ephemera Utah",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "ephemera_utah",
@@ -487,7 +487,7 @@
   {
     "id": 31,
     "work_title": "In Searching",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "in_searching",
@@ -505,7 +505,7 @@
   {
     "id": 33,
     "work_title": "Speak Now",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "speak_now",
@@ -523,7 +523,7 @@
   {
     "id": 34,
     "work_title": "This Isn't Funny",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "this_isn't_funny",
@@ -541,7 +541,7 @@
   {
     "id": 35,
     "work_title": "Welcome Home",
-    "type": "",
+    "type": "video",
     "format": "feature film",
     "categories": "film scoring",
     "gallery_image_filename": "welcome_home",
@@ -559,7 +559,7 @@
   {
     "id": 37,
     "work_title": "Get Your Line In And Pray",
-    "type": "",
+    "type": "video",
     "format": "short film",
     "categories": "film scoring",
     "gallery_image_filename": "get_your_line_in_and_pray",
@@ -577,7 +577,7 @@
   {
     "id": 38,
     "work_title": "All In All Gym",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "all_in_all_gym",
@@ -593,7 +593,7 @@
   {
     "id": 39,
     "work_title": "Best Roommate Ever",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "best_roommate_ever",
@@ -609,7 +609,7 @@
   {
     "id": 40,
     "work_title": "Let's Target",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "let's_target",
@@ -625,7 +625,7 @@
   {
     "id": 41,
     "work_title": "Level Up (theme song)",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "level_up_(theme_song)",
@@ -641,7 +641,7 @@
   {
     "id": 42,
     "work_title": "Level Up (trailer)",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "level_up_(trailer)",
@@ -657,7 +657,7 @@
   {
     "id": 43,
     "work_title": "Ultimate Home Championship",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "ultimate_home_championship",
@@ -673,7 +673,7 @@
   {
     "id": 44,
     "work_title": "Wherever",
-    "type": "",
+    "type": "video",
     "format": "video",
     "categories": "branded",
     "gallery_image_filename": "wherever",
