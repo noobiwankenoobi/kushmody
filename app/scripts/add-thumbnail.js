@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Read the JSON file
-const dataPath = join(__dirname, '..', 'data', 'music-items.json');
+const dataPath = join(__dirname, '..', 'data', 'visual-items.json');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 // Add _thumbnail to gallery_image_filename and set it to gallery_image_url_thumbnail

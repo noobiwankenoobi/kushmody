@@ -15,8 +15,8 @@ const visualOrMusic = route.path.includes('/music') ? 'music' : 'visual'
 const imgSrc = ref('')
 if (props?.item?.img_url) {
   imgSrc.value = props.item.img_url
-} else if (props?.item?.work_title) {
-  imgSrc.value =`/images/${visualOrMusic}/thumbnails/${props?.item?.work_title}.webp`
+} else if (props?.item?.gallery_image_url_thumbnail) {
+  imgSrc.value =`/images/${visualOrMusic}/thumbnails/${props?.item?.gallery_image_url_thumbnail}.webp`
 }
 
 </script>
@@ -27,8 +27,8 @@ if (props?.item?.img_url) {
     @click="$emit('click')">
       <div
         v-if="item.type === 'video'"
-        class="absolute top-1/2 left-1/2 z-200 transform -translate-x-1/2 -translate-y-1/2">
-        <IconsPlay :width="48" :height="48" custom-class="text-kushmint opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
+        class="absolute top-1/2 left-1/2 z-2 transform -translate-x-1/2 -translate-y-1/2">
+        <IconsPlay :width="48" :height="48" custom-class="text-kushmint opacity-50 group-hover:opacity-100    group-hover:scale-[2] transition-all duration-1000" />
       </div>
       <img :src="imgSrc" :alt="item.work_title" class="w-full object-contain">
 
@@ -39,3 +39,4 @@ if (props?.item?.img_url) {
 
 <!-- EXAMPLE URLS -->
 <!-- "img_url": "https://img.youtube.com/vi/ {VIDEO ID} /hqdefault.jpg", -->
+
