@@ -16,10 +16,10 @@
           <div :class="[
             'flex flex-row items-center justify-between w-full px-80 py-2 transition-opacity duration-1000',
             showTopBar ? 'opacity-100' : 'opacity-0']">
-            <div class=" font-medium text-sm justify-start z-100 tracking-wide ml-20 cursor-pointer">
+            <div class=" font-medium sm:text-xs md:text-sm justify-start z-100 tracking-wide ml-20 cursor-pointer">
               [ CLICK THE EAR FOR MUSIC WORK ]
             </div>
-            <div class=" font-medium text-sm  justify-end z-100 tracking-wide">
+            <div class=" font-medium sm:text-sm md:text-sm justify-end z-100 tracking-wide">
               [ CLICK THE EYE FOR VISUAL WORK ]
             </div>
           </div>
@@ -27,7 +27,7 @@
 
           <!-- MAIN HEADER -->
           <!-- Kush Mody Logo -->
-          <div class="flex flex-row items-center justify-center z-10 h-3/20">
+          <div class="flex flex-row items-center justify-center z-10 h-4/40 mt-14">
             <!-- sizing container for the "kush mody" logo image with relative position -->
             <div class="w-4/10 relative">
               <!-- LOGO IMG -->
@@ -67,37 +67,37 @@
 
             <!-- PRODUCER -->
             <span
-              class="flex flex-row items-center justify-center font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1  mx-1 lg:mx-2 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="earHover ? 'text-kushred' : 'text-gray-900'"
               @click="routeToMusicPage({ category: 'production' })">PRODUCER</span>
 
             <span
-              class="flex flex-row items-center justify-center text-gray-900 font-bold text-lg mt-1 mx-2 tracking-widest transition-colors duration-200 "
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-md mt-1 mx-1 lg:mx-2 tracking-wider transition-colors duration-200 "
               :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- MIXER -->
             <span
-              class="flex flex-row items-center justify-center font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="earHover ? 'text-kushred' : 'text-gray-900'"
               @click="routeToMusicPage({ category: 'mixing' })">MIXER</span>
 
             <span
-              class="flex flex-row items-center justify-center text-gray-900 font-bold text-lg mt-1 mx-2 tracking-widest transition-colors duration-200"
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-md mt-1 mx-1 lg:mx-2 tracking-wider transition-colors duration-200"
               :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- COMPOSER -->
             <span
-              class="flex flex-row items-center justify-center  font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center  font-bold text-md mt-1 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="earHover ? 'text-kushred' : 'text-gray-900'"
               @click="routeToMusicPage({ category: 'film scoring' })">COMPOSER</span>
 
             <span
-              class="flex flex-row items-center justify-center text-gray-900 font-bold text-lg mt-1 mx-2 tracking-widest transition-colors duration-200"
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-md mt-1 mx-1 lg:mx-2 tracking-widest transition-colors duration-200"
               :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- VISUAL ARTIST -->
             <span
-              class="flex flex-row items-center justify-center  font-bold text-lg mt-1 tracking-widest transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="eyeHover ? 'text-kushred' : 'text-gray-900'" @click="routeToVisualPage()">VISUAL ARTIST</span>
 
           </div>
@@ -120,7 +120,7 @@ const onImageLoad = () => {
   imageLoaded.value = true
   setTimeout(() => {
     showHero.value = true
-  }, 500)
+  }, 200)
 }
 
 
