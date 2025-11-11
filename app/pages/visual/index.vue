@@ -1,6 +1,6 @@
 <template>
   <div>
-  <NavNavbar :page="page"  class="top-0 w-full z-50" />
+  <NavMain :page="page"  class="top-0 w-full z-50" />
   <AppLayout>
     <!-- Page-specific content here -->
 

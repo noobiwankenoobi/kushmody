@@ -3,10 +3,10 @@
    <nav class="min-h-24 border-b-gray-300 border-2">
 
     <div v-if="page === 'music'">
-      <NavMusicMainNav />
+      <NavMainMusic />
     </div>
     <div v-else-if="page === 'visual'">
-      <NavVisualMainNav />
+      <NavMainVisual />
     </div>
 
     <div v-else>Default Navbar</div>

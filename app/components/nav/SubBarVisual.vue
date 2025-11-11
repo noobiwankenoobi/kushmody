@@ -38,7 +38,7 @@ function handleClick(item) {
     <!-- loop through sub nav items -->
     <ul v-for="item in subNavItems" :key="item.name" class="list-none">
       <!-- handle the emit -->
-      <NavSubNavItem 
+      <NavSubItem 
       :item="item" 
       @handle-click="handleClick(item)" 
       :isSelected="item.data == selectedCategory"  />
