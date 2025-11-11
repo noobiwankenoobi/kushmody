@@ -18,7 +18,7 @@
   {
     "id": 2,
     "work_title": "Fine Si Dolce",
-    "type": "",
+    "type": "music",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "fine_si_dolce",
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "work_title": "On One",
-    "type": "",
+    "type": "music",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "on_one",
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "work_title": "Classics",
-    "type": "",
+    "type": "music",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "classics",
@@ -66,7 +66,7 @@
   {
     "id": 5,
     "work_title": "Quixote",
-    "type": "",
+    "type": "music",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "quixote",
@@ -82,7 +82,7 @@
   {
     "id": 6,
     "work_title": "Give Me All Your Money",
-    "type": "",
+    "type": "music",
     "format": "ep",
     "categories": "production, mixing",
     "gallery_image_filename": "give_me_all_your_money",

@@ -19,23 +19,27 @@ function handleSquareClick(item) {
   if (!item) return
 
   // const category = route.query.category
-  const category = galleryCategory.value
+  const category = galleryCategory?.value
+
+  console.log("handleSquareClick running: galleryCategory is:: ", galleryCategory?.value)
   
   if (!category || category === '' || category === null || category === undefined) {
     selectedItem.value = item
-    router.push({ query: { id: item.work_title } }) // stays on page, updates URL
+    router.push({ query: { id: item?.gallery_image_url_thumbnail } }) // stays on page, updates URL
+     console.log("handleSquareClick running: no category, just pushing id of item: ", item)
     return
   }
 
   selectedItem.value = item
-  router.push({ query: { category: category, id: item.work_title } }) // stays on page, updates URL
+  router.push({ query: { category: category, id: item?.gallery_image_url_thumbnail } }) // stays on page, updates URL
+  console.log("handleSquareClick running: category found, just pushing id of item ", item)
 }
 
 // close modal
 function closeModal() {
   selectedItem.value = null
   if (route.query.category) {
-    router.push({ query: { category: route.query.category } }) // remove id from URL
+    router.push({ query: { category: route.query?.category } }) // remove id from URL
     return
   }
   router.push({ query: {} }) // remove id from URL
@@ -55,14 +59,15 @@ const isMusicGrid = computed(() => {
 
 // Watch for changes in visibleGalleryItems and trigger animation
 watch(() => visibleGalleryItems.value, async () => {
-  console.log('GRID WATCHER: visibleGalleryItems changed: ', visibleGalleryItems.value)
-  console.log('Number of visible items: ', visibleGalleryItems.value.length)
-  console.log('Triggering animation...')
   triggerAnimation.value = false
   await nextTick()
   triggerAnimation.value = true
 
 }, { immediate: false })
+
+watch(() => selectedItem, (newVal, _) => {
+  console.log('selectedItem changed: ', newVal, _)
+}, { immediate: true })
 
 </script>
 
@@ -110,15 +115,17 @@ watch(() => visibleGalleryItems.value, async () => {
 
   <!-- MODALS -->
     <MediaAudioPlayerModal
-    v-if="selectedItem && !selectedItem.type == 'image'"
+    v-if="selectedItem"
     :item="selectedItem"
     @close="closeModal"
   />
     <MediaImageViewerModal
-    v-else-if="selectedItem && selectedItem.type == 'image'"
+    v-else-if="selectedItem && selectedItem?.type == 'image'"
     :item="selectedItem"
     @close="closeModal"
   />
+
+  
 </template>
 
 <style scoped>

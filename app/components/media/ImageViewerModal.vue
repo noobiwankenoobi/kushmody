@@ -52,8 +52,8 @@ const props = defineProps({
 function determineImgSrc() {
   if (props?.item?.img_url) {
     return props.item.img_url
-  } else if (props?.item?.work_title) {
-    return `/images/visual/${props?.item?.work_title}.webp`
+  } else if (props?.item?.gallery_image_url_thumbnail) {
+    return `/images/visual/${props?.item?.gallery_image_url_thumbnail}.webp`
   }
   return ''
 }

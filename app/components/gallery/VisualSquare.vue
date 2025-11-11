@@ -12,11 +12,11 @@ defineEmits(["click"])
 const route = useRoute()
 const visualOrMusic = route.path.includes('/music') ? 'music' : 'visual'
 
-const imgSrc = ref('')
-if (props?.item?.img_url) {
-  imgSrc.value = props.item.img_url
-} else if (props?.item?.gallery_image_url_thumbnail) {
-  imgSrc.value =`/images/${visualOrMusic}/thumbnails/${props?.item?.gallery_image_url_thumbnail}.webp`
+function getImageSrc(item) {
+   if (item?.gallery_image_url_thumbnail) {
+    return `/images/${visualOrMusic}/thumbnails/${item?.gallery_image_url_thumbnail}.webp`
+  }
+  return ''
 }
 
 </script>
@@ -28,9 +28,9 @@ if (props?.item?.img_url) {
       <div
         v-if="item.type === 'video'"
         class="absolute top-1/2 left-1/2 z-2 transform -translate-x-1/2 -translate-y-1/2">
-        <IconsPlay :width="48" :height="48" custom-class="text-kushmint opacity-50 group-hover:opacity-100    group-hover:scale-[2] transition-all duration-1000" />
+        <IconsPlay :width="48" :height="48" custom-class="text-kushmint opacity-50 group-hover:opacity-100 group-hover:scale-[2] transition-all duration-1000" />
       </div>
-      <img :src="imgSrc" :alt="item.work_title" class="w-full object-contain">
+      <img :src="getImageSrc(item)" :alt="item.work_title" class="w-full object-contain">
 
 
       

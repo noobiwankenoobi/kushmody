@@ -129,6 +129,12 @@ watch(() => youtubeSrc.value, (newVal, _) => {
 
 }, { immediate: true})
 
+watch(()=> props.item, (newVal, _) => {
+  console.log('item prop changed: ', newVal, _)
+  // set loading to true when item changes
+
+}, { immediate: true })
+
 </script>
 
 <!-- EXAMPLES -->

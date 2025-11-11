@@ -12,9 +12,7 @@ const route = useRoute()
 const visualOrMusic = route.path.includes('/music') ? 'music' : 'visual'
 
 const imgSrc = ref('')
-if (props?.item?.img_url) {
-  imgSrc.value = props.item.img_url
-} else if (props?.item?.work_title) {
+ if (props?.item?.gallery_image_url_thumbnail) {
   imgSrc.value =`/images/${visualOrMusic}/thumbnails/${props?.item?.gallery_image_url_thumbnail}.webp`
 }
 
