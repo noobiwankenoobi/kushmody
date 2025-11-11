@@ -1,14 +1,14 @@
 <template>
   <div>
-  <NavMain :page="page"  class="top-0 w-full z-50" />
-  <AppLayout>
-    <!-- Page-specific content here -->
+    <NavMain :page="page" class="top-0 w-full z-50" />
+    <AppLayout>
+      <!-- Page-specific content here -->
 
-    <div>
-      <GalleryMain/>
-    </div>
+      <div>
+        <GalleryMain />
+      </div>
 
-  </AppLayout>
+    </AppLayout>
   </div>
 </template>
 
@@ -23,6 +23,4 @@ page.value = path === "/" ? "home" : path.includes("/music") ? "music" : path.in
 
 </script>
 
-<style>
-
-</style>
+<style></style>
