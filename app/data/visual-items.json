@@ -5,6 +5,9 @@
     "type": "video",
     "format": "youtube",
     "categories": "video",
+    "gallery_image_filename": "the_world_is_mine_(bts)",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/UAbH1oErrwQ/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=UAbH1oErrwQ",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -15,6 +18,9 @@
     "type": "video",
     "format": "youtube",
     "categories": "video",
+    "gallery_image_filename": "immigrants_(we_get_the_job_done)_bts",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/pWFLYqkvhMk/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=pWFLYqkvhMk",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/pWFLYqkvhMk?si=smJ0ys9q2nQj7lM0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -25,6 +31,10 @@
     "type": "video",
     "format": "vimeo",
     "categories": "video",
+    "gallery_image_filename": "exquisite_corpse_(bts)",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
     "youtube": "",
     "youtube_embed": "",
     "vimeo": "https://vimeo.com/manage/videos/249213444",
@@ -36,6 +46,9 @@
     "type": "video",
     "format": "youtube",
     "categories": "video",
+    "gallery_image_filename": "lithium",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/5H7A2-WLFCc/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=5H7A2-WLFCc",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5H7A2-WLFCc?si=VP7AAMfsyR0UbusK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
@@ -48,6 +61,10 @@
     "type": "video",
     "format": "vimeo",
     "categories": "video",
+    "gallery_image_filename": "plante_guitar_co",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
     "youtube": "",
     "youtube_embed": "",
     "vimeo": "https://vimeo.com/359182669",
@@ -59,6 +76,9 @@
     "type": "video",
     "format": "",
     "categories": "video",
+    "gallery_image_filename": "congratulatory_trinkets",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/x00I42ATvKo/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=x00I42ATvKo",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/x00I42ATvKo?si=4U28OV9EumEzfuqY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
@@ -71,6 +91,9 @@
     "type": "video",
     "format": "youtube",
     "categories": "video",
+    "gallery_image_filename": "wax_on_wax:_shit_i_used_to_do",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/GTaFYJt_oPI/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=GTaFYJt_oPI",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GTaFYJt_oPI?si=uQHezDzVlmP0Yoxg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
@@ -83,6 +106,10 @@
     "type": "video",
     "format": "vimeo",
     "categories": "video",
+    "gallery_image_filename": "socal_grill",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
     "youtube": "",
     "youtube_embed": "",
     "vimeo": "https://vimeo.com/1069434916/68b7260cd9?p=1t",
@@ -94,6 +121,9 @@
     "type": "video",
     "format": "",
     "categories": "video",
+    "gallery_image_filename": "apollo",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/lflpOfP9BgA/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=lflpOfP9BgA",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/lflpOfP9BgA?si=zkGUPtDBAKKDch0j\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
@@ -106,6 +136,9 @@
     "type": "video",
     "format": "youtube",
     "categories": "video",
+    "gallery_image_filename": "darren_fund",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/2kPX8i5HXzw/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=2kPX8i5HXzw",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2kPX8i5HXzw?si=ZeozFFvHl5r6ip2i\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
@@ -118,6 +151,9 @@
     "type": "video",
     "format": "youtube",
     "categories": "video",
+    "gallery_image_filename": "the_wheel",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
     "img_url": "https://img.youtube.com/vi/dtkbnOBx1aU/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=dtkbnOBx1aU",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dtkbnOBx1aU?si=nMYnzsSBIiT7pP7k\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
@@ -128,329 +164,611 @@
     "id": 110,
     "work_title": "Biirdvana_coverart",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "biirdvana_coverart",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 111,
     "work_title": "City On Vines",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "city_on_vines",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 112,
     "work_title": "eattherich",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "eattherich",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 113,
     "work_title": "Fall Tour 2022 flyer",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "fall_tour_2022_flyer",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 114,
     "work_title": "Fonda_3.23.18",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "fonda_3_23_18",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 115,
     "work_title": "FTB-OEAS_FRONT_COVER",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "ftb_oeas_front_cover",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 116,
     "work_title": "Give Me All Your Money_v4",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "give_me_all_your_money_v4",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 117,
     "work_title": "howwhy",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "howwhy",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 118,
     "work_title": "impossible aokay",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "impossible_aokay",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 119,
     "work_title": "Impossible Volcano",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "impossible_volcano",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1110,
     "work_title": "Kite antlers_no background",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "kite_antlers_no_background",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1111,
     "work_title": "LAA_frontcover_cmyk",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "laa_frontcover_cmyk",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1112,
     "work_title": "Lennon Shark",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "lennon_shark",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1113,
     "work_title": "make it now",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "make_it_now",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1114,
     "work_title": "No Wasted Food Here_15x21",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "no_wasted_food_here_15x21",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1115,
     "work_title": "patriarchy tattoo",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "patriarchy_tattoo",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1116,
     "work_title": "Penguin Wearing Boots",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "penguin_wearing_boots",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1117,
     "work_title": "Playing Card_white",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "playing_card_white",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1118,
     "work_title": "Sir Finn",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "sir_finn",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1119,
     "work_title": "Tao Cow",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "tao_cow",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1120,
     "work_title": "wake me up for the inflight meal - hat",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "wake_me_up_for_the_inflight_meal_hat",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1121,
     "work_title": "wake me up in flight meal",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "wake_me_up_in_flight_meal",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 1122,
     "work_title": "waxmode_not disposable",
     "type": "image",
+    "format": "",
     "categories": "art&design",
-    "img_url": ""
+    "gallery_image_filename": "waxmode_not_disposable",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 220,
     "work_title": "9B0A5334-2",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "9b0a5334_2",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 221,
     "work_title": "9B0A5343-2",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "9b0a5343_2",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 222,
     "work_title": "9B0A5500-2-2",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "9b0a5500_2_2",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 223,
     "work_title": "9B0A6853",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "9b0a6853",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 224,
     "work_title": "9B0A7870",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "9b0a7870",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 225,
     "work_title": "bookbalancer",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "bookbalancer",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 226,
     "work_title": "French Painter_crop",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "french_painter_crop",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 227,
     "work_title": "fruit fruit donut",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "fruit_fruit_donut",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 228,
     "work_title": "gaspump2",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "gaspump2",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 229,
     "work_title": "Hal_face stripe",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "hal_face_stripe",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2210,
     "work_title": "Hal_fire sticks",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "hal_fire_sticks",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2211,
     "work_title": "halloween2021_green",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "halloween2021_green",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2212,
     "work_title": "hannah tumble",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "hannah_tumble",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2213,
     "work_title": "marimba",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "marimba",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2214,
     "work_title": "packing peanuts",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "packing_peanuts",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2215,
     "work_title": "rooftop reader",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "rooftop_reader",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2216,
     "work_title": "sandwichlegs",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "sandwichlegs",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2217,
     "work_title": "sasha bike",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "sasha_bike",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2218,
     "work_title": "sasha house suitcase",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "sasha_house_suitcase",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2219,
     "work_title": "sasha_flowers-bw",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "sasha_flowers_bw",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2220,
     "work_title": "sticksmash",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "sticksmash",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2221,
     "work_title": "streetboat",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "streetboat",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2222,
     "work_title": "superman",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "superman",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   },
   {
     "id": 2223,
     "work_title": "tireswinglegs",
     "type": "image",
+    "format": "",
     "categories": "photography",
-    "img_url": ""
+    "gallery_image_filename": "tireswinglegs",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "",
+    "img_url": "",
+    "youtube": "",
+    "youtube_embed": ""
   }
 ]

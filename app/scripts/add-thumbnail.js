@@ -7,14 +7,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Read the JSON file
-const dataPath = join(__dirname, 'data', 'music-items.json');
+const dataPath = join(__dirname, '..', 'data', 'music-items.json');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
-// Lowercase categories and format values
+// Add _thumbnail to gallery_image_filename and set it to gallery_image_url_thumbnail
 const transformed = data.map(item => ({
   ...item,
-  categories: item.categories ? item.categories.toLowerCase() : item.categories,
-  format: item.format ? item.format.toLowerCase() : item.format
+  gallery_image_url_thumbnail: item.gallery_image_filename ? `${item.gallery_image_filename}_thumbnail` : ''
 }));
 
 // Write back to file
@@ -23,4 +22,4 @@ fs.writeFileSync(
   JSON.stringify(transformed, null, 2)
 );
 
-console.log('✅ Done! Lowercased all categories and format values.');
+console.log('✅ Done! Added _thumbnail suffix to all gallery_image_url_thumbnail values.');

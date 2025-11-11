@@ -15,7 +15,7 @@ const imgSrc = ref('')
 if (props?.item?.img_url) {
   imgSrc.value = props.item.img_url
 } else if (props?.item?.work_title) {
-  imgSrc.value =`/images/${visualOrMusic}/${props?.item?.work_title}.webp`
+  imgSrc.value =`/images/${visualOrMusic}/thumbnails/${props?.item?.gallery_image_url_thumbnail}.webp`
 }
 
 </script>
