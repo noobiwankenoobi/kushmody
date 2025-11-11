@@ -27,7 +27,7 @@ function handleClick() {
     <!--  -->
 
     <!-- Right Side -->
-    <div class="flex-shrink-0 w-22 p-2 flex items-center justify-end">
+    <div class="flex-shrink-0 w-18 p-0 flex items-center justify-end">
       <NuxtLink to="/music" class="text-gray-700 font-bold ">
         <img class="hover:scale-105 transition-all" src="/images/nav-elements/visual_page_ear_to_music_work.png" />
       </NuxtLink>

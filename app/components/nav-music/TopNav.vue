@@ -26,7 +26,7 @@ function handleClick() {
     <!--  -->
 
     <!-- Right Side -->
-    <div class="flex-shrink-0 w-28 p-2 flex items-center justify-end">
+    <div class="flex-shrink-0 w-18 p-0 flex items-center justify-end">
       <NuxtLink to="/visual" class="text-gray-700 font-bold">
         <img src="/images/nav-elements/music_page_eye_to_visual_work.png" />
       </NuxtLink>
