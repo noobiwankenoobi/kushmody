@@ -7,8 +7,9 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Path to the images directory
-const imagesDir = join(__dirname, '..', 'public', 'images', 'music');
+// Paths to the images directories
+const musicImagesDir = join(__dirname, '..', 'public', 'images', 'music');
+const visualImagesDir = join(__dirname, '..', 'public', 'images', 'visual');
 
 // Function to transform filename
 function createFilename(filename) {
@@ -27,31 +28,39 @@ function createFilename(filename) {
   return newName + ext;
 }
 
-// Read all files in the directory
-try {
-  const files = fs.readdirSync(imagesDir);
+// Function to process a directory
+function processDirectory(imagesDir, dirName) {
+  try {
+    const files = fs.readdirSync(imagesDir);
+    let renamedCount = 0;
 
-  let renamedCount = 0;
+    files.forEach(file => {
+      const oldPath = join(imagesDir, file);
+      const stats = fs.statSync(oldPath);
 
-  files.forEach(file => {
-    const oldPath = join(imagesDir, file);
-    const stats = fs.statSync(oldPath);
+      // Only process files (not directories)
+      if (stats.isFile()) {
+        const newFilename = createFilename(file);
+        const newPath = join(imagesDir, newFilename);
 
-    // Only process files (not directories)
-    if (stats.isFile()) {
-      const newFilename = createFilename(file);
-      const newPath = join(imagesDir, newFilename);
-
-      // Only rename if the name is different
-      if (file !== newFilename) {
-        fs.renameSync(oldPath, newPath);
-        console.log(`Renamed: ${file} → ${newFilename}`);
-        renamedCount++;
+        // Only rename if the name is different
+        if (file !== newFilename) {
+          fs.renameSync(oldPath, newPath);
+          console.log(`[${dirName}] Renamed: ${file} → ${newFilename}`);
+          renamedCount++;
+        }
       }
-    }
-  });
+    });
 
-  console.log(`\n✅ Done! Renamed ${renamedCount} file(s).`);
-} catch (error) {
-  console.error('Error:', error.message);
+    console.log(`✅ [${dirName}] Done! Renamed ${renamedCount} file(s).\n`);
+  } catch (error) {
+    console.error(`Error in ${dirName}:`, error.message);
+  }
 }
+
+// Process both directories
+console.log('Processing music images...\n');
+processDirectory(musicImagesDir, 'music');
+
+console.log('Processing visual images...\n');
+processDirectory(visualImagesDir, 'visual');
