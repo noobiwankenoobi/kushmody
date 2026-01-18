@@ -27,3 +27,18 @@ body {
   background-color: #EDF3F5;
   /* Light gray background */
 }
+
+/* Prevent horizontal scroll on mobile */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Ensure modals are properly sized on mobile */
+@media (max-width: 768px) {
+
+  .disco-embed,
+  iframe {
+    max-width: 100%;
+  }
+}

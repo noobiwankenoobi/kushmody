@@ -35,16 +35,34 @@ function handleClick(item) {
 
 <template>
 
-  <div class="flex justify-evenly items-center py-2 px-52">
+  <div class="flex justify-evenly items-center py-2 px-4 md:px-52">
 
-    <!-- loop through sub nav items -->
-    <ul v-for="item in subNavItems" :key="item.name" class="list-none">
-      <!-- handle the emit -->
-      <NavSubItem 
-        :item="item"
-        :isSelected="item.data == selectedCategory" 
-        @handleClick="handleClick(item)" />
-    </ul>
+    <!-- Desktop: Show all categories in a row -->
+    <div class="hidden md:flex justify-evenly items-center w-full">
+      <ul v-for="item in subNavItems" :key="item.name" class="list-none">
+        <NavSubItem 
+          :item="item"
+          :isSelected="item.data == selectedCategory" 
+          @handleClick="handleClick(item)" />
+      </ul>
+    </div>
+
+    <!-- Mobile: Show categories with underline -->
+    <div class="md:hidden flex flex-wrap gap-3 justify-center w-full">
+      <button 
+        v-for="item in subNavItems" 
+        :key="item.name"
+        @click="handleClick(item)"
+        :class="[
+          'px-2 py-1 text-xs font-bold transition-all border-b-2',
+          item.data == selectedCategory 
+            ? 'border-kushred text-kushred' 
+            : 'border-transparent text-gray-700 hover:text-kushred hover:border-gray-300'
+        ]"
+      >
+        {{ item.name }}
+      </button>
+    </div>
 
   </div>
 

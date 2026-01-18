@@ -82,7 +82,7 @@ watch(() => selectedItem, (newVal, _) => {
 <template>
   <!-- Grid container: Music -->
   <template v-if="isMusicGrid">
-    <div class="gallery-grid grid grid-cols-4 gap-x-16 gap-y-12 justify-center mx-auto max-w-5xl">
+    <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6 md:gap-x-16 md:gap-y-12 justify-center mx-auto max-w-5xl px-4 md:px-0">
 
       <!-- GALLERY SQUARE LOOP -->
       <GalleryMusicSquare v-for="(item, idx) in visibleGalleryItems" :key="item.id" :item="item"
@@ -96,7 +96,7 @@ watch(() => selectedItem, (newVal, _) => {
 
   <template v-if="isVisualGrid">
     <!-- Grid container: Visual Art -->
-    <div class="columns-4 gap-x-16 mt-8 mx-auto max-w-5xl">
+    <div class="columns-2 md:columns-3 lg:columns-4 gap-x-4 md:gap-x-16 mt-8 mx-auto max-w-5xl px-4 md:px-0">
 
       <!-- GALLERY VISUAL SQUARE LOOP -->
       <GalleryVisualSquare v-for="(item, idx) in visibleGalleryItems" :key="item.id" :item="item"

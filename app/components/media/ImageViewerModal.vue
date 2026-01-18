@@ -1,16 +1,16 @@
 <template>
   <!-- Modal All -->
-  <div class="fixed inset-0 flex items-center justify-center z-50 w-screen overflow-y-auto">
+  <div class="fixed inset-0 flex items-center justify-center z-50 w-screen overflow-y-auto p-4">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gray-500/70 cursor-pointer" @click="$emit('close')" />
 
     <!--+-------------+-->
     <!-- Modal Content -->
     <!--+-------------+-->
-    <div class="bg-white p-6 shadow-sm relative">
+    <div class="bg-white p-4 md:p-6 shadow-sm relative max-w-full max-h-[90vh]">
 
       <!-- Close Button -->
-      <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer" @click="$emit('close')">✕
+      <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer z-10" @click="$emit('close')">✕
       </button>
 
       <!-- Custom Loading Spinner -->
@@ -23,7 +23,7 @@
 
       <!-- Full Size Image -->
       <img v-if="item && item?.gallery_image_url_thumbnail" :src="determineImgSrc()"
-        :alt="item.gallery_image_url_thumbnail || 'Image'" class="max-w-full h-[80vh] object-contain rounded"
+        :alt="item.gallery_image_url_thumbnail || 'Image'" class="max-w-full max-h-[80vh] w-auto h-auto object-contain rounded"
         @load="onImageLoad" />
 
 

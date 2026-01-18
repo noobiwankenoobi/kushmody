@@ -1,20 +1,20 @@
 <template>
   <!-- Modal All -->
-  <div class="fixed inset-0 flex items-center justify-center z-50 w-screen overflow-y-auto">
+  <div class="fixed inset-0 flex items-center justify-center z-50 w-screen overflow-y-auto p-4">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gray-500/70 cursor-pointer" @click="$emit('close')" />
 
     <!--+-------------+-->
     <!-- Modal Content -->
     <!--+-------------+-->
-    <div class="bg-white p-6 shadow-sm relative">
+    <div class="bg-white p-4 md:p-6 shadow-sm relative max-w-full min-w-[280px] md:min-w-[480px]">
 
       <!-- Close Button -->
-      <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer" @click="$emit('close')">✕
+      <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer z-10" @click="$emit('close')">✕
       </button>
 
       <!-- Custom Loading Spinner -->
-      <div v-if="playerIsLoading" class="flex items-center justify-center h-[395px] w-[480px]">
+      <div v-if="playerIsLoading" class="flex items-center justify-center h-[280px] md:h-[395px] w-full">
         <div class="relative w-12 h-12">
           <div
             class="absolute inset-0 rounded-full border-4 border-t-kushmint border-b-gray-300 border-l-gray-300 border-r-gray-300 animate-spin">
@@ -29,14 +29,14 @@
       <!-- Conditional rendering based on item type -->
 
       <!-- Disco Audio Player Iframe -->
-      <iframe v-if="item.disco_embed" :src="discoSrc" width="480" height="395" frameborder="0" allowfullscreen
-        class="disco-embed" @load="onIframeLoad" style="display: block;" v-show="!playerIsLoading"></iframe>
+      <iframe v-if="item.disco_embed" :src="discoSrc" class="disco-embed w-full h-[280px] md:h-[395px]" frameborder="0" allowfullscreen
+        @load="onIframeLoad" style="display: block;" v-show="!playerIsLoading"></iframe>
 
       <!-- Youtube Embed -->
-      <iframe v-if="item.youtube_embed" width="560" height="315" :src="youtubeSrc" title="YouTube video player"
+      <iframe v-if="item.youtube_embed" :src="youtubeSrc" title="YouTube video player"
         frameborder="0" @load="onIframeLoad"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen class="rounded shadow" v-show="!playerIsLoading"></iframe>
+        allowfullscreen class="rounded shadow w-full h-[220px] md:h-[315px]" v-show="!playerIsLoading"></iframe>
 
       <!-- Vimeo Embed -->
 

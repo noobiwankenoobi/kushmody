@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-kushoffwhite mt-[60px]">
+  <div class="min-h-screen bg-kushoffwhite mt-[40px] md:mt-[60px]">
     <GalleryGrid />
   </div>
 </template>
