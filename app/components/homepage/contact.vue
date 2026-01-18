@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 md:py-12 px-4 md:px-8">
+  <div id="contact-section" class="py-8 md:py-12 px-4 md:px-8">
 
     <!-- FULL WIDTH SECTION -->
   <div class="flex flex-col md:flex-row items-start justify-center py-4 w-full gap-4 md:gap-0">

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="w-full bg-kushoffwhite py-4 flex flex-col justify-center px-4 md:px-8">
+  <div class="w-full bg-kushoffwhite py-2 md:py-4 flex flex-col justify-center px-4 md:px-8">
 
     <!-- Fade in transition wrapper -->
     <transition name="fade" mode="out-in">
@@ -10,13 +10,13 @@
         <!-- ------------------------ -->
 
         <!-- FULL WIDTH SECTION with illustration on left and text on right -->
-        <div class="flex flex-col md:flex-row items-start justify-center py-4 w-full gap-4 md:gap-0">
+        <div class="flex flex-col md:flex-row items-start justify-center py-2 md:py-4 w-full gap-4 md:gap-0">
 
           <!-- LEFT OF DIVIDER SECTION -->
           <div class="w-full md:w-4/10 flex flex-col md:flex-row items-center md:items-stretch">
 
             <!-- Illustration in left divider -->
-            <div class="flex items-center justify-center p-4 md:p-4 lg:p-12">
+            <div class="flex items-center justify-center p-2 md:p-4 lg:p-12">
               <img src="/images/homepage/illustrations/homepage_sheet_music_drawing.png" alt="Particulars Illustration"
                 class="object-contain w-24 md:w-32 lg:w-2xl h-24 md:h-32 lg:h-2xl" />
             </div>
@@ -92,7 +92,7 @@
 
             <!-- NOTABLES SECTION -->
             <div class="flex flex-col justify-center w-full md:w-1/2">
-              <ul class="flex flex-col md:flex-row w-full gap-4 md:gap-8 mt-4 md:mt-18">
+              <ul class="flex flex-row w-full gap-4 md:gap-8 mt-4 md:mt-18">
                 <!-- Left List -->
                 <ul class="flex-1 text-sm md:text-base lg:text-lg text-gray-700 font-bold space-y-1 list-none text-left">
                   <li>Anderson .Paak</li>
