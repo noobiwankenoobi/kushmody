@@ -38,24 +38,24 @@
               <div class="absolute -top-2 md:-top-4 left-18/80 w-6/50 h-30/20 z-300 cursor-pointer" @click="routeToMusicPage"
                 @mouseenter="earHover = true" @mouseleave="earHover = false">
                 <!-- EAR -->
-                <img v-show="earHover" src="/images/homepage-logo/red_ear.png"
+                <img v-show="showRedEar" src="/images/homepage-logo/red_ear.png"
                   class="text-black h-full transition-opacity duration-500 scale-105"
-                  :class="earHover ? 'opacity-100' : 'opacity-0'" />
-                <img v-show="!earHover" src="/images/homepage-logo/ear_black.png"
+                  :class="showRedEar ? 'opacity-100' : 'opacity-0'" />
+                <img v-show="!showRedEar" src="/images/homepage-logo/ear_black.png"
                   class="text-black h-full transition-opacity duration-500"
-                  :class="earHover ? 'opacity-0' : 'opacity-100'" />
+                  :class="showRedEar ? 'opacity-0' : 'opacity-100'" />
               </div>
 
               <!-- EYE CLICK AREA -->
               <div class="absolute -top-3 md:-top-5 right-16/80 w-8/50 z-300 cursor-pointer" @click="routeToVisualPage"
                 @mouseenter="eyeHover = true" @mouseleave="eyeHover = false">
                 <!-- EYE -->
-                <img v-show="eyeHover" src="/images/homepage-logo/red_eye.png"
+                <img v-show="showRedEye" src="/images/homepage-logo/red_eye.png"
                   class="text-black h-full transition-opacity duration-700 scale-105"
-                  :class="eyeHover ? 'opacity-100' : 'opacity-0'" />
-                <img v-show="!eyeHover" src="/images/homepage-logo/eye_black.png"
+                  :class="showRedEye ? 'opacity-100' : 'opacity-0'" />
+                <img v-show="!showRedEye" src="/images/homepage-logo/eye_black.png"
                   class="text-black h-full transition-opacity duration-700"
-                  :class="eyeHover ? 'opacity-0' : 'opacity-100'" />
+                  :class="showRedEye ? 'opacity-0' : 'opacity-100'" />
 
               </div>
             </div>
@@ -68,37 +68,46 @@
             <!-- PRODUCER -->
             <span
               class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
-              :class="earHover ? 'text-kushred' : 'text-gray-900'"
+              :class="earHover || producerHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="producerHover = true"
+              @mouseleave="producerHover = false"
               @click="routeToMusicPage({ category: 'production' })">PRODUCER</span>
 
             <span
               class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200"
-              :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              :class="showRedEar ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- MIXER -->
             <span
               class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
-              :class="earHover ? 'text-kushred' : 'text-gray-900'"
+              :class="earHover || mixerHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="mixerHover = true"
+              @mouseleave="mixerHover = false"
               @click="routeToMusicPage({ category: 'mixing' })">MIXER</span>
 
             <span
               class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200"
-              :class="earHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              :class="showRedEar ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- COMPOSER -->
             <span
               class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
-              :class="earHover ? 'text-kushred' : 'text-gray-900'"
+              :class="earHover || composerHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="composerHover = true"
+              @mouseleave="composerHover = false"
               @click="routeToMusicPage({ category: 'film scoring' })">COMPOSER</span>
 
             <span
               class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-widest transition-colors duration-200"
-              :class="eyeHover ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+              :class="showRedEye ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- VISUAL ARTIST -->
             <span
               class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
-              :class="eyeHover ? 'text-kushred' : 'text-gray-900'" @click="routeToVisualPage()">VISUAL ARTIST</span>
+              :class="eyeHover || visualArtistHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="visualArtistHover = true"
+              @mouseleave="visualArtistHover = false"
+              @click="routeToVisualPage()">VISUAL ARTIST</span>
 
           </div>
           <!-- END: SUB HEADER -->
@@ -147,6 +156,16 @@ const routeToVisualPage = (query) => {
 // Hover states for ear and eye
 const earHover = ref(false)
 const eyeHover = ref(false)
+
+// Hover states for individual submenu items
+const producerHover = ref(false)
+const mixerHover = ref(false)
+const composerHover = ref(false)
+const visualArtistHover = ref(false)
+
+// Computed properties to show red ear/eye when either the logo or submenu items are hovered
+const showRedEar = computed(() => earHover.value || producerHover.value || mixerHover.value || composerHover.value)
+const showRedEye = computed(() => eyeHover.value || visualArtistHover.value)
 
 //+--------------------+
 //|     ANIMATION      |
