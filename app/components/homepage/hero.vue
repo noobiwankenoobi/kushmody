@@ -14,12 +14,12 @@
 
           <!-- TOP BAR -->
           <div :class="[
-            'hidden md:flex flex-row items-center justify-between w-full px-8 lg:px-80 py-2 transition-opacity duration-1000',
+            'hidden md:flex flex-row items-center justify-between w-full px-8 lg:px-16 xl:px-32 2xl:px-48 py-2 transition-opacity duration-1000',
             showTopBar ? 'opacity-100' : 'opacity-0']">
-            <div class="font-medium text-xs lg:text-sm justify-start z-100 tracking-wide lg:ml-20 cursor-pointer">
+            <div class="font-medium text-xs md:text-md justify-start z-100 tracking-wide cursor-pointer">
               [ CLICK THE EAR FOR MUSIC WORK ]
             </div>
-            <div class="font-medium text-xs lg:text-sm justify-end z-100 tracking-wide">
+            <div class="font-medium text-xs md:text-md justify-end z-100 tracking-wide">
               [ CLICK THE EYE FOR VISUAL WORK ]
             </div>
           </div>
@@ -27,7 +27,7 @@
 
           <!-- MAIN HEADER -->
           <!-- Kush Mody Logo -->
-          <div class="flex flex-row items-center justify-center z-10 h-4/40 mt-8 md:mt-14 px-4">
+          <div class="flex flex-row items-center justify-center z-10 h-4/40 mt-8 md:mt-[4vh] lg:mt-[6vh] xl:mt-[7vh] 2xl:mt-[8vh] px-4">
             <!-- sizing container for the "kush mody" logo image with relative position -->
             <div class="w-full md:w-4/10 relative max-w-md md:max-w-none">
               <!-- LOGO IMG -->
@@ -63,7 +63,7 @@
           <!-- END: MAIN HEADER -->
 
           <!-- SUB HEADER -->
-          <div class="flex flex-row flex-wrap items-center justify-center z-10 px-2 gap-x-1 gap-y-0 sm:gap-1 mt-4 md:mt-2">
+          <div class="flex flex-row flex-wrap items-center justify-center z-10 px-2 gap-x-1 gap-y-0 sm:gap-1 mt-4 md:mt-0 lg:mt-2 xl:mt-3 2xl:mt-4">
 
             <!-- PRODUCER -->
             <span
