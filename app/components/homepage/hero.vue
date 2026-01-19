@@ -22,11 +22,11 @@
                 @mouseenter="earHover = true" @mouseleave="earHover = false">
                 <!-- EAR -->
                 <img v-show="showRedEar" src="/images/homepage-logo/red_ear.png"
-                  class="text-black h-full transition-opacity duration-500 scale-105"
-                  :class="showRedEar ? 'opacity-100' : 'opacity-0'" />
+                  class="text-black h-full transition-all duration-500 scale-105"
+                  :class="[showRedEar ? 'opacity-100' : 'opacity-0', isWiggling ? 'wiggle' : '']" />
                 <img v-show="!showRedEar" src="/images/homepage-logo/ear_black.png"
-                  class="text-black h-full transition-opacity duration-500"
-                  :class="showRedEar ? 'opacity-0' : 'opacity-100'" />
+                  class="text-black h-full transition-all duration-500"
+                  :class="[showRedEar ? 'opacity-0' : 'opacity-100', isWiggling ? 'wiggle' : '']" />
               </div>
 
               <!-- EYE CLICK AREA -->
@@ -34,11 +34,11 @@
                 @mouseenter="eyeHover = true" @mouseleave="eyeHover = false">
                 <!-- EYE -->
                 <img v-show="showRedEye" src="/images/homepage-logo/red_eye.png"
-                  class="text-black h-full transition-opacity duration-700 scale-105"
-                  :class="showRedEye ? 'opacity-100' : 'opacity-0'" />
+                  class="text-black h-full transition-all duration-700 scale-105"
+                  :class="[showRedEye ? 'opacity-100' : 'opacity-0', isWinking ? 'wink' : '']" />
                 <img v-show="!showRedEye" src="/images/homepage-logo/eye_black.png"
-                  class="text-black h-full transition-opacity duration-700"
-                  :class="showRedEye ? 'opacity-0' : 'opacity-100'" />
+                  class="text-black h-full transition-all duration-700"
+                  :class="[showRedEye ? 'opacity-0' : 'opacity-100', isWinking ? 'wink' : '']" />
               </div>
             </div>
           </div>
@@ -138,11 +138,11 @@
                 @mouseenter="earHover = true" @mouseleave="earHover = false">
                 <!-- EAR -->
                 <img v-show="showRedEar" src="/images/homepage-logo/red_ear.png"
-                  class="text-black h-full transition-opacity duration-500 scale-105"
-                  :class="showRedEar ? 'opacity-100' : 'opacity-0'" />
+                  class="text-black h-full transition-all duration-500 scale-105"
+                  :class="[showRedEar ? 'opacity-100' : 'opacity-0', isWiggling ? 'wiggle' : '']" />
                 <img v-show="!showRedEar" src="/images/homepage-logo/ear_black.png"
-                  class="text-black h-full transition-opacity duration-500"
-                  :class="showRedEar ? 'opacity-0' : 'opacity-100'" />
+                  class="text-black h-full transition-all duration-500"
+                  :class="[showRedEar ? 'opacity-0' : 'opacity-100', isWiggling ? 'wiggle' : '']" />
               </div>
 
               <!-- EYE CLICK AREA -->
@@ -150,11 +150,11 @@
                 @mouseenter="eyeHover = true" @mouseleave="eyeHover = false">
                 <!-- EYE -->
                 <img v-show="showRedEye" src="/images/homepage-logo/red_eye.png"
-                  class="text-black h-full transition-opacity duration-700 scale-105"
-                  :class="showRedEye ? 'opacity-100' : 'opacity-0'" />
+                  class="text-black h-full transition-all duration-700 scale-105"
+                  :class="[showRedEye ? 'opacity-100' : 'opacity-0', isWinking ? 'wink' : '']" />
                 <img v-show="!showRedEye" src="/images/homepage-logo/eye_black.png"
-                  class="text-black h-full transition-opacity duration-700"
-                  :class="showRedEye ? 'opacity-0' : 'opacity-100'" />
+                  class="text-black h-full transition-all duration-700"
+                  :class="[showRedEye ? 'opacity-0' : 'opacity-100', isWinking ? 'wink' : '']" />
 
               </div>
             </div>
@@ -272,10 +272,46 @@ const showRedEye = computed(() => eyeHover.value || visualArtistHover.value)
 // Animate top bar to fade in after 5 seconds
 const showTopBar = ref(false)
 
+// Eye winking animation
+const isWinking = ref(false)
+
+// Ear wiggle animation
+const isWiggling = ref(false)
+
+const scheduleWink = () => {
+  // Random interval between 3.5 and 4.5 seconds
+  const randomInterval = 3500 + Math.random() * 1000
+  setTimeout(() => {
+    isWinking.value = true
+    setTimeout(() => {
+      isWinking.value = false
+      scheduleWink() // Schedule next wink
+    }, 300) // Wink duration
+  }, randomInterval)
+}
+
+const scheduleWiggle = () => {
+  // Random interval between 4 and 5 seconds
+  const randomInterval = 4000 + Math.random() * 1000
+  setTimeout(() => {
+    isWiggling.value = true
+    setTimeout(() => {
+      isWiggling.value = false
+      scheduleWiggle() // Schedule next wiggle
+    }, 500) // Wiggle duration
+  }, randomInterval)
+}
+
 onMounted(() => {
   setTimeout(() => {
     showTopBar.value = true
   }, 5000)
+
+  // Start winking with random intervals
+  scheduleWink()
+  
+  // Start wiggling with random intervals
+  scheduleWiggle()
 })
 
 
@@ -290,5 +326,31 @@ onMounted(() => {
 .fade-enter-from,
 .fade-leave-to {
   @apply opacity-0;
+}
+
+.wink {
+  animation: wink 0.3s ease-in-out;
+}
+
+@keyframes wink {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+.wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.15) translate(8%, -8%);
+  }
 }
 </style>
