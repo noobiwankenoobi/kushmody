@@ -1,20 +1,119 @@
 <template>
   <!-- relative container -->
   <div class="relative w-full h-full">
-    <!-- Background image -->
-    <img src="/images/hero.jpg" alt="My Photo" class="w-full h-full object-cover z-0 opacity-75" @load="onImageLoad">
+    <!-- Background image - hidden on mobile, shown on desktop -->
+    <img src="/images/hero.jpg" alt="My Photo" class="hidden md:block w-full h-full object-cover z-0 opacity-75" @load="onImageLoad">
 
+    <!-- Mobile offwhite section with logo and submenu -->
+    <div class="md:hidden bg-kushoffwhite w-full py-8 px-4">
+      <transition name="fade" mode="out-in" appear>
+        <div v-if="showHero" class="flex flex-col items-center">
+          <!-- MAIN HEADER -->
+          <!-- Kush Mody Logo -->
+          <div class="flex flex-row items-center justify-center z-10 w-full">
+            <!-- sizing container for the "kush mody" logo image with relative position -->
+            <div class="w-full relative max-w-md">
+              <!-- LOGO IMG -->
+              <img src="/images/homepage-logo/kushmody_header_no_ear_eye.png" alt="Kush Mody Header" class="w-full" />
+
+              <!-- 2 clickable overlays on the logo -->
+              <!-- EAR CLICK AREA -->
+              <div class="absolute -top-2 left-18/80 w-6/50 h-30/20 z-300 cursor-pointer" @click="routeToMusicPage"
+                @mouseenter="earHover = true" @mouseleave="earHover = false">
+                <!-- EAR -->
+                <img v-show="showRedEar" src="/images/homepage-logo/red_ear.png"
+                  class="text-black h-full transition-opacity duration-500 scale-105"
+                  :class="showRedEar ? 'opacity-100' : 'opacity-0'" />
+                <img v-show="!showRedEar" src="/images/homepage-logo/ear_black.png"
+                  class="text-black h-full transition-opacity duration-500"
+                  :class="showRedEar ? 'opacity-0' : 'opacity-100'" />
+              </div>
+
+              <!-- EYE CLICK AREA -->
+              <div class="absolute -top-3 right-16/80 w-8/50 z-300 cursor-pointer" @click="routeToVisualPage"
+                @mouseenter="eyeHover = true" @mouseleave="eyeHover = false">
+                <!-- EYE -->
+                <img v-show="showRedEye" src="/images/homepage-logo/red_eye.png"
+                  class="text-black h-full transition-opacity duration-700 scale-105"
+                  :class="showRedEye ? 'opacity-100' : 'opacity-0'" />
+                <img v-show="!showRedEye" src="/images/homepage-logo/eye_black.png"
+                  class="text-black h-full transition-opacity duration-700"
+                  :class="showRedEye ? 'opacity-0' : 'opacity-100'" />
+              </div>
+            </div>
+          </div>
+          <!-- END: MAIN HEADER -->
+
+          <!-- SUB HEADER -->
+          <div class="flex flex-row flex-nowrap items-center justify-center z-10 px-1 gap-x-0.5 mt-4">
+
+            <!-- PRODUCER -->
+            <span
+              class="flex flex-row items-center justify-center font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200 cursor-pointer hover:text-kushred"
+              :class="earHover || producerHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="producerHover = true"
+              @mouseleave="producerHover = false"
+              @click="routeToMusicPage({ category: 'production' })">PRODUCER</span>
+
+            <span
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200"
+              :class="showRedEar ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+
+            <!-- MIXER -->
+            <span
+              class="flex flex-row items-center justify-center font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200 cursor-pointer hover:text-kushred"
+              :class="earHover || mixerHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="mixerHover = true"
+              @mouseleave="mixerHover = false"
+              @click="routeToMusicPage({ category: 'mixing' })">MIXER</span>
+
+            <span
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200"
+              :class="showRedEar ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+
+            <!-- COMPOSER -->
+            <span
+              class="flex flex-row items-center justify-center font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200 cursor-pointer hover:text-kushred"
+              :class="earHover || composerHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="composerHover = true"
+              @mouseleave="composerHover = false"
+              @click="routeToMusicPage({ category: 'film scoring' })">COMPOSER</span>
+
+            <span
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200"
+              :class="showRedEye ? 'text-kushred' : 'text-gray-900'">&middot;</span>
+
+            <!-- VISUAL ARTIST -->
+            <span
+              class="flex flex-row items-center justify-center font-bold text-xs mt-1 mx-0.5 tracking-tight transition-colors duration-200 cursor-pointer hover:text-kushred"
+              :class="eyeHover || visualArtistHover ? 'text-kushred' : 'text-gray-900'"
+              @mouseenter="visualArtistHover = true"
+              @mouseleave="visualArtistHover = false"
+              @click="routeToVisualPage()">VISUAL ARTIST</span>
+
+          </div>
+          <!-- END: SUB HEADER -->
+        </div>
+      </transition>
+    </div>
+
+    <!-- Mobile: Show hero image below the offwhite section -->
+    <div class="md:hidden w-full h-full">
+      <img src="/images/hero.jpg" alt="My Photo" class="w-full h-full object-cover opacity-75">
+    </div>
+
+    <!-- Desktop overlay -->
     <!-- Start transition -->
     <transition name="fade" mode="out-in" appear>
       <!-- OVERLAY: full size absolute overlay div -- full width and height -->
-      <div v-if="showHero" class="absolute top-0 z-105 w-full h-full">
+      <div v-if="showHero" class="hidden md:block absolute top-0 z-105 w-full h-full">
 
         <!-- START: relative div inside overlay -->
         <div class="flex flex-col w-full h-full z-200">
 
           <!-- TOP BAR -->
           <div :class="[
-            'hidden md:flex flex-row items-center justify-between w-full px-8 lg:px-16 xl:px-32 2xl:px-48 py-2 transition-opacity duration-1000',
+            'flex flex-row items-center justify-between w-full px-8 lg:px-16 xl:px-32 2xl:px-48 py-2 transition-opacity duration-1000',
             showTopBar ? 'opacity-100' : 'opacity-0']">
             <div class="font-medium text-xs md:text-md justify-start z-100 tracking-wide cursor-pointer">
               [ CLICK THE EAR FOR MUSIC WORK ]
@@ -27,15 +126,15 @@
 
           <!-- MAIN HEADER -->
           <!-- Kush Mody Logo -->
-          <div class="flex flex-row items-center justify-center z-10 h-4/40 mt-8 md:mt-[4vh] lg:mt-[6vh] xl:mt-[7vh] 2xl:mt-[8vh] px-4">
+          <div class="flex flex-row items-center justify-center z-10 h-4/40 mt-[4vh] lg:mt-[6vh] xl:mt-[7vh] 2xl:mt-[8vh] px-4">
             <!-- sizing container for the "kush mody" logo image with relative position -->
-            <div class="w-full md:w-4/10 relative max-w-md md:max-w-none">
+            <div class="w-4/10 relative">
               <!-- LOGO IMG -->
               <img src="/images/homepage-logo/kushmody_header_no_ear_eye.png" alt="Kush Mody Header" class="w-full" />
 
               <!-- 2 clickable overlays on the logo -->
               <!-- EAR CLICK AREA -->
-              <div class="absolute -top-2 md:-top-4 left-18/80 w-6/50 h-30/20 z-300 cursor-pointer" @click="routeToMusicPage"
+              <div class="absolute -top-4 left-18/80 w-6/50 h-30/20 z-300 cursor-pointer" @click="routeToMusicPage"
                 @mouseenter="earHover = true" @mouseleave="earHover = false">
                 <!-- EAR -->
                 <img v-show="showRedEar" src="/images/homepage-logo/red_ear.png"
@@ -47,7 +146,7 @@
               </div>
 
               <!-- EYE CLICK AREA -->
-              <div class="absolute -top-3 md:-top-5 right-16/80 w-8/50 z-300 cursor-pointer" @click="routeToVisualPage"
+              <div class="absolute -top-5 right-16/80 w-8/50 z-300 cursor-pointer" @click="routeToVisualPage"
                 @mouseenter="eyeHover = true" @mouseleave="eyeHover = false">
                 <!-- EYE -->
                 <img v-show="showRedEye" src="/images/homepage-logo/red_eye.png"
@@ -63,47 +162,47 @@
           <!-- END: MAIN HEADER -->
 
           <!-- SUB HEADER -->
-          <div class="flex flex-row flex-wrap items-center justify-center z-10 px-2 gap-x-1 gap-y-0 sm:gap-1 mt-4 md:mt-0 lg:mt-2 xl:mt-3 2xl:mt-4">
+          <div class="flex flex-row flex-wrap items-center justify-center z-10 px-2 gap-1 mt-0 lg:mt-2 xl:mt-3 2xl:mt-4">
 
             <!-- PRODUCER -->
             <span
-              class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1 mx-2 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="earHover || producerHover ? 'text-kushred' : 'text-gray-900'"
               @mouseenter="producerHover = true"
               @mouseleave="producerHover = false"
               @click="routeToMusicPage({ category: 'production' })">PRODUCER</span>
 
             <span
-              class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200"
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-md mt-1 mx-2 tracking-wider transition-colors duration-200"
               :class="showRedEar ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- MIXER -->
             <span
-              class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1 mx-2 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="earHover || mixerHover ? 'text-kushred' : 'text-gray-900'"
               @mouseenter="mixerHover = true"
               @mouseleave="mixerHover = false"
               @click="routeToMusicPage({ category: 'mixing' })">MIXER</span>
 
             <span
-              class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200"
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-md mt-1 mx-2 tracking-wider transition-colors duration-200"
               :class="showRedEar ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- COMPOSER -->
             <span
-              class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1 mx-2 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="earHover || composerHover ? 'text-kushred' : 'text-gray-900'"
               @mouseenter="composerHover = true"
               @mouseleave="composerHover = false"
               @click="routeToMusicPage({ category: 'film scoring' })">COMPOSER</span>
 
             <span
-              class="flex flex-row items-center justify-center text-gray-900 font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-widest transition-colors duration-200"
+              class="flex flex-row items-center justify-center text-gray-900 font-bold text-md mt-1 mx-2 tracking-widest transition-colors duration-200"
               :class="showRedEye ? 'text-kushred' : 'text-gray-900'">&middot;</span>
 
             <!-- VISUAL ARTIST -->
             <span
-              class="flex flex-row items-center justify-center font-bold text-xs md:text-md mt-1 mx-1 lg:mx-2 tracking-normal sm:tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
+              class="flex flex-row items-center justify-center font-bold text-md mt-1 mx-2 tracking-wider transition-colors duration-200 cursor-pointer hover:text-kushred"
               :class="eyeHover || visualArtistHover ? 'text-kushred' : 'text-gray-900'"
               @mouseenter="visualArtistHover = true"
               @mouseleave="visualArtistHover = false"
