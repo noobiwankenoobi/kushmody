@@ -22,7 +22,7 @@
     <div class="w-full md:w-6/10">
 
       <!-- FORM -->
-      <form class="w-full md:w-lg py-4 md:py-6 rounded space-y-6 md:space-y-8 mt-2 md:mt-6">
+      <form @submit.prevent="handleSubmit" class="w-full md:w-lg py-4 md:py-6 rounded space-y-6 md:space-y-8 mt-2 md:mt-6">
 
       <!-- EMAIL -->
       <div>
@@ -51,9 +51,14 @@
 
 <script setup>
 import { ref } from "vue"
-// const name = ref("")
 const email = ref("")
 const message = ref("")
 
-// You can add a submit handler here for actual sending
+const handleSubmit = () => {
+  // Create mailto link with pre-filled fields
+  const mailtoLink = `mailto:kush.mody@gmail.com?subject=Message from ${email.value}&body=${encodeURIComponent(message.value)}`
+  
+  // Open user's default email client
+  window.location.href = mailtoLink
+}
 </script>

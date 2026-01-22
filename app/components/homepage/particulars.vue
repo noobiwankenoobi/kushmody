@@ -128,11 +128,6 @@
 
       </div>
     </transition>
-    
-    <!-- Full width dividing line after section -->
-    <div class="w-full my-4">
-      <hr class="border-t-1 border-gray-700" />
-    </div>
   </div>
 </template>
 
