@@ -171,7 +171,8 @@
     "gallery_image_url_thumbnail": "biirdvana_coverart_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 111,
@@ -184,7 +185,8 @@
     "gallery_image_url_thumbnail": "city_on_vines_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpeg"
   },
   {
     "id": 112,
@@ -197,7 +199,8 @@
     "gallery_image_url_thumbnail": "eattherich_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 113,
@@ -210,7 +213,8 @@
     "gallery_image_url_thumbnail": "fall_tour_2022_flyer_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 114,
@@ -223,7 +227,8 @@
     "gallery_image_url_thumbnail": "fonda_3_23_18_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 115,
@@ -236,7 +241,8 @@
     "gallery_image_url_thumbnail": "ftb_oeas_front_cover_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 116,
@@ -249,7 +255,8 @@
     "gallery_image_url_thumbnail": "give_me_all_your_money_v4_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 117,
@@ -262,7 +269,8 @@
     "gallery_image_url_thumbnail": "howwhy_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 118,
@@ -275,7 +283,8 @@
     "gallery_image_url_thumbnail": "impossible_aokay_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 119,
@@ -288,7 +297,8 @@
     "gallery_image_url_thumbnail": "impossible_volcano_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1110,
@@ -301,7 +311,8 @@
     "gallery_image_url_thumbnail": "kite_antlers_no_background_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1111,
@@ -314,7 +325,8 @@
     "gallery_image_url_thumbnail": "laa_frontcover_cmyk_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1112,
@@ -327,7 +339,8 @@
     "gallery_image_url_thumbnail": "lennon_shark_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpeg"
   },
   {
     "id": 1113,
@@ -340,7 +353,8 @@
     "gallery_image_url_thumbnail": "make_it_now_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1114,
@@ -353,7 +367,8 @@
     "gallery_image_url_thumbnail": "no_wasted_food_here_15x21_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1115,
@@ -366,7 +381,8 @@
     "gallery_image_url_thumbnail": "patriarchy_tattoo_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1116,
@@ -379,7 +395,8 @@
     "gallery_image_url_thumbnail": "penguin_wearing_boots_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1117,
@@ -392,7 +409,8 @@
     "gallery_image_url_thumbnail": "playing_card_white_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".png"
   },
   {
     "id": 1118,
@@ -405,7 +423,8 @@
     "gallery_image_url_thumbnail": "sir_finn_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".png"
   },
   {
     "id": 1119,
@@ -418,7 +437,8 @@
     "gallery_image_url_thumbnail": "tao_cow_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1120,
@@ -431,7 +451,8 @@
     "gallery_image_url_thumbnail": "wake_me_up_for_the_inflight_meal_hat_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1121,
@@ -444,7 +465,8 @@
     "gallery_image_url_thumbnail": "wake_me_up_in_flight_meal_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 1122,
@@ -457,7 +479,8 @@
     "gallery_image_url_thumbnail": "waxmode_not_disposable_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 220,
@@ -470,7 +493,8 @@
     "gallery_image_url_thumbnail": "9b0a5334_2_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 221,
@@ -483,7 +507,8 @@
     "gallery_image_url_thumbnail": "9b0a5343_2_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 222,
@@ -496,7 +521,8 @@
     "gallery_image_url_thumbnail": "9b0a5500_2_2_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 223,
@@ -509,7 +535,8 @@
     "gallery_image_url_thumbnail": "9b0a6853_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 224,
@@ -522,7 +549,8 @@
     "gallery_image_url_thumbnail": "9b0a7870_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 225,
@@ -535,7 +563,8 @@
     "gallery_image_url_thumbnail": "bookbalancer_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 226,
@@ -548,7 +577,8 @@
     "gallery_image_url_thumbnail": "french_painter_crop_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 227,
@@ -561,7 +591,8 @@
     "gallery_image_url_thumbnail": "fruit_fruit_donut_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 228,
@@ -574,7 +605,8 @@
     "gallery_image_url_thumbnail": "gaspump2_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".png"
   },
   {
     "id": 229,
@@ -587,7 +619,8 @@
     "gallery_image_url_thumbnail": "hal_face_stripe_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2210,
@@ -600,7 +633,8 @@
     "gallery_image_url_thumbnail": "hal_fire_sticks_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2211,
@@ -613,7 +647,8 @@
     "gallery_image_url_thumbnail": "halloween2021_green_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2212,
@@ -626,7 +661,8 @@
     "gallery_image_url_thumbnail": "hannah_tumble_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2213,
@@ -639,7 +675,8 @@
     "gallery_image_url_thumbnail": "marimba_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2214,
@@ -652,7 +689,8 @@
     "gallery_image_url_thumbnail": "packing_peanuts_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2215,
@@ -665,7 +703,8 @@
     "gallery_image_url_thumbnail": "rooftop_reader_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2216,
@@ -678,7 +717,8 @@
     "gallery_image_url_thumbnail": "sandwichlegs_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2217,
@@ -691,7 +731,8 @@
     "gallery_image_url_thumbnail": "sasha_bike_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2218,
@@ -704,7 +745,8 @@
     "gallery_image_url_thumbnail": "sasha_house_suitcase_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2219,
@@ -717,7 +759,8 @@
     "gallery_image_url_thumbnail": "sasha_flowers_bw_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2220,
@@ -730,7 +773,8 @@
     "gallery_image_url_thumbnail": "sticksmash_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2221,
@@ -743,7 +787,8 @@
     "gallery_image_url_thumbnail": "streetboat_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2222,
@@ -756,7 +801,8 @@
     "gallery_image_url_thumbnail": "superman_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   },
   {
     "id": 2223,
@@ -769,6 +815,7 @@
     "gallery_image_url_thumbnail": "tireswinglegs_thumbnail",
     "img_url": "",
     "youtube": "",
-    "youtube_embed": ""
+    "youtube_embed": "",
+    "file_extension": ".jpg"
   }
 ]

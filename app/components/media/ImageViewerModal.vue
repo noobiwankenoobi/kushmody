@@ -43,9 +43,11 @@ const props = defineProps({
 
 function determineImgSrc() {
   if (!props.item) return ''
-  if (props?.item?.gallery_image_url_thumbnail) {
+  if (props?.item?.gallery_image_filename) {
     console.log('ImageViewerModal: determineImgSrc running for item: ', props?.item)
-    return `/images/visual/thumbnails/${props?.item?.gallery_image_url_thumbnail}.webp`
+    const filename = props?.item?.gallery_image_filename
+    const extension = props?.item?.file_extension || '.jpg'
+    return `/images/visual/highres/${filename}${extension}`
   }
   return ''
 }
