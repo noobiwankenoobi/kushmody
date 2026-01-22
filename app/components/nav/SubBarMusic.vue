@@ -54,7 +54,7 @@ function handleClick(item) {
         :key="item.name"
         @click="handleClick(item)"
         :class="[
-          'px-2 py-1 text-xs font-bold transition-all border-b-2',
+          'px-2 py-1 text-sm font-bold transition-all border-b-2',
           item.data == selectedCategory 
             ? 'border-kushred text-kushred' 
             : 'border-transparent text-gray-700 hover:text-kushred hover:border-gray-300'

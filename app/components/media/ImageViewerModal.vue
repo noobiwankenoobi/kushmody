@@ -13,16 +13,16 @@
       <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer z-10" @click="$emit('close')">✕
       </button>
 
-      <!-- Custom Loading Spinner -->
-      <!-- <div v-if="playerIsLoading" class="flex items-center justify-center h-[395px] w-[480px]">
-        <div class="relative w-12 h-12">
+      <!-- Loading Spinner -->
+      <div v-if="imageIsLoading" class="flex items-center justify-center min-h-[400px] min-w-[400px]">
+        <div class="relative w-16 h-16">
           <div class="absolute inset-0 rounded-full border-4 border-t-kushmint border-b-gray-300 border-l-gray-300 border-r-gray-300 animate-spin"></div>
-          <div class="absolute inset-2 rounded-full bg-kushmint opacity-30"></div>
+          <div class="absolute inset-2 rounded-full bg-kushmint opacity-20"></div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Full Size Image -->
-      <img v-if="item && item?.gallery_image_url_thumbnail" :src="determineImgSrc()"
+      <img v-show="!imageIsLoading" v-if="item && item?.gallery_image_url_thumbnail" :src="determineImgSrc()"
         :alt="item.gallery_image_url_thumbnail || 'Image'" class="max-w-full max-h-[80vh] w-auto h-auto object-contain rounded"
         @load="onImageLoad" />
 
@@ -32,6 +32,7 @@
 </template>
 
 <script setup lang="js">
+import { ref, watch } from "vue"
 import { defineEmits } from "vue"
 defineEmits(["close"])
 const props = defineProps({
@@ -56,14 +57,16 @@ function determineImgSrc() {
 //|     LOADING        |
 //+--------------------+
 // loading defaults to true
-// const playerIsLoading = ref(true)
-// on iframe load, set loading to false
-// function onIframeLoad() {
-//   playerIsLoading.value = false
-// }
+const imageIsLoading = ref(true)
+// on image load, set loading to false
+function onImageLoad() {
+  imageIsLoading.value = false
+}
 
 watch(() => props?.item?.value, (newVal, _) => {
   console.log('item prop changed: ', newVal, _)
+  // Reset loading state when item changes
+  imageIsLoading.value = true
 }, { immediate: true })
 
 

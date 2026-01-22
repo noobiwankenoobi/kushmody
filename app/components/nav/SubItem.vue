@@ -15,7 +15,7 @@ defineEmits(["handleClick"])
   <li class="mx-4">
     <span
       :class="[
-          'tracking-wide font-bold text-sm cursor-pointer transition-colors duration-300',
+          'tracking-wide font-bold text-base cursor-pointer transition-colors duration-300',
           isSelected ? 'text-kushred' : 'text-gray-700 hover:text-kushred'
         ]"
       @click="$emit('handleClick', item)"
