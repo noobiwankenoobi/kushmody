@@ -39,7 +39,7 @@
 
             <!-- Right: Accomplishments (2/3) -->
             <div class="flex flex-col justify-center w-full md:w-4/5">
-              <ul class="text-sm md:text-base lg:text-lg text-gray-700 font-bold space-y-2 list-none text-left mt-4 md:mt-10">
+              <ul class="text-xs md:text-sm lg:text-base text-gray-700 font-bold space-y-2 list-none text-left mt-4 md:mt-10">
                 <li>Interdiscplinary creative based in LA</li>
                 <li>Graduated in 2010 from Berklee College of Music with a degree in film scoring</li>
                 <li>Toured worldwide as a bassist and keyboardist for 11 years</li>
@@ -94,7 +94,7 @@
             <div class="flex flex-col justify-center w-full md:w-1/2">
               <ul class="flex flex-row w-full gap-4 md:gap-8 mt-4 md:mt-18">
                 <!-- Left List -->
-                <ul class="flex-1 text-sm md:text-base lg:text-lg text-gray-700 font-bold space-y-1 list-none text-left">
+                <ul class="flex-1 text-xs md:text-sm lg:text-base text-gray-700 font-bold space-y-1 list-none text-left">
                   <li>Anderson .Paak</li>
                   <li>T-Pain</li>
                   <li>Talib Kweli</li>
@@ -104,7 +104,7 @@
                   <li>Watsky</li>
                 </ul>
                 <!-- Right List -->
-                <ul class="flex-1 text-sm md:text-base lg:text-lg text-gray-700 font-bold space-y-1 list-none text-left">
+                <ul class="flex-1 text-xs md:text-sm lg:text-base text-gray-700 font-bold space-y-1 list-none text-left">
                   <li>Apple</li>
                   <li>T-Mobile</li>
                   <li>Target</li>

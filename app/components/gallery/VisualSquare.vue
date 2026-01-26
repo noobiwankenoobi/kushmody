@@ -22,7 +22,7 @@ function getImageSrc(item) {
 </script>
 
 <template>
-  <div class="flex items-center justify-center cursor-pointer w-full mb-8 relative group" @click="$emit('click')">
+  <div class="flex items-center justify-center cursor-pointer w-full mb-8 relative group break-inside-avoid" @click="$emit('click')">
     <div v-if="item.type === 'video'" class="absolute top-1/2 left-1/2 z-2 transform -translate-x-1/2 -translate-y-1/2">
       <IconsPlay :width="48" :height="48"
         custom-class="text-kushmint opacity-50 group-hover:opacity-100 group-hover:scale-[2] transition-all duration-1000" />

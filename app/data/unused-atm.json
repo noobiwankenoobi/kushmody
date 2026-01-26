@@ -11,5 +11,22 @@
     "img_url": "https://img.youtube.com/vi/UAbH1oErrwQ/hqdefault.jpg",
     "youtube": "https://www.youtube.com/watch?v=UAbH1oErrwQ",
     "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 28,
+    "work_title": "Adventures of Serial Buddies",
+    "type": "video",
+    "format": "feature film",
+    "categories": "film scoring",
+    "gallery_image_filename": "adventures_of_serial_buddies",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "adventures_of_serial_buddies_thumbnail",
+    "disco_embed": "",
+    "spotify": "",
+    "youtube": "",
+    "vimeo": "",
+    "vimeo_embed": "",
+    "dropbox_url": "https://www.dropbox.com/scl/fi/nxivq9xy6vzfb6o47og1v/Serial-Buddies.jpg?rlkey=k3ln53e1ki8adokxpp2co0e9n&dl=0",
+    "youtube_embed": ""
   }
 ]
