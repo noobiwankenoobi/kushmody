@@ -20,12 +20,12 @@
     "categories": "video",
     "gallery_image_filename": "exquisite_corpse_(bts)",
     "gallery_image_url": "",
-    "gallery_image_url_thumbnail": "exquisite_corpse_(bts)_thumbnail",
+    "gallery_image_url_thumbnail": "exquisite_corpse_thumbnail",
     "img_url": "",
     "youtube": "",
     "youtube_embed": "",
-    "vimeo": "https://vimeo.com/manage/videos/249213444",
-    "vimeo_embed": ""
+    "vimeo": "",
+    "vimeo_embed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/249213444?h=7e4e1321c2\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" allowfullscreen></iframe>"
   },
   {
     "id": 4,
