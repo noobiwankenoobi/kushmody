@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "work_title": "The World Is Mine (BTS)",
+    "type": "video",
+    "format": "youtube",
+    "categories": "video",
+    "gallery_image_filename": "the_world_is_mine_(bts)",
+    "gallery_image_url": "",
+    "gallery_image_url_thumbnail": "the_world_is_mine_(bts)_thumbnail",
+    "img_url": "https://img.youtube.com/vi/UAbH1oErrwQ/hqdefault.jpg",
+    "youtube": "https://www.youtube.com/watch?v=UAbH1oErrwQ",
+    "youtube_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UAbH1oErrwQ?si=zp2P32P9SVzxtmx3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  }
+]

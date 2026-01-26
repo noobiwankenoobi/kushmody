@@ -112,6 +112,8 @@ watch(() => selectedItem, (newVal, _) => {
   <!-- MODALS -->
   <MediaAudioPlayerModal v-if="selectedItem && selectedItem?.type == 'audio'" :item="selectedItem"
     @close="closeModal" />
+  <MediaVideoViewerModal v-else-if="selectedItem && selectedItem?.type == 'video'" :item="selectedItem"
+    @close="closeModal" />
   <MediaImageViewerModal v-else-if="selectedItem && selectedItem?.type == 'image'" :item="selectedItem"
     @close="closeModal" />
 
