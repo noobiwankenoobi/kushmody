@@ -1,12 +1,11 @@
 <template>
   <div class="w-full h-full">
     <HomepageHero />
-    <HomepageName />
     <HomepageParticulars />
-    <HomepageStudio />
+    <HomepageName />
+    <!-- <HomepageStudio /> -->
     <HomepageContact />
     <HomepageTellMe />
-    
   </div>
 </template>
 

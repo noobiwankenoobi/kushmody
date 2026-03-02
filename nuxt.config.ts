@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  runtimeConfig: {
+    public: {
+      web3formsKey: process.env.WEB3FORMS_KEY,
+    },
+  },
 
   vite: {
     plugins: [
